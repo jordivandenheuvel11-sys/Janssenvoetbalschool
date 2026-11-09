@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 const AboutUsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -50,18 +51,20 @@ const AboutUsSection = () => {
         overflow: 'hidden',
         padding: '24px' // Padding to show the rounding
       }}>
-        <img 
-          src="/about-us-new.jpg" 
-          alt="Janssen Voetbal Training" 
-          loading="lazy"
+        <Image
+          src="/about-us-new.webp"
+          alt="Janssen Voetbal Training"
+          width={1200}
+          height={800}
+          sizes="(max-width: 768px) 100vw, 50vw"
           style={{
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            borderRadius: '32px', // Consistency
+            borderRadius: '32px',
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? 'scale(1)' : 'scale(1.1)',
-            transition: 'all 1.5s cubic-bezier(0.16, 1, 0.3, 1)'
+            transition: 'all 1.5s cubic-bezier(0.16, 1, 0.3, 1)',
           }}
         />
       </div>

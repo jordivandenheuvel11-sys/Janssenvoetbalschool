@@ -1,12 +1,15 @@
 import React from "react";
+import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
 import PressMentionSection from "@/components/PressMentionSection";
 import HomeOfferSection from "@/components/HomeOfferSection";
-import AboutUsSection from "@/components/AboutUsSection";
-import StickyFeatures from "@/components/StickyFeatures";
-import AboutSection from "@/components/AboutSection";
 import { BUSINESS, getMapsUrl } from "@/lib/business";
 import { getSiteUrl } from "@/lib/site";
+
+/** Below-fold client sections: split JS so hero LCP stays light */
+const AboutUsSection = dynamic(() => import("@/components/AboutUsSection"));
+const StickyFeatures = dynamic(() => import("@/components/StickyFeatures"));
+const AboutSection = dynamic(() => import("@/components/AboutSection"));
 
 const siteUrl = getSiteUrl();
 
@@ -21,8 +24,8 @@ const homeJsonLd = {
       description:
         "Professionele individuele voetbaltraining voor jeugdspelers in Velden, gemeente Venlo. Techniektraining op Sportpark Theo Lommen.",
       url: siteUrl,
-      image: [`${siteUrl}/trainer-new.jpg`, `${siteUrl}/opengraph-image`],
-      logo: `${siteUrl}/logo.png`,
+      image: [`${siteUrl}/trainer-new.webp`, `${siteUrl}/opengraph-image`],
+      logo: `${siteUrl}/logo.webp`,
       telephone: BUSINESS.telephone,
       email: BUSINESS.email,
       identifier: {
@@ -65,7 +68,7 @@ const homeJsonLd = {
       name: BUSINESS.trainerName,
       jobTitle: "Voetbaltrainer",
       worksFor: { "@id": `${siteUrl}/#business` },
-      image: `${siteUrl}/trainer-new.jpg`,
+      image: `${siteUrl}/trainer-new.webp`,
       url: `${siteUrl}/#over-mij`,
       sameAs: [
         "https://www.instagram.com/janssenvoetbal/",

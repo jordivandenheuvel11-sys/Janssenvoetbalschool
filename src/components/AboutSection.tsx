@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const AboutSection = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -137,15 +138,17 @@ const AboutSection = () => {
                 boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
                 overflow: 'hidden'
               }}>
-                <img 
-                  src="/trainer-new.jpg" 
-                  alt="Trainer Jelte" 
-                  loading="lazy"
-                  style={{ 
-                    width: '100%', 
-                    height: '100%', 
-                    objectFit: 'cover' 
-                  }} 
+                <Image
+                  src="/trainer-new.webp"
+                  alt="Trainer Jelte Janssen"
+                  width={500}
+                  height={750}
+                  sizes="(max-width: 768px) 90vw, 400px"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
                 />
               </div>
 

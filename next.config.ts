@@ -17,11 +17,29 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   devIndicators: false,
   allowedDevOrigins: ["127.0.0.1", "localhost", "10.10.0.107", "10.10.0.110"],
+  images: {
+    formats: ["image/avif", "image/webp"],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256],
+  },
+  // Keep Sanity Studio off the critical path for marketing pages
+  experimental: {
+    optimizePackageImports: ["framer-motion", "lucide-react"],
+  },
   async headers() {
     return [
       {
         source: "/:path*",
         headers: securityHeaders,
+      },
+      {
+        source: "/:all*(svg|jpg|jpeg|png|webp|avif|mp4)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
       },
     ];
   },

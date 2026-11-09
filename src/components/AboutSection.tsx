@@ -59,43 +59,12 @@ const AboutSection = () => {
               color: '#3a3a3a',
               lineHeight: 1.75,
               fontWeight: 500,
-              margin: '0 0 16px',
-            }}
-          >
-            Welkom bij Janssen Voetbalschool. Mijn naam is Jelte Janssen, en ik
-            ben gedreven door de passie om jong talent naar het volgende niveau
-            te tillen. Met ervaring als speler én trainer geloof ik dat de
-            juiste begeleiding het verschil maakt — juist in de jeugd, wanneer
-            techniek en zelfvertrouwen het hardst groeien.
-          </p>
-          <p
-            style={{
-              fontSize: '17px',
-              color: '#3a3a3a',
-              lineHeight: 1.75,
-              fontWeight: 500,
-              margin: '0 0 16px',
-            }}
-          >
-            Mijn aanpak is persoonlijk, direct en gefocust op jouw specifieke
-            behoeften. Of het nu gaat om techniek, sneller handelen of
-            spelinzicht — ik werk samen met jou keihard aan jouw ontwikkeling in
-            een professionele, maar vertrouwde omgeving op Sportpark Theo Lommen
-            in Velden.
-          </p>
-          <p
-            style={{
-              fontSize: '17px',
-              color: '#3a3a3a',
-              lineHeight: 1.75,
-              fontWeight: 500,
               margin: 0,
             }}
           >
-            Omroep Venlo schreef eerder over de oprichting van de voetbalschool.
-            Diezelfde drive staat nog steeds centraal: elke speler serieus
-            nemen, duidelijk feedback geven en resultaat boeken zonder het
-            plezier uit het oog te verliezen.
+            Ik ben Jelte Janssen. Op Sportpark Theo Lommen in Velden train ik
+            jeugdspelers persoonlijk — techniek, spelinzicht en zelfvertrouwen,
+            gericht op jouw doelen.
           </p>
 
           <div style={{ marginTop: '28px' }}>
@@ -124,7 +93,10 @@ const AboutSection = () => {
             flex: '1 1 320px',
             minWidth: '280px',
             position: 'relative',
-            aspectRatio: '4 / 3',
+            aspectRatio: '3 / 4',
+            maxWidth: '420px',
+            width: '100%',
+            margin: '0 auto',
             overflow: 'hidden',
           }}
         >

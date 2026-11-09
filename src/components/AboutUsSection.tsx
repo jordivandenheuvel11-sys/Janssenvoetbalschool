@@ -108,7 +108,7 @@ const AboutUsSection = () => {
             flex: '1 1 320px',
             minWidth: '280px',
             position: 'relative',
-            aspectRatio: '4 / 3',
+            aspectRatio: '5 / 4',
             overflow: 'hidden',
           }}
         >

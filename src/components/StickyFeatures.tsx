@@ -12,9 +12,9 @@ const link: CSSProperties = { color: "#D90429", fontWeight: 700 };
 const reasons = [
   {
     title: "Individuele aandacht",
-    image: "/gallery/g2.jpg",
+    image: "/feature-poster-1.jpg",
     imageAlt:
-      "Individuele voetbaltraining bij Janssen Voetbalschool in Velden",
+      "1-op-1 aandacht tijdens voetbaltraining bij Janssen Voetbalschool in Velden",
     body: (
       <>
         Bij mij train je niet weg in een grote groep. Ik kijk mee naar jouw
@@ -26,9 +26,9 @@ const reasons = [
   },
   {
     title: "Meetbaar resultaat",
-    image: "/gallery/g5.jpg",
+    image: "/feature-poster-2.jpg",
     imageAlt:
-      "Jeugdspeler werkt aan techniek tijdens training op Sportpark Theo Lommen",
+      "Jeugdspeler werkt aan balcontrole tijdens training op Sportpark Theo Lommen",
     body: (
       <>
         Elke sessie van 60 minuten geef ik een duidelijk doel: beter handelen
@@ -47,9 +47,9 @@ const reasons = [
   },
   {
     title: "Plezier én focus",
-    image: "/gallery/g4.jpg",
+    image: "/feature-poster-3.jpg",
     imageAlt:
-      "Jonge voetballers met plezier aan de bal bij Janssen Voetbalschool",
+      "Actieve jeugdtraining met plezier en focus bij Janssen Voetbalschool",
     body: (
       <>
         Goede voetballers blijven trainen omdat het leuk is. Mijn aanpak is

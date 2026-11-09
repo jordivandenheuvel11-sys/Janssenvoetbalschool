@@ -8,8 +8,9 @@ const linkStyle: React.CSSProperties = { color: "#D90429", fontWeight: 700 };
 const audiences = [
   {
     title: "Jeugdspelers naast de club",
-    image: "/gallery/g2.jpg",
-    imageAlt: "Jeugdspeler tijdens individuele voetbaltraining in Velden",
+    image: "/gallery/g1.jpg",
+    imageAlt:
+      "Trainer met jeugdspelers in een huddle tijdens training in Velden",
     body: (
       <>
         Ik train spelers uit {BUSINESS.addressLocality} en gemeente Venlo die
@@ -25,8 +26,9 @@ const audiences = [
   },
   {
     title: "Techniek, 1-tegen-1 en spelinzicht",
-    image: "/gallery/g5.jpg",
-    imageAlt: "Techniektraining: dribbelen en aannemen op Sportpark Theo Lommen",
+    image: "/gallery/g3.jpg",
+    imageAlt:
+      "Jeugdspeler met de bal tijdens individuele techniektraining op Sportpark Theo Lommen",
     body: (
       <>
         Mijn sessies duren 60 minuten, met focus op aannemen, dribbelen, passen,

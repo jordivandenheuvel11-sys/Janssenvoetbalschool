@@ -46,22 +46,22 @@ const PressMentionSection = () => {
       <div
         className="container"
         style={{
-          paddingTop: '56px',
-          paddingBottom: '56px',
+          paddingTop: '28px',
+          paddingBottom: '28px',
           opacity: isVisible ? 1 : 0,
-          transform: isVisible ? 'translateY(0)' : 'translateY(18px)',
-          transition: 'opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)',
+          transform: isVisible ? 'translateY(0)' : 'translateY(12px)',
+          transition: 'opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1)',
         }}
       >
         <span
           style={{
-            fontSize: '13px',
+            fontSize: '11px',
             fontWeight: 700,
             color: '#D90429',
-            letterSpacing: '0.2em',
+            letterSpacing: '0.18em',
             textTransform: 'uppercase',
             display: 'block',
-            marginBottom: '28px',
+            marginBottom: '14px',
             textAlign: 'center',
           }}
         >
@@ -76,10 +76,10 @@ const PressMentionSection = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            gap: '20px',
+            gap: '10px',
             textDecoration: 'none',
             color: 'inherit',
-            maxWidth: '720px',
+            maxWidth: '560px',
             margin: '0 auto',
             textAlign: 'center',
           }}
@@ -87,10 +87,10 @@ const PressMentionSection = () => {
           <img
             src="/press/omroep-venlo-dark.svg"
             alt="Omroep Venlo"
-            width={166}
-            height={35}
+            width={140}
+            height={30}
             style={{
-              width: 'min(220px, 70%)',
+              width: 'min(140px, 55%)',
               height: 'auto',
               display: 'block',
             }}
@@ -99,41 +99,26 @@ const PressMentionSection = () => {
           <h2
             style={{
               margin: 0,
-              fontSize: 'clamp(1.35rem, 3.2vw, 1.85rem)',
+              fontSize: 'clamp(1rem, 2.4vw, 1.2rem)',
               fontWeight: 700,
-              letterSpacing: '0.015em',
-              lineHeight: 1.25,
+              letterSpacing: '0.01em',
+              lineHeight: 1.3,
               color: '#1a1a1b',
-              maxWidth: '34ch',
+              maxWidth: '36ch',
             }}
           >
             Jelte Janssen (19) heeft zijn eigen voetbalschool
           </h2>
 
-          <p
-            style={{
-              margin: 0,
-              fontSize: '16px',
-              lineHeight: 1.65,
-              color: '#4a4a4a',
-              fontWeight: 500,
-              maxWidth: '42ch',
-            }}
-          >
-            Omroep Venlo belicht hoe Jelte iedere week op het kunstgras van SV
-            Velden het beste uit jonge voetballers haalt.
-          </p>
-
           <span
             style={{
-              marginTop: '4px',
-              fontSize: '13px',
+              fontSize: '12px',
               fontWeight: 700,
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
               color: '#1a1a1b',
-              borderBottom: '2px solid #D90429',
-              paddingBottom: '4px',
+              borderBottom: '1.5px solid #D90429',
+              paddingBottom: '2px',
             }}
           >
             Lees het artikel

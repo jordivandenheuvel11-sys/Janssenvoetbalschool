@@ -259,31 +259,6 @@ export default function HomeOfferSection() {
         >
           Proefles aanvragen
         </ContactLink>
-        <p
-          style={{
-            fontSize: "15px",
-            lineHeight: 1.7,
-            color: "#4a4a4a",
-            fontWeight: 500,
-            margin: 0,
-          }}
-        >
-          <Link href="/prive-voetbaltraining" style={linkStyle}>
-            Privé training
-          </Link>
-          {" · "}
-          <Link href="/individuele-voetbaltrainer-venlo" style={linkStyle}>
-            Trainer Venlo
-          </Link>
-          {" · "}
-          <Link href="/voetbaltraining-velden" style={linkStyle}>
-            Velden
-          </Link>
-          {" · "}
-          <Link href="/voetbaltraining-venlo" style={linkStyle}>
-            Venlo
-          </Link>
-        </p>
       </div>
     </section>
   );

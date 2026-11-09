@@ -110,19 +110,6 @@ export default function StickyFeatures({ sectionHeading }: StickyFeaturesProps) 
         >
           {heading}
         </h2>
-        <p
-          style={{
-            fontSize: "18px",
-            lineHeight: 1.7,
-            color: "#4a4a4a",
-            fontWeight: 500,
-            margin: 0,
-            maxWidth: "42rem",
-          }}
-        >
-          Ik train jeugdspelers in Velden (gemeente Venlo) die techniek,
-          spelinzicht en zelfvertrouwen willen versterken — naast hun club.
-        </p>
       </div>
 
       <div

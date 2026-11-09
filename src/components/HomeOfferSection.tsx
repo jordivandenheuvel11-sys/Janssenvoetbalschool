@@ -459,106 +459,88 @@ export default function HomeOfferSection() {
 
       <div
         style={{
-          maxWidth: "1000px",
+          maxWidth: "560px",
           margin: "72px auto 0",
+          textAlign: "center",
           display: "flex",
-          flexWrap: "wrap",
-          gap: "40px",
+          flexDirection: "column",
           alignItems: "center",
-          flexDirection: "row",
         }}
       >
-        <div
-          style={{
-            flex: "1 1 320px",
-            minWidth: "280px",
-            maxWidth: "520px",
-            width: "100%",
-          }}
-        >
+        <div style={{ width: "100%", maxWidth: "420px", marginBottom: "28px" }}>
           <VisualProefles />
         </div>
-        <div
+        <h3
           style={{
-            flex: "1 1 320px",
-            minWidth: "280px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
+            fontSize: "clamp(1.5rem, 3vw, 2rem)",
+            fontWeight: 900,
+            letterSpacing: "-0.03em",
+            lineHeight: 1.15,
+            margin: "0 0 16px",
+            color: "#0f0f0f",
           }}
         >
-          <h3
-            style={{
-              fontSize: "clamp(1.5rem, 3vw, 2rem)",
-              fontWeight: 900,
-              letterSpacing: "-0.03em",
-              lineHeight: 1.15,
-              margin: "0 0 16px",
-              color: "#0f0f0f",
-            }}
-          >
-            Start met een proefles
-          </h3>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.75,
-              color: "#3a3a3a",
-              fontWeight: 500,
-              margin: "0 0 24px",
-            }}
-          >
-            Vraag een{" "}
-            <Link href="/proefles-aanvragen" style={linkStyle}>
-              proefles
-            </Link>{" "}
-            aan — dan plan ik samen met jou een moment. Mijn tarieven staan bij{" "}
-            <Link href="/pakketten" style={linkStyle}>
-              pakketten
-            </Link>
-            .
-          </p>
-          <p
-            style={{
-              fontSize: "15px",
-              lineHeight: 1.7,
-              color: "#4a4a4a",
-              fontWeight: 500,
-              margin: "0 0 16px",
-            }}
-          >
-            <Link href="/voetbaltraining-velden" style={linkStyle}>
-              Velden
-            </Link>
-            {" · "}
-            <Link href="/voetbaltraining-venlo" style={linkStyle}>
-              Venlo
-            </Link>
-            {" · "}
-            <Link href="/jeugd-voetbaltraining" style={linkStyle}>
-              Jeugd
-            </Link>
-            {" · "}
-            <Link href="/locatie-sportpark-theo-lommen" style={linkStyle}>
-              Locatie
-            </Link>
-          </p>
-          <p
-            style={{
-              fontSize: "14px",
-              lineHeight: 1.6,
-              color: "#6b6b6b",
-              fontWeight: 500,
-              margin: 0,
-            }}
-          >
-            {getFullAddressLine()} ·{" "}
-            <a href={`tel:${BUSINESS.telephone}`} style={{ color: "inherit" }}>
-              {BUSINESS.telephoneDisplay}
-            </a>{" "}
-            · KvK {BUSINESS.kvk}
-          </p>
-        </div>
+          Start met een proefles
+        </h3>
+        <p
+          style={{
+            fontSize: "17px",
+            lineHeight: 1.75,
+            color: "#3a3a3a",
+            fontWeight: 500,
+            margin: "0 0 24px",
+          }}
+        >
+          Vraag een{" "}
+          <Link href="/proefles-aanvragen" style={linkStyle}>
+            proefles
+          </Link>{" "}
+          aan — dan plan ik samen met jou een moment. Mijn tarieven staan bij{" "}
+          <Link href="/pakketten" style={linkStyle}>
+            pakketten
+          </Link>
+          .
+        </p>
+        <p
+          style={{
+            fontSize: "15px",
+            lineHeight: 1.7,
+            color: "#4a4a4a",
+            fontWeight: 500,
+            margin: "0 0 16px",
+          }}
+        >
+          <Link href="/voetbaltraining-velden" style={linkStyle}>
+            Velden
+          </Link>
+          {" · "}
+          <Link href="/voetbaltraining-venlo" style={linkStyle}>
+            Venlo
+          </Link>
+          {" · "}
+          <Link href="/jeugd-voetbaltraining" style={linkStyle}>
+            Jeugd
+          </Link>
+          {" · "}
+          <Link href="/locatie-sportpark-theo-lommen" style={linkStyle}>
+            Locatie
+          </Link>
+        </p>
+        <p
+          style={{
+            fontSize: "14px",
+            lineHeight: 1.6,
+            color: "#6b6b6b",
+            fontWeight: 500,
+            margin: 0,
+          }}
+        >
+          {getFullAddressLine()} ·{" "}
+          <a href={`tel:${BUSINESS.telephone}`} style={{ color: "inherit" }}>
+            {BUSINESS.telephoneDisplay}
+          </a>{" "}
+          · KvK {BUSINESS.kvk}
+        </p>
       </div>
     </section>
   );

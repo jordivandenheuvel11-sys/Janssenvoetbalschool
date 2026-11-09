@@ -72,7 +72,7 @@ const InschrijvingForm = ({ initialPakket }: InschrijvingFormProps) => {
   const labelStyle: React.CSSProperties = {
     fontSize: '14px',
     fontWeight: 800,
-    color: '#888888',
+    color: '#595959',
     textTransform: 'uppercase',
   };
 

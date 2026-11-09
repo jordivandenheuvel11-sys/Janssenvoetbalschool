@@ -7,7 +7,10 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import ContactModal from "./ContactModal";
+import dynamic from "next/dynamic";
+
+/** Modal JS alleen laden wanneer de popup open gaat (minder unused JS op homepage). */
+const ContactModal = dynamic(() => import("./ContactModal"), { ssr: false });
 
 export type ContactAanvraagType =
   | "contact"
@@ -55,13 +58,15 @@ export function ContactModalProvider({
   return (
     <ContactModalContext.Provider value={value}>
       {children}
-      <ContactModal
-        open={isOpen}
-        onClose={closeContactModal}
-        initialType={options.type}
-        initialSubject={options.subject}
-        initialMessage={options.message}
-      />
+      {isOpen ? (
+        <ContactModal
+          open={isOpen}
+          onClose={closeContactModal}
+          initialType={options.type}
+          initialSubject={options.subject}
+          initialMessage={options.message}
+        />
+      ) : null}
     </ContactModalContext.Provider>
   );
 }

@@ -1,17 +1,19 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
-import PressMentionSection from "@/components/PressMentionSection";
 import HomeOfferSection from "@/components/HomeOfferSection";
 import StickyFeatures from "@/components/StickyFeatures";
-import FaqSection from "@/components/FaqSection";
-import FirstTrainingCta from "@/components/FirstTrainingCta";
 import { BUSINESS, getMapsUrl } from "@/lib/business";
 import { getSiteUrl } from "@/lib/site";
 
-/** Below-fold client sections: split JS so hero LCP stays light */
+/** Below-fold sections: split JS so hero LCP stays light */
+const PressMentionSection = dynamic(
+  () => import("@/components/PressMentionSection"),
+);
 const AboutUsSection = dynamic(() => import("@/components/AboutUsSection"));
 const AboutSection = dynamic(() => import("@/components/AboutSection"));
+const FaqSection = dynamic(() => import("@/components/FaqSection"));
+const FirstTrainingCta = dynamic(() => import("@/components/FirstTrainingCta"));
 
 const siteUrl = getSiteUrl();
 

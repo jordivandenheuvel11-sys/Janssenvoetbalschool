@@ -128,7 +128,7 @@ const ContactSection = ({
         }}
       >
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <label htmlFor="subject" style={{ fontSize: '14px', fontWeight: '800', color: '#888888', textTransform: 'uppercase' }}>Onderwerp</label>
+          <label htmlFor="subject" style={{ fontSize: '14px', fontWeight: '800', color: '#595959', textTransform: 'uppercase' }}>Onderwerp</label>
           <input
             type="text"
             id="subject"
@@ -153,7 +153,7 @@ const ContactSection = ({
           width: '100%' 
         }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            <label htmlFor="name" style={{ fontSize: '14px', fontWeight: '800', color: '#888888', textTransform: 'uppercase' }}>Naam</label>
+            <label htmlFor="name" style={{ fontSize: '14px', fontWeight: '800', color: '#595959', textTransform: 'uppercase' }}>Naam</label>
             <input 
               type="text" 
               id="name" 
@@ -172,7 +172,7 @@ const ContactSection = ({
             />
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            <label htmlFor="email" style={{ fontSize: '14px', fontWeight: '800', color: '#888888', textTransform: 'uppercase' }}>E-mail</label>
+            <label htmlFor="email" style={{ fontSize: '14px', fontWeight: '800', color: '#595959', textTransform: 'uppercase' }}>E-mail</label>
             <input 
               type="email" 
               id="email" 
@@ -193,7 +193,7 @@ const ContactSection = ({
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <label htmlFor="phone" style={{ fontSize: '14px', fontWeight: '800', color: '#888888', textTransform: 'uppercase' }}>Telefoonnummer</label>
+          <label htmlFor="phone" style={{ fontSize: '14px', fontWeight: '800', color: '#595959', textTransform: 'uppercase' }}>Telefoonnummer</label>
           <input 
             type="tel" 
             id="phone" 
@@ -212,7 +212,7 @@ const ContactSection = ({
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <label htmlFor="message" style={{ fontSize: '14px', fontWeight: '800', color: '#888888', textTransform: 'uppercase' }}>Bericht</label>
+          <label htmlFor="message" style={{ fontSize: '14px', fontWeight: '800', color: '#595959', textTransform: 'uppercase' }}>Bericht</label>
           <textarea 
             id="message" 
             name="message" 

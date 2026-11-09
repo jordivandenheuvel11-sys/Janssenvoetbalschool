@@ -3,7 +3,7 @@
 import React, { useEffect, useId, useState } from "react";
 import type { ContactAanvraagType } from "./ContactModalContext";
 
-type ContactModalProps = {
+export type ContactModalProps = {
   open: boolean;
   onClose: () => void;
   initialType?: ContactAanvraagType;
@@ -159,7 +159,7 @@ export default function ContactModal({
   const labelStyle: React.CSSProperties = {
     fontSize: "12px",
     fontWeight: 800,
-    color: "#888888",
+    color: "#595959",
     textTransform: "uppercase",
     letterSpacing: "0.08em",
     marginBottom: "8px",

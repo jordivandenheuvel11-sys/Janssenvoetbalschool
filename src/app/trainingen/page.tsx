@@ -169,7 +169,7 @@ export default async function TrainingenPage() {
           </div>
         ) : (
           <div style={{ textAlign: 'center', padding: '80px 0' }}>
-            <p style={{ fontSize: '18px', color: '#888888' }}>
+            <p style={{ fontSize: '18px', color: '#595959' }}>
               Er zijn momenteel geen trainingen gepland. Kom binnenkort terug!
             </p>
           </div>

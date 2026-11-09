@@ -15,6 +15,7 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
   preload: true,
+  weight: ["500", "600", "700", "800", "900"],
 });
 
 const siteUrl = getSiteUrl();

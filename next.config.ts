@@ -22,9 +22,11 @@ const nextConfig: NextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256],
   },
-  // Keep Sanity Studio off the critical path for marketing pages
+  // Keep Sanity Studio off the critical path for marketing pages.
+  // inlineCss: CSS is ~3KB — remove the render-blocking stylesheet round-trip.
   experimental: {
     optimizePackageImports: ["framer-motion", "lucide-react"],
+    inlineCss: true,
   },
   async headers() {
     return [

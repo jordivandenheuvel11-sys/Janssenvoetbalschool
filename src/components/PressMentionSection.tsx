@@ -115,7 +115,7 @@ const PressMentionSection = () => {
               margin: 0,
               fontSize: '16px',
               lineHeight: 1.65,
-              color: '#5b5c5e',
+              color: '#4a4a4a',
               fontWeight: 500,
               maxWidth: '42ch',
             }}

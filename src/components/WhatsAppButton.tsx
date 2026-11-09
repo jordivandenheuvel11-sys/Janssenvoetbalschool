@@ -147,7 +147,7 @@ const WhatsAppButton = () => {
               marginTop: 4,
               fontSize: 11,
               fontWeight: 500,
-              color: '#667781',
+              color: '#54656f',
             }}
           >
             Tik om WhatsApp te openen

@@ -15,7 +15,6 @@ const reasons = [
     image: "/gallery/g2.jpg",
     imageAlt:
       "Individuele voetbaltraining bij Janssen Voetbalschool in Velden",
-    aspectRatio: "5 / 4",
     body: (
       <>
         Bij mij train je niet weg in een grote groep. Ik kijk mee naar jouw
@@ -30,7 +29,6 @@ const reasons = [
     image: "/gallery/g5.jpg",
     imageAlt:
       "Jeugdspeler werkt aan techniek tijdens training op Sportpark Theo Lommen",
-    aspectRatio: "1 / 1",
     body: (
       <>
         Elke sessie van 60 minuten geef ik een duidelijk doel: beter handelen
@@ -52,7 +50,6 @@ const reasons = [
     image: "/gallery/g4.jpg",
     imageAlt:
       "Jonge voetballers met plezier aan de bal bij Janssen Voetbalschool",
-    aspectRatio: "4 / 5",
     body: (
       <>
         Goede voetballers blijven trainen omdat het leuk is. Mijn aanpak is
@@ -154,15 +151,10 @@ export default function StickyFeatures({ sectionHeading }: StickyFeaturesProps) 
                 style={{
                   flex: "1 1 280px",
                   minWidth: "240px",
-                  maxWidth:
-                    reason.aspectRatio === "1 / 1"
-                      ? "400px"
-                      : reason.aspectRatio === "4 / 5"
-                        ? "380px"
-                        : "520px",
+                  maxWidth: "480px",
                   width: "100%",
                   position: "relative",
-                  aspectRatio: reason.aspectRatio,
+                  aspectRatio: "4 / 3",
                   overflow: "hidden",
                 }}
               >

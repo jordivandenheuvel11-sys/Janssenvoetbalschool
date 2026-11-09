@@ -24,7 +24,7 @@ export default async function InschrijvenPage({ searchParams }: InschrijvenPageP
         <span
           style={{
             fontSize: "14px",
-            fontWeight: 900,
+            fontWeight: 700,
             color: "#D90429",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
@@ -37,8 +37,8 @@ export default async function InschrijvenPage({ searchParams }: InschrijvenPageP
         <h1
           style={{
             fontSize: "clamp(2.25rem, 5vw, 3.5rem)",
-            fontWeight: 900,
-            letterSpacing: "-0.04em",
+            fontWeight: 700,
+            letterSpacing: "0.02em",
             lineHeight: 1.1,
             margin: "0 0 16px 0",
           }}

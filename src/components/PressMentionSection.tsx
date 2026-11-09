@@ -56,7 +56,7 @@ const PressMentionSection = () => {
         <span
           style={{
             fontSize: '13px',
-            fontWeight: 900,
+            fontWeight: 700,
             color: '#D90429',
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
@@ -100,8 +100,8 @@ const PressMentionSection = () => {
             style={{
               margin: 0,
               fontSize: 'clamp(1.35rem, 3.2vw, 1.85rem)',
-              fontWeight: 850,
-              letterSpacing: '-0.03em',
+              fontWeight: 700,
+              letterSpacing: '0.015em',
               lineHeight: 1.25,
               color: '#1a1a1b',
               maxWidth: '34ch',
@@ -128,7 +128,7 @@ const PressMentionSection = () => {
             style={{
               marginTop: '4px',
               fontSize: '13px',
-              fontWeight: 800,
+              fontWeight: 700,
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
               color: '#1a1a1b',

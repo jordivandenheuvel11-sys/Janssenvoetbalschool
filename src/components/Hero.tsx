@@ -95,8 +95,8 @@ const Hero = () => {
             fontSize: 'clamp(2.1rem, 5.5vw, 3.8rem)',
             color: '#ffffff',
             margin: '0 0 24px',
-            letterSpacing: '-0.03em',
-            fontWeight: 800,
+            letterSpacing: '0.02em',
+            fontWeight: 700,
           }}
         >
           Individuele voetbaltraining in Velden

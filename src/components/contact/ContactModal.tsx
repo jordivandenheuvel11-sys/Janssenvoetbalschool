@@ -250,7 +250,7 @@ export default function ContactModal({
             <span
               style={{
                 fontSize: "12px",
-                fontWeight: 900,
+                fontWeight: 700,
                 color: "#D90429",
                 letterSpacing: "0.16em",
                 textTransform: "uppercase",
@@ -288,8 +288,8 @@ export default function ContactModal({
               style={{
                 margin: "0 0 8px",
                 fontSize: "clamp(1.5rem, 4vw, 1.85rem)",
-                fontWeight: 900,
-                letterSpacing: "-0.03em",
+                fontWeight: 700,
+                letterSpacing: "0.015em",
               }}
             >
               Waarmee kan ik je helpen?
@@ -368,8 +368,8 @@ export default function ContactModal({
               style={{
                 margin: "0 0 8px",
                 fontSize: "clamp(1.5rem, 4vw, 1.85rem)",
-                fontWeight: 900,
-                letterSpacing: "-0.03em",
+                fontWeight: 700,
+                letterSpacing: "0.015em",
               }}
             >
               Jouw gegevens
@@ -472,8 +472,8 @@ export default function ContactModal({
               style={{
                 margin: "0 0 8px",
                 fontSize: "clamp(1.5rem, 4vw, 1.85rem)",
-                fontWeight: 900,
-                letterSpacing: "-0.03em",
+                fontWeight: 700,
+                letterSpacing: "0.015em",
               }}
             >
               Je bericht
@@ -568,8 +568,8 @@ export default function ContactModal({
               style={{
                 margin: "8px 0 12px",
                 fontSize: "clamp(1.5rem, 4vw, 1.85rem)",
-                fontWeight: 900,
-                letterSpacing: "-0.03em",
+                fontWeight: 700,
+                letterSpacing: "0.015em",
               }}
             >
               Bedankt — ik heb je bericht

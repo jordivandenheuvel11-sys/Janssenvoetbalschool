@@ -37,7 +37,7 @@ export default function ProeflesAanvragenPage() {
         <span
           style={{
             fontSize: "13px",
-            fontWeight: 900,
+            fontWeight: 700,
             color: "#D90429",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
@@ -50,8 +50,8 @@ export default function ProeflesAanvragenPage() {
         <h1
           style={{
             fontSize: "clamp(2.4rem, 5vw, 3.6rem)",
-            fontWeight: 900,
-            letterSpacing: "-0.04em",
+            fontWeight: 700,
+            letterSpacing: "0.02em",
             lineHeight: 1.08,
             margin: "0 0 20px",
           }}

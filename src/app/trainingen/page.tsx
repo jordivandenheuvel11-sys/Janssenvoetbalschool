@@ -51,7 +51,7 @@ export default async function TrainingenPage() {
         <div style={{ marginBottom: '80px', textAlign: 'center' }}>
           <span style={{
             fontSize: '14px',
-            fontWeight: '900',
+            fontWeight: '700',
             color: '#D90429',
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
@@ -62,8 +62,8 @@ export default async function TrainingenPage() {
           </span>
           <h1 style={{ 
             fontSize: 'clamp(3rem, 6vw, 5rem)',
-            fontWeight: '900', 
-            letterSpacing: '-0.04em',
+            fontWeight: '700', 
+            letterSpacing: '0.02em',
             lineHeight: '1',
             margin: '0 auto'
           }}>
@@ -108,7 +108,7 @@ export default async function TrainingenPage() {
                 <div style={{ 
                   color: '#D90429', 
                   fontSize: '13px',
-                  fontWeight: '900',
+                  fontWeight: '700',
                   letterSpacing: '0.1em',
                   textTransform: 'uppercase',
                   marginBottom: '16px'
@@ -116,7 +116,7 @@ export default async function TrainingenPage() {
                   {new Date(training.date).toLocaleDateString('nl-NL', { weekday: 'long' })}
                 </div>
                 
-                <h3 style={{ fontSize: '32px', fontWeight: '900', marginBottom: '8px', letterSpacing: '-0.02em' }}>
+                <h3 style={{ fontSize: '32px', fontWeight: '700', marginBottom: '8px', letterSpacing: '0.01em' }}>
                   {new Date(training.date).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long' })}
                 </h3>
                 

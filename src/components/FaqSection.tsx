@@ -43,7 +43,7 @@ export default function FaqSection({
         <span
           style={{
             fontSize: "13px",
-            fontWeight: 900,
+            fontWeight: 700,
             color: "#D90429",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
@@ -57,8 +57,8 @@ export default function FaqSection({
           id="faq-heading"
           style={{
             fontSize: "clamp(2.2rem, 4.5vw, 3.4rem)",
-            fontWeight: 900,
-            letterSpacing: "-0.04em",
+            fontWeight: 700,
+            letterSpacing: "0.02em",
             lineHeight: 1.08,
             margin: "0 0 40px",
             color: "#0f0f0f",
@@ -81,8 +81,8 @@ export default function FaqSection({
                   cursor: "pointer",
                   listStyle: "none",
                   fontSize: "18px",
-                  fontWeight: 800,
-                  letterSpacing: "-0.02em",
+                  fontWeight: 700,
+                  letterSpacing: "0.01em",
                   lineHeight: 1.35,
                   color: "#0f0f0f",
                   padding: "12px 0",

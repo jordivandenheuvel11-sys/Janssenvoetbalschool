@@ -38,7 +38,7 @@ export default function LocalGuideLayout({
           <span
             style={{
               fontSize: "13px",
-              fontWeight: 900,
+              fontWeight: 700,
               color: "#D90429",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
@@ -51,8 +51,8 @@ export default function LocalGuideLayout({
           <h1
             style={{
               fontSize: "clamp(2.2rem, 5vw, 3.4rem)",
-              fontWeight: 900,
-              letterSpacing: "-0.04em",
+              fontWeight: 700,
+              letterSpacing: "0.02em",
               lineHeight: 1.08,
               margin: "0 0 20px",
             }}
@@ -97,8 +97,8 @@ export default function LocalGuideLayout({
           <h2
             style={{
               fontSize: "1.25rem",
-              fontWeight: 800,
-              letterSpacing: "-0.02em",
+              fontWeight: 700,
+              letterSpacing: "0.01em",
               margin: "0 0 12px",
               color: "#0f0f0f",
             }}

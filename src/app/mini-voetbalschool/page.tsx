@@ -106,8 +106,8 @@ export default function MiniVoetbalschoolPage() {
           <p
             style={{
               fontSize: "clamp(1.15rem, 2.5vw, 1.5rem)",
-              fontWeight: 800,
-              letterSpacing: "-0.02em",
+              fontWeight: 700,
+              letterSpacing: "0.01em",
               marginBottom: "20px",
               color: "#ffffff",
             }}
@@ -117,8 +117,8 @@ export default function MiniVoetbalschoolPage() {
           <h1
             style={{
               fontSize: "clamp(2.4rem, 7vw, 4.5rem)",
-              fontWeight: 900,
-              letterSpacing: "-0.04em",
+              fontWeight: 700,
+              letterSpacing: "0.02em",
               lineHeight: 1.05,
               margin: "0 0 24px 0",
               color: "#ffffff",
@@ -150,7 +150,7 @@ export default function MiniVoetbalschoolPage() {
                 borderRadius: 'var(--radius)',
                 backgroundColor: "#ffffff",
                 color: "#0f0f0f",
-                fontWeight: 800,
+                fontWeight: 700,
                 letterSpacing: "0.04em",
                 textTransform: "uppercase",
               }}
@@ -212,7 +212,7 @@ export default function MiniVoetbalschoolPage() {
             <span
               style={{
                 fontSize: "13px",
-                fontWeight: 900,
+                fontWeight: 700,
                 color: "#D90429",
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
@@ -225,8 +225,8 @@ export default function MiniVoetbalschoolPage() {
             <h2
               style={{
                 fontSize: "clamp(2rem, 4vw, 3rem)",
-                fontWeight: 900,
-                letterSpacing: "-0.04em",
+                fontWeight: 700,
+                letterSpacing: "0.02em",
                 lineHeight: 1.1,
                 marginBottom: "24px",
                 color: "#0f0f0f",
@@ -258,7 +258,7 @@ export default function MiniVoetbalschoolPage() {
             <span
               style={{
                 fontSize: "14px",
-                fontWeight: 900,
+                fontWeight: 700,
                 color: "#D90429",
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
@@ -271,8 +271,8 @@ export default function MiniVoetbalschoolPage() {
             <h2
               style={{
                 fontSize: "clamp(2rem, 4.5vw, 3.25rem)",
-                fontWeight: 900,
-                letterSpacing: "-0.04em",
+                fontWeight: 700,
+                letterSpacing: "0.02em",
                 lineHeight: 1.1,
                 margin: 0,
               }}
@@ -312,8 +312,8 @@ export default function MiniVoetbalschoolPage() {
                 <h3
                   style={{
                     fontSize: "1.5rem",
-                    fontWeight: 900,
-                    letterSpacing: "-0.02em",
+                    fontWeight: 700,
+                    letterSpacing: "0.01em",
                     margin: "0 0 12px 0",
                   }}
                 >
@@ -335,7 +335,7 @@ export default function MiniVoetbalschoolPage() {
             <span
               style={{
                 fontSize: "14px",
-                fontWeight: 900,
+                fontWeight: 700,
                 color: "#D90429",
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
@@ -348,8 +348,8 @@ export default function MiniVoetbalschoolPage() {
             <h2
               style={{
                 fontSize: "clamp(2rem, 4.5vw, 3.25rem)",
-                fontWeight: 900,
-                letterSpacing: "-0.04em",
+                fontWeight: 700,
+                letterSpacing: "0.02em",
                 lineHeight: 1.1,
                 margin: "0 0 16px 0",
                 color: "#0f0f0f",

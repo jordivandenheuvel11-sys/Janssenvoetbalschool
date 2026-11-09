@@ -112,8 +112,8 @@ export default function IndividueleVoetbaltrainerVenloPage() {
 
 const h2: CSSProperties = {
   fontSize: "1.35rem",
-  fontWeight: 800,
-  letterSpacing: "-0.02em",
+  fontWeight: 700,
+  letterSpacing: "0.01em",
   margin: "36px 0 12px",
   color: "#0f0f0f",
 };

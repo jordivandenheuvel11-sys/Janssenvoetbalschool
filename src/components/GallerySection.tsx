@@ -44,7 +44,7 @@ const GallerySection = () => {
       <div style={{ maxWidth: '1200px', width: '100%', marginBottom: '60px', textAlign: 'center', padding: '0 24px' }}>
         <span style={{
           fontSize: '14px',
-          fontWeight: '900',
+          fontWeight: '700',
           color: '#D90429',
           letterSpacing: '0.2em',
           textTransform: 'uppercase',
@@ -55,8 +55,8 @@ const GallerySection = () => {
         </span>
         <h2 style={{
           fontSize: 'clamp(2.5rem, 5vw, 4rem)',
-          fontWeight: '900',
-          letterSpacing: '-0.04em',
+          fontWeight: '700',
+          letterSpacing: '0.02em',
           lineHeight: '1.1',
           color: '#0f0f0f'
         }}>

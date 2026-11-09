@@ -27,7 +27,7 @@ export default function OpenGraphImage() {
             gap: 16,
             color: "#D90429",
             fontSize: 28,
-            fontWeight: 800,
+            fontWeight: 700,
             letterSpacing: "0.18em",
             textTransform: "uppercase",
           }}
@@ -39,8 +39,8 @@ export default function OpenGraphImage() {
             style={{
               color: "#ffffff",
               fontSize: 64,
-              fontWeight: 900,
-              letterSpacing: "-0.04em",
+              fontWeight: 700,
+              letterSpacing: "0.02em",
               lineHeight: 1.05,
               maxWidth: 900,
             }}

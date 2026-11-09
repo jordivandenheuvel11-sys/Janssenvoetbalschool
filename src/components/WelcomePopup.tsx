@@ -82,7 +82,7 @@ const WelcomePopup = () => {
               }} />
             </div>
             <div>
-              <h4 style={{ margin: 0, fontSize: '16px', fontWeight: '800', letterSpacing: '-0.01em' }}>Jelte Janssen</h4>
+              <h4 style={{ margin: 0, fontSize: '16px', fontWeight: '800', letterSpacing: '0.01em' }}>Jelte Janssen</h4>
               <span style={{ fontSize: '13px', color: '#D90429', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                 Trainer / Eigenaar
               </span>

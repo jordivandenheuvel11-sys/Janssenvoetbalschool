@@ -56,8 +56,8 @@ const Footer = () => {
           </Link>
           <h3 style={{
             fontSize: '24px',
-            fontWeight: '850',
-            letterSpacing: '-0.03em',
+            fontWeight: '700',
+            letterSpacing: '0.015em',
             margin: '0 0 20px 0',
             textTransform: 'uppercase'
           }}>

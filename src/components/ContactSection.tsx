@@ -84,7 +84,7 @@ const ContactSection = ({
       <div style={{ maxWidth: '800px', width: '100%', textAlign: 'center', marginBottom: '60px' }}>
         <span style={{
           fontSize: '14px',
-          fontWeight: '900',
+          fontWeight: '700',
           color: '#D90429',
           letterSpacing: '0.2em',
           textTransform: 'uppercase',
@@ -98,8 +98,8 @@ const ContactSection = ({
           {
             style: {
               fontSize: 'clamp(2.5rem, 5vw, 4rem)',
-              fontWeight: '900',
-              letterSpacing: '-0.04em',
+              fontWeight: '700',
+              letterSpacing: '0.02em',
               lineHeight: '1.1',
               marginBottom: '24px',
               color: '#ffffff',

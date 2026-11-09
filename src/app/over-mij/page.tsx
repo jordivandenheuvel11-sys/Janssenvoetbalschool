@@ -57,8 +57,8 @@ const personJsonLd = {
 
 const h2: CSSProperties = {
   fontSize: "clamp(1.6rem, 3vw, 2.1rem)",
-  fontWeight: 900,
-  letterSpacing: "-0.03em",
+  fontWeight: 700,
+  letterSpacing: "0.015em",
   lineHeight: 1.15,
   margin: "0 0 16px",
   color: "#0f0f0f",
@@ -156,7 +156,7 @@ export default function OverMijPage() {
             <span
               style={{
                 fontSize: "13px",
-                fontWeight: 900,
+                fontWeight: 700,
                 color: "#D90429",
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
@@ -169,8 +169,8 @@ export default function OverMijPage() {
             <h1
               style={{
                 fontSize: "clamp(2.4rem, 5vw, 3.6rem)",
-                fontWeight: 900,
-                letterSpacing: "-0.04em",
+                fontWeight: 700,
+                letterSpacing: "0.02em",
                 lineHeight: 1.08,
                 margin: "0 0 16px",
               }}
@@ -331,8 +331,8 @@ export default function OverMijPage() {
                     style={{
                       margin: "0 0 6px",
                       fontSize: "1.2rem",
-                      fontWeight: 900,
-                      letterSpacing: "-0.02em",
+                      fontWeight: 700,
+                      letterSpacing: "0.01em",
                       color: "#0f0f0f",
                     }}
                   >
@@ -373,8 +373,8 @@ export default function OverMijPage() {
                   style={{
                     margin: "0 0 6px",
                     fontSize: "1.15rem",
-                    fontWeight: 900,
-                    letterSpacing: "-0.02em",
+                    fontWeight: 700,
+                    letterSpacing: "0.01em",
                     color: "#ffffff",
                   }}
                 >

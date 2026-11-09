@@ -73,8 +73,8 @@ export default function FirstTrainingCta({
           id="eerste-training-heading"
           style={{
             fontSize: "clamp(1.85rem, 4vw, 2.75rem)",
-            fontWeight: 900,
-            letterSpacing: "-0.03em",
+            fontWeight: 700,
+            letterSpacing: "0.015em",
             lineHeight: 1.15,
             margin: "0 0 16px 0",
             color: "#ffffff",
@@ -102,7 +102,7 @@ export default function FirstTrainingCta({
             borderRadius: 'var(--radius)',
             backgroundColor: "#ffffff",
             color: "#0f0f0f",
-            fontWeight: 900,
+            fontWeight: 700,
             letterSpacing: "0.06em",
             textTransform: "uppercase",
             fontSize: "14px",

@@ -139,9 +139,9 @@ button {
 
 .hero h1 {
   font-size: clamp(2.5rem, 8vw, 4.5rem);
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 24px;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.01em;
   line-height: 1.1;
   max-width: 900px;
   animation: fadeInUp 0.8s ease-out forwards;
@@ -229,7 +229,7 @@ button {
 
 .sticky-left h2 {
   font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   color: #1a1a1a;
   margin-bottom: 24px;
@@ -360,10 +360,10 @@ button {
 
 .trainer-info-card h3 {
   font-size: 24px;
-  font-weight: 850;
+  font-weight: 700;
   margin-bottom: 12px;
   color: #1a1a1b;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.01em;
 }
 
 .trainer-info-card p {

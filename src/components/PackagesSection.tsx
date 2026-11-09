@@ -73,7 +73,7 @@ const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionP
           <span
             style={{
               fontSize: '14px',
-              fontWeight: '900',
+              fontWeight: '700',
               color: '#D90429',
               letterSpacing: '0.2em',
               textTransform: 'uppercase',
@@ -86,8 +86,8 @@ const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionP
           <Heading
             style={{
               fontSize: 'clamp(2.5rem, 5vw, 4rem)',
-              fontWeight: '900',
-              letterSpacing: '-0.04em',
+              fontWeight: '700',
+              letterSpacing: '0.02em',
               lineHeight: '1.1',
               margin: '0 0 24px 0'
             }}
@@ -160,7 +160,7 @@ const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionP
 
               <h3 style={{ fontSize: '24px', fontWeight: '800', marginBottom: '8px' }}>{pkg.name}</h3>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '20px' }}>
-                <span style={{ fontSize: '48px', fontWeight: '900', color: '#ffffff' }}>€{pkg.price}</span>
+                <span style={{ fontSize: '48px', fontWeight: '700', color: '#ffffff' }}>€{pkg.price}</span>
                 <span style={{ fontSize: '16px', color: '#666', fontWeight: '700' }}>{pkg.priceSuffix}</span>
               </div>
 

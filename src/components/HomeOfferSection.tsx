@@ -162,6 +162,33 @@ export default function HomeOfferSection() {
 
         <p
           style={{
+            fontSize: "16px",
+            lineHeight: 1.7,
+            color: "#4a4a4a",
+            fontWeight: 500,
+            marginBottom: "20px",
+          }}
+        >
+          Meer lezen:{" "}
+          <Link href="/voetbaltraining-velden" style={{ color: "#D90429", fontWeight: 700 }}>
+            training in Velden
+          </Link>
+          {" · "}
+          <Link href="/voetbaltraining-venlo" style={{ color: "#D90429", fontWeight: 700 }}>
+            training in Venlo
+          </Link>
+          {" · "}
+          <Link href="/jeugd-voetbaltraining" style={{ color: "#D90429", fontWeight: 700 }}>
+            jeugdtraining
+          </Link>
+          {" · "}
+          <Link href="/locatie-sportpark-theo-lommen" style={{ color: "#D90429", fontWeight: 700 }}>
+            locatie
+          </Link>
+        </p>
+
+        <p
+          style={{
             fontSize: "15px",
             lineHeight: 1.65,
             color: "#6b6b6b",

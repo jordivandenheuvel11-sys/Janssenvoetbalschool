@@ -95,6 +95,9 @@ const Footer = () => {
               { name: 'Wanneer trainen', href: '/trainingen' },
               { name: 'Mini Voetbalschool', href: '/mini-voetbalschool' },
               { name: 'Pakketten', href: '/pakketten' },
+              { name: 'Training Velden', href: '/voetbaltraining-velden' },
+              { name: 'Training Venlo', href: '/voetbaltraining-venlo' },
+              { name: 'Locatie', href: '/locatie-sportpark-theo-lommen' },
               { name: 'Over mij', href: '/#over-mij' },
               { name: 'Contact', href: '/contact' }
             ].map((item) => (

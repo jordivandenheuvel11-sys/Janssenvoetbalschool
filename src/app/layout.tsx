@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { preload } from "react-dom";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -67,6 +68,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Discover LCP hero poster in the initial document (no JS delay)
+  preload("/hero-bg.webp", { as: "image", fetchPriority: "high" });
+
   return (
     <html lang="nl">
       <body className={inter.className}>

@@ -77,6 +77,10 @@ export default function MiniVoetbalschoolPage() {
           src="/gallery/g4.jpg"
           alt=""
           aria-hidden="true"
+          width={1600}
+          height={1067}
+          fetchPriority="high"
+          decoding="async"
           style={{
             position: "absolute",
             inset: 0,
@@ -175,9 +179,12 @@ export default function MiniVoetbalschoolPage() {
           }}
         >
           <img
-            src="/about-us-new.jpg"
+            src="/about-us-new.webp"
             alt="Trainingssfeer bij Janssen Voetbalschool"
+            width={1200}
+            height={800}
             loading="lazy"
+            decoding="async"
             style={{
               width: "100%",
               height: "100%",
@@ -389,7 +396,10 @@ export default function MiniVoetbalschoolPage() {
                   <img
                     src={photo.src}
                     alt={photo.alt}
+                    width={800}
+                    height={600}
                     loading="lazy"
+                    decoding="async"
                     style={{
                       width: "100%",
                       height: "100%",
@@ -419,6 +429,10 @@ export default function MiniVoetbalschoolPage() {
           src="/gallery/g1.jpg"
           alt=""
           aria-hidden="true"
+          width={1600}
+          height={1067}
+          loading="lazy"
+          decoding="async"
           style={{
             position: "absolute",
             inset: 0,

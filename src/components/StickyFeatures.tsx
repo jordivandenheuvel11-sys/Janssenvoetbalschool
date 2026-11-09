@@ -6,19 +6,19 @@ const features = [
   {
     title: 'Individuele aandacht',
     video: '/feature-video-1.mp4',
-    poster: '/feature-poster-1.jpg',
+    poster: '/feature-poster-1.webp',
     description: 'Persoonlijke coaching om jouw unieke talenten te ontwikkelen.',
   },
   {
     title: 'Resultaat',
     video: '/feature-video-2.mp4',
-    poster: '/feature-poster-2.jpg',
+    poster: '/feature-poster-2.webp',
     description: 'Focus op vooruitgang en het behalen van sportieve doelen.',
   },
   {
     title: 'Plezier',
     video: '/feature-video-3.mp4',
-    poster: '/feature-poster-3.jpg',
+    poster: '/feature-poster-3.webp',
     description: 'De basis van elke goede voetballer is passie voor het spel.',
   },
 ];
@@ -96,7 +96,8 @@ function FeatureCard({
         }}
       />
 
-      {active && (
+      {/* Skip video on mobile — posters keep the look without multi‑MB payload */}
+      {active && !isMobile && (
         <video
           ref={videoRef}
           src={feature.video}
@@ -111,7 +112,7 @@ function FeatureCard({
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            opacity: isMobile ? 1 : 0.6,
+            opacity: 0.6,
           }}
         />
       )}

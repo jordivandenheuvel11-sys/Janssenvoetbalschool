@@ -58,7 +58,9 @@ const WelcomePopup = () => {
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '20px' }}>
             <div style={{ position: 'relative' }}>
               <img 
-                src="/trainer-new.jpg" 
+                src="/trainer-new.webp"
+                width={500}
+                height={750} 
                 alt="Jelte Janssen" 
                 loading="lazy"
                 style={{ 

@@ -31,7 +31,12 @@ export default function VoetbaltrainingVeldenPage() {
         Zoek je <strong>voetbaltraining in Velden</strong> naast de clubtraining?
         Janssen Voetbalschool van {BUSINESS.trainerName} werkt met jeugdspelers die
         hun balvaardigheid, sneller handelen en zelfvertrouwen willen versterken.
-        Trainingen vinden plaats op {getFullAddressLine()}.
+        Trainingen vinden plaats op {getFullAddressLine()}. Kom je van verder
+        in de provincie? Bekijk ook{" "}
+        <Link href="/voetbaltraining-limburg" style={link}>
+          extra voetbaltraining in Limburg
+        </Link>
+        .
       </p>
       <h2 style={h2}>Voor wie in Velden?</h2>
       <p>

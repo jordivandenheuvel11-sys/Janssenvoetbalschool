@@ -40,10 +40,29 @@ export const FAQ_ITEMS: FaqItem[] = [
         href: "/locatie-sportpark-theo-lommen",
         label: "Sportpark Theo Lommen",
       },
-      " in Velden (gemeente Venlo). Ook relevant: ",
+      " in Velden (gemeente Venlo). Spelers komen uit heel Limburg — zie ",
+      {
+        href: "/voetbaltraining-limburg",
+        label: "extra voetbaltraining in Limburg",
+      },
+      ", ",
       { href: "/voetbaltraining-velden", label: "training in Velden" },
       " en ",
       { href: "/voetbaltraining-venlo", label: "training in Venlo" },
+      ".",
+    ],
+  },
+  {
+    question:
+      "Ik wil naast mijn club extra voetbaltraining in Limburg — is dat iets voor mij?",
+    parts: [
+      "Ja. Clubtraining blijft de basis; bij mij krijg je gerichte training in kleine groepjes ernaast. Lees meer over ",
+      {
+        href: "/voetbaltraining-limburg",
+        label: "extra voetbaltraining in Limburg",
+      },
+      " of start met een ",
+      { href: "/proefles-aanvragen", label: "proefles" },
       ".",
     ],
   },

@@ -1,6 +1,10 @@
 /** Shared related links for local support pages (internal linking cluster). */
 
 export const LOCAL_GUIDE_LINKS = [
+  {
+    href: "/voetbaltraining-limburg",
+    label: "Extra voetbaltraining in Limburg",
+  },
   { href: "/voetbaltraining-velden", label: "Voetbaltraining in Velden" },
   { href: "/voetbaltraining-venlo", label: "Voetbaltraining in Venlo" },
   { href: "/jeugd-voetbaltraining", label: "Jeugd voetbaltraining" },

@@ -112,8 +112,8 @@ const Hero = () => {
             fontWeight: 500,
           }}
         >
-          Ik train jeugdspelers in kleine groepjes in gemeente{' '}
-          <strong>Venlo</strong> — zodat jij het beste uit jezelf haalt.
+          Extra training naast je club, in kleine groepjes — voor jeugd uit{' '}
+          <strong>Limburg</strong> (locatie Velden, gemeente Venlo).
         </p>
 
         <div className="hero-buttons" style={{ justifyContent: isMobile ? 'center' : 'flex-start' }}>

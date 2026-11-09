@@ -31,7 +31,12 @@ export default function VoetbaltrainingVenloPage() {
         Voor <strong>voetbaltraining in Venlo</strong> en de hele gemeente biedt
         Janssen Voetbalschool persoonlijke sessies onder leiding van{" "}
         {BUSINESS.trainerName}. De vaste locatie is {getFullAddressLine()} —
-        goed bereikbaar vanuit Venlo-stad, Blerick, Tegelen en Velden.
+        goed bereikbaar vanuit Venlo-stad, Blerick, Tegelen en Velden. Zoek je
+        breder in de provincie? Zie{" "}
+        <Link href="/voetbaltraining-limburg" style={link}>
+          extra voetbaltraining in Limburg
+        </Link>
+        .
       </p>
       <h2 style={h2}>Waarom naast de club?</h2>
       <p>

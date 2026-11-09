@@ -115,8 +115,8 @@ export default function HomeOfferSection() {
             maxWidth: "40rem",
           }}
         >
-          Ik geef voetbaltraining in kleine groepjes in Velden (Venlo, Limburg)
-          aan jeugdspelers die willen groeien — en via Mini ook aan de
+          Ik geef extra voetbaltraining in kleine groepjes voor jeugd uit heel
+          Limburg (locatie Velden, Venlo) — en via Mini ook aan de
           allerjongsten.
         </p>
       </div>

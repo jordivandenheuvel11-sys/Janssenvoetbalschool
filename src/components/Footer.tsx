@@ -98,6 +98,7 @@ const Footer = () => {
               { name: 'Wanneer trainen', href: '/trainingen' },
               { name: 'Mini Voetbalschool', href: '/mini-voetbalschool' },
               { name: 'Pakketten', href: '/pakketten' },
+              { name: 'Training Limburg', href: '/voetbaltraining-limburg' },
               { name: 'Training Velden', href: '/voetbaltraining-velden' },
               { name: 'Training Venlo', href: '/voetbaltraining-venlo' },
               { name: 'Kleine groepjes', href: '/prive-voetbaltraining' },

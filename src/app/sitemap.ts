@@ -26,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority:
       path === "/"
         ? 1
-        : path === "/proefles-aanvragen"
+        : path === "/proefles-aanvragen" || path === "/voetbaltraining-limburg"
           ? 0.9
           : path.startsWith("/voetbal") ||
               path.startsWith("/jeugd") ||

@@ -14,6 +14,11 @@ const homeJsonLd = {
   url: "https://www.janssenvoetbalschool.nl",
   telephone: "+31611250476",
   email: "jelte.janssen@ziggo.nl",
+  identifier: {
+    "@type": "PropertyValue",
+    name: "KvK",
+    value: "4218918",
+  },
   address: {
     "@type": "PostalAddress",
     streetAddress: "Sportpark Theo Lommen",

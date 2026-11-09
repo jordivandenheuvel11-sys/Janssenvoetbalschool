@@ -57,6 +57,7 @@ const AboutUsSection = () => {
           width={1200}
           height={800}
           sizes="(max-width: 768px) 100vw, 50vw"
+          quality={90}
           style={{
             width: '100%',
             height: '100%',

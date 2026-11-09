@@ -138,6 +138,7 @@ const Navbar = () => {
             width={160}
             height={50}
             sizes="160px"
+            quality={95}
             /* no priority — keep LCP on hero poster */
             style={{
               height: '50px',

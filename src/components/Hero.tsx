@@ -4,8 +4,8 @@ import React from 'react';
 import ContactLink from '@/components/contact/ContactLink';
 
 /**
- * Studio hero still — speler rechts, tekst in donkere ruimte.
- * Mobiel: object-position houdt de speler in beeld; tekst onderin.
+ * Studio hero still (portret + rode glow) — speler rechts, tekst links.
+ * Mobiel: object-position houdt het gezicht in beeld; tekst onderin.
  */
 const Hero = () => {
   const [isMobile, setIsMobile] = React.useState(false);
@@ -38,11 +38,11 @@ const Hero = () => {
       <picture>
         <source
           type="image/webp"
-          srcSet="/hero-studio-player.webp 1376w, /hero-studio-player-1920.webp 1920w"
+          srcSet="/hero-portrait.webp 1376w, /hero-portrait-1920.webp 1920w"
           sizes="100vw"
         />
         <img
-          src="/hero-studio-player.jpg"
+          src="/hero-portrait.jpg"
           alt=""
           width={1920}
           height={1072}
@@ -55,8 +55,8 @@ const Hero = () => {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            /* Desktop: speler rechts; mobiel iets naar rechts/boven zodat gezicht + bal zichtbaar blijven */
-            objectPosition: isMobile ? '78% 28%' : 'right center',
+            /* Desktop: speler rechts; mobiel gezicht centraal houden */
+            objectPosition: isMobile ? '72% 22%' : '70% center',
             zIndex: 0,
           }}
         />

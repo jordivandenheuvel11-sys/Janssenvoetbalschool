@@ -78,7 +78,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   // Discover sharp LCP hero poster in the initial document (no JS delay)
-  preload("/hero-studio-player.jpg", { as: "image", fetchPriority: "high" });
+  preload("/hero-portrait.jpg", { as: "image", fetchPriority: "high" });
 
   return (
     <html lang="nl">

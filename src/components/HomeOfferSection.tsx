@@ -457,7 +457,7 @@ export default function HomeOfferSection() {
             lineHeight: 1.7,
             color: "#4a4a4a",
             fontWeight: 500,
-            margin: "0 0 16px",
+            margin: 0,
           }}
         >
           <Link href="/voetbaltraining-velden" style={linkStyle}>
@@ -475,21 +475,6 @@ export default function HomeOfferSection() {
           <Link href="/locatie-sportpark-theo-lommen" style={linkStyle}>
             Locatie
           </Link>
-        </p>
-        <p
-          style={{
-            fontSize: "14px",
-            lineHeight: 1.6,
-            color: "#6b6b6b",
-            fontWeight: 500,
-            margin: 0,
-          }}
-        >
-          {getFullAddressLine()} ·{" "}
-          <a href={`tel:${BUSINESS.telephone}`} style={{ color: "inherit" }}>
-            {BUSINESS.telephoneDisplay}
-          </a>{" "}
-          · KvK {BUSINESS.kvk}
         </p>
       </div>
     </section>

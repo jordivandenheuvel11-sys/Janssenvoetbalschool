@@ -5,21 +5,27 @@ import Image from 'next/image';
 import { TRAINERS } from '@/lib/trainers';
 
 type TrainersSectionProps = {
-  /** Lighter intro when embedded under Over ons */
   eyebrow?: string;
   heading?: string;
   intro?: string;
   background?: string;
+  /** Extra top padding under fixed navbar (e.g. over-ons page) */
+  topPadding?: boolean;
+  /** Use h1 when this section is the page title */
+  asPageTitle?: boolean;
 };
 
 const TrainersSection = ({
-  eyebrow = 'Ons team',
-  heading = 'Onze trainers',
+  eyebrow = 'Over ons',
+  heading = 'Aangenaam.',
   intro = 'Jelte, Rik en Wout — het team achter de trainingen op Sportpark Theo Lommen.',
-  background = '#f7f7f7',
+  background = '#ffffff',
+  topPadding = false,
+  asPageTitle = false,
 }: TrainersSectionProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const HeadingTag = asPageTitle ? 'h1' : 'h2';
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -41,7 +47,7 @@ const TrainersSection = ({
       ref={sectionRef}
       aria-labelledby="trainers-heading"
       style={{
-        padding: '100px 24px',
+        padding: topPadding ? '140px 24px 100px' : '100px 24px',
         backgroundColor: background,
         position: 'relative',
         zIndex: 20,
@@ -71,7 +77,7 @@ const TrainersSection = ({
           >
             {eyebrow}
           </span>
-          <h2
+          <HeadingTag
             id="trainers-heading"
             style={{
               fontSize: 'clamp(2.2rem, 4.5vw, 3.4rem)',
@@ -83,7 +89,7 @@ const TrainersSection = ({
             }}
           >
             {heading}
-          </h2>
+          </HeadingTag>
           <p
             style={{
               fontSize: '17px',

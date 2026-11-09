@@ -11,7 +11,6 @@ const PressMentionSection = dynamic(
   () => import("@/components/PressMentionSection"),
 );
 const AboutUsSection = dynamic(() => import("@/components/AboutUsSection"));
-const AboutSection = dynamic(() => import("@/components/AboutSection"));
 const TrainersSection = dynamic(() => import("@/components/TrainersSection"));
 const FaqSection = dynamic(() => import("@/components/FaqSection"));
 const FirstTrainingCta = dynamic(() => import("@/components/FirstTrainingCta"));
@@ -153,7 +152,6 @@ export default function Home() {
         <HomeOfferSection />
         <AboutUsSection />
         <StickyFeatures />
-        <AboutSection />
         <TrainersSection />
         <FaqSection limit={5} />
         <FirstTrainingCta

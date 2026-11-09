@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ContactLink from "@/components/contact/ContactLink";
+import TrainersSection from "@/components/TrainersSection";
 import { BUSINESS, getFullAddressLine, getMapsUrl } from "@/lib/business";
 import { getSiteUrl } from "@/lib/site";
 
@@ -417,7 +418,14 @@ export default function OverMijPage() {
           </div>
         </section>
 
-        <section style={{ padding: "72px 24px 100px" }}>
+        <TrainersSection
+          eyebrow="Ons team"
+          heading="Trainers van Janssen Voetbalschool"
+          intro="Samen met Rik en Wout geef ik trainingen in kleine groepjes — techniek, zelfvertrouwen en plezier op het veld."
+          background="#ffffff"
+        />
+
+        <section style={{ padding: "72px 24px 100px", backgroundColor: "#f7f7f7" }}>
           <div style={{ maxWidth: "720px", margin: "0 auto" }}>
             <h2 style={h2}>Janssen Voetbalschool</h2>
             <p style={p}>

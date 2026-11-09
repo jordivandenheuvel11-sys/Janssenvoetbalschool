@@ -12,6 +12,7 @@ const PressMentionSection = dynamic(
 );
 const AboutUsSection = dynamic(() => import("@/components/AboutUsSection"));
 const AboutSection = dynamic(() => import("@/components/AboutSection"));
+const TrainersSection = dynamic(() => import("@/components/TrainersSection"));
 const FaqSection = dynamic(() => import("@/components/FaqSection"));
 const FirstTrainingCta = dynamic(() => import("@/components/FirstTrainingCta"));
 
@@ -81,19 +82,23 @@ const homeJsonLd = {
         "jeugd voetbaltechniek",
       ],
       sameAs: [...BUSINESS.sameAs],
-      employee: { "@id": `${siteUrl}/#trainer` },
+      employee: [
+        { "@id": `${siteUrl}/#trainer` },
+        { "@id": `${siteUrl}/#trainer-rik` },
+        { "@id": `${siteUrl}/#trainer-wout` },
+      ],
       founder: { "@id": `${siteUrl}/#trainer` },
     },
     {
       "@type": "Person",
       "@id": `${siteUrl}/#trainer`,
       name: BUSINESS.trainerName,
-      jobTitle: "Individuele voetbaltrainer",
+      jobTitle: "Eigenaar & individuele voetbaltrainer",
       description:
         "Individuele voetbaltrainer in Venlo en Limburg. Extra voetbaltraining in kleine groepjes voor jeugdspelers uit heel Limburg.",
       worksFor: { "@id": `${siteUrl}/#business` },
-      image: `${siteUrl}/trainer-new.webp`,
-      url: `${siteUrl}/individuele-voetbaltrainer-venlo`,
+      image: `${siteUrl}/trainers/jelte.webp`,
+      url: `${siteUrl}/over-mij`,
       areaServed: [
         "Velden",
         "Venlo",
@@ -107,6 +112,22 @@ const homeJsonLd = {
         "https://www.instagram.com/janssenvoetbal/",
         "https://omroepvenlo.nl/nieuws/artikel/jelte-janssen-19-heeft-zijn-eigen-voetbalschool",
       ],
+    },
+    {
+      "@type": "Person",
+      "@id": `${siteUrl}/#trainer-rik`,
+      name: "Rik",
+      jobTitle: "Voetbaltrainer",
+      worksFor: { "@id": `${siteUrl}/#business` },
+      image: `${siteUrl}/trainers/rik.webp`,
+    },
+    {
+      "@type": "Person",
+      "@id": `${siteUrl}/#trainer-wout`,
+      name: "Wout",
+      jobTitle: "Voetbaltrainer",
+      worksFor: { "@id": `${siteUrl}/#business` },
+      image: `${siteUrl}/trainers/wout.webp`,
     },
     {
       "@type": "WebSite",
@@ -133,6 +154,7 @@ export default function Home() {
         <AboutUsSection />
         <StickyFeatures />
         <AboutSection />
+        <TrainersSection />
         <FaqSection limit={5} />
         <FirstTrainingCta
           description="Vraag een proefles aan — ik plan samen met jou een moment op Sportpark Theo Lommen in Velden."

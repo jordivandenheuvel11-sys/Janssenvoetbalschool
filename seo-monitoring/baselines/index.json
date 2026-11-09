@@ -1,0 +1,85 @@
+{
+  "captured_at": "2026-11-09T17:18:00Z",
+  "pages": [
+    {
+      "file": "contact.json",
+      "url": "https://www.janssenvoetbalschool.nl/contact",
+      "baseline_id": 6,
+      "timestamp": "2026-11-09T17:18:52.253939+00:00",
+      "title": "Contact | Janssen Voetbalschool",
+      "h1": "Contact",
+      "canonical": "https://www.janssenvoetbalschool.nl/contact",
+      "status_code": 200
+    },
+    {
+      "file": "home.json",
+      "url": "https://www.janssenvoetbalschool.nl/",
+      "baseline_id": 1,
+      "timestamp": "2026-11-09T17:18:48.923985+00:00",
+      "title": "Janssen Voetbalschool | Voetbaltraining in Velden & Gemeente Venlo",
+      "h1": "Train, ontwikkel en beheers elke vaardigheid.",
+      "canonical": "https://www.janssenvoetbalschool.nl",
+      "status_code": 200
+    },
+    {
+      "file": "jeugd-voetbaltraining.json",
+      "url": "https://www.janssenvoetbalschool.nl/jeugd-voetbaltraining",
+      "baseline_id": 8,
+      "timestamp": "2026-11-09T17:18:53.408890+00:00",
+      "title": "Jeugd voetbaltraining | Janssen Voetbalschool",
+      "h1": "Jeugd voetbaltraining met persoonlijke aandacht",
+      "canonical": "https://www.janssenvoetbalschool.nl/jeugd-voetbaltraining",
+      "status_code": 200
+    },
+    {
+      "file": "locatie-sportpark-theo-lommen.json",
+      "url": "https://www.janssenvoetbalschool.nl/locatie-sportpark-theo-lommen",
+      "baseline_id": 7,
+      "timestamp": "2026-11-09T17:18:52.788499+00:00",
+      "title": "Locatie Sportpark Theo Lommen | Janssen Voetbalschool",
+      "h1": "Sportpark Theo Lommen, Velden",
+      "canonical": "https://www.janssenvoetbalschool.nl/locatie-sportpark-theo-lommen",
+      "status_code": 200
+    },
+    {
+      "file": "pakketten.json",
+      "url": "https://www.janssenvoetbalschool.nl/pakketten",
+      "baseline_id": 5,
+      "timestamp": "2026-11-09T17:18:51.537406+00:00",
+      "title": "Pakketten & tarieven | Janssen Voetbalschool",
+      "h1": "Pakketten & tarieven",
+      "canonical": "https://www.janssenvoetbalschool.nl/pakketten",
+      "status_code": 200
+    },
+    {
+      "file": "proefles-aanvragen.json",
+      "url": "https://www.janssenvoetbalschool.nl/proefles-aanvragen",
+      "baseline_id": 2,
+      "timestamp": "2026-11-09T17:18:49.509211+00:00",
+      "title": "Proefles aanvragen | Janssen Voetbalschool",
+      "h1": "Proefles aanvragen",
+      "canonical": "https://www.janssenvoetbalschool.nl/proefles-aanvragen",
+      "status_code": 200
+    },
+    {
+      "file": "voetbaltraining-velden.json",
+      "url": "https://www.janssenvoetbalschool.nl/voetbaltraining-velden",
+      "baseline_id": 3,
+      "timestamp": "2026-11-09T17:18:50.276516+00:00",
+      "title": "Voetbaltraining in Velden | Janssen Voetbalschool",
+      "h1": "Voetbaltraining in Velden",
+      "canonical": "https://www.janssenvoetbalschool.nl/voetbaltraining-velden",
+      "status_code": 200
+    },
+    {
+      "file": "voetbaltraining-venlo.json",
+      "url": "https://www.janssenvoetbalschool.nl/voetbaltraining-venlo",
+      "baseline_id": 4,
+      "timestamp": "2026-11-09T17:18:50.858181+00:00",
+      "title": "Voetbaltraining in Venlo | Janssen Voetbalschool",
+      "h1": "Voetbaltraining in Venlo",
+      "canonical": "https://www.janssenvoetbalschool.nl/voetbaltraining-venlo",
+      "status_code": 200
+    }
+  ]
+}

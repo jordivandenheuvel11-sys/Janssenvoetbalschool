@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "baseline_id": 1,
+  "url": "https://www.janssenvoetbalschool.nl/",
+  "timestamp": "2026-11-09T17:18:48.923985+00:00",
+  "summary": {
+    "title": "Janssen Voetbalschool | Voetbaltraining in Velden & Gemeente Venlo",
+    "meta_description": "Professionele voetbaltraining in Velden, gemeente Venlo. Individuele techniektra...",
+    "canonical": "https://www.janssenvoetbalschool.nl",
+    "robots": "index, follow",
+    "h1": "Train, ontwikkel en beheers elke vaardigheid.",
+    "h2_count": 5,
+    "h3_count": 7,
+    "schema_count": 3,
+    "og_tag_count": 11,
+    "cwv_captured": false,
+    "status_code": 200,
+    "html_hash": "3965e71fee0f..."
+  }
+}

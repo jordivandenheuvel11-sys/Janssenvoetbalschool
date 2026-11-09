@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "baseline_id": 5,
+  "url": "https://www.janssenvoetbalschool.nl/pakketten",
+  "timestamp": "2026-11-09T17:18:51.537406+00:00",
+  "summary": {
+    "title": "Pakketten & tarieven | Janssen Voetbalschool",
+    "meta_description": "Bekijk de trainingspakketten van Janssen Voetbalschool in Velden: techniektraini...",
+    "canonical": "https://www.janssenvoetbalschool.nl/pakketten",
+    "robots": "index, follow",
+    "h1": "Pakketten & tarieven",
+    "h2_count": 0,
+    "h3_count": 4,
+    "schema_count": 0,
+    "og_tag_count": 3,
+    "cwv_captured": false,
+    "status_code": 200,
+    "html_hash": "76c5d7274a36..."
+  }
+}

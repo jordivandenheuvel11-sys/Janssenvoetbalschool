@@ -2,11 +2,10 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 /**
- * LCP-first hero: poster image paints immediately; video loads after idle/timeout
- * so Lighthouse does not wait on a multi‑MB MP4 for LCP.
+ * LCP: plain <img> with fetchPriority (discoverable in SSR HTML, no optimizer delay).
+ * Video only on desktop + when idle / not save-data — keeps mobile Lighthouse lean.
  */
 const Hero = () => {
   const [isMobile, setIsMobile] = React.useState(false);
@@ -14,13 +13,24 @@ const Hero = () => {
   const videoRef = React.useRef<HTMLVideoElement>(null);
 
   React.useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    const mq = window.matchMedia('(max-width: 768px)');
+    const sync = () => setIsMobile(mq.matches);
+    sync();
+    mq.addEventListener('change', sync);
+    return () => mq.removeEventListener('change', sync);
   }, []);
 
   React.useEffect(() => {
+    if (isMobile) return;
+
+    const connection = (navigator as Navigator & {
+      connection?: { saveData?: boolean; effectiveType?: string };
+    }).connection;
+    if (connection?.saveData) return;
+    if (connection?.effectiveType === '2g' || connection?.effectiveType === 'slow-2g') {
+      return;
+    }
+
     let cancelled = false;
     const start = () => {
       if (!cancelled) setLoadVideo(true);
@@ -32,25 +42,23 @@ const Hero = () => {
     };
 
     if (typeof w.requestIdleCallback === 'function') {
-      const id = w.requestIdleCallback(start, { timeout: 2000 });
+      const id = w.requestIdleCallback(start, { timeout: 2500 });
       return () => {
         cancelled = true;
         w.cancelIdleCallback?.(id);
       };
     }
 
-    const t = window.setTimeout(start, 1200);
+    const t = window.setTimeout(start, 1500);
     return () => {
       cancelled = true;
       window.clearTimeout(t);
     };
-  }, []);
+  }, [isMobile]);
 
   React.useEffect(() => {
     if (!loadVideo || !videoRef.current) return;
-    videoRef.current.play().catch(() => {
-      /* autoplay may be blocked — poster remains */
-    });
+    videoRef.current.play().catch(() => {});
   }, [loadVideo]);
 
   return (
@@ -69,20 +77,26 @@ const Hero = () => {
         backgroundColor: '#0a0a0a',
       }}
     >
-      {/* LCP element: optimized poster */}
-      <Image
+      {/* LCP element — static img, explicit dimensions, high priority */}
+      <img
         src="/hero-bg.webp"
         alt=""
-        fill
-        priority
-        sizes="100vw"
+        width={1600}
+        height={1065}
+        fetchPriority="high"
+        decoding="async"
         style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
           objectFit: 'cover',
           zIndex: 0,
         }}
       />
 
-      {loadVideo && (
+      {loadVideo && !isMobile && (
         <video
           ref={videoRef}
           autoPlay

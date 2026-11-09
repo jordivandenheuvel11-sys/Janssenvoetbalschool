@@ -58,7 +58,9 @@ const Preloader = () => {
               }}
             >
               <img 
-                src="/logo.png" 
+                src="/logo.webp"
+                width={160}
+                height={50} 
                 alt="Janssen Voetbalschool Logo" 
                 fetchPriority="high"
                 style={{ 

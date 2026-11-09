@@ -137,7 +137,8 @@ const Navbar = () => {
             alt="Janssen Voetbalschool"
             width={160}
             height={50}
-            priority
+            sizes="160px"
+            /* no priority — keep LCP on hero poster */
             style={{
               height: '50px',
               width: 'auto',

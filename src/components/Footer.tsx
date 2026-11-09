@@ -43,6 +43,7 @@ const Footer = () => {
               width={200}
               height={80}
               sizes="200px"
+              loading="lazy"
               style={{
                 height: '80px',
                 width: 'auto',

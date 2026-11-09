@@ -90,7 +90,7 @@ const Hero = () => {
       >
         <h1
           style={{
-            maxWidth: '16ch',
+            maxWidth: '18ch',
             lineHeight: '1.08',
             fontSize: 'clamp(2.1rem, 5.5vw, 3.8rem)',
             color: '#ffffff',
@@ -99,7 +99,7 @@ const Hero = () => {
             fontWeight: 800,
           }}
         >
-          Train, ontwikkel en beheers elke vaardigheid.
+          Individuele voetbaltraining in Velden
         </h1>
 
         <p
@@ -112,7 +112,7 @@ const Hero = () => {
             fontWeight: 500,
           }}
         >
-          Ik train jeugdspelers individueel in <strong>Velden</strong>, gemeente{' '}
+          Ik geef privé 1-op-1 training aan jeugdspelers in gemeente{' '}
           <strong>Venlo</strong> — zodat jij het beste uit jezelf haalt.
         </p>
 

@@ -221,7 +221,7 @@ export default function HomeOfferSection() {
             lineHeight: 1.75,
             color: "#3a3a3a",
             fontWeight: 500,
-            margin: "0 0 24px",
+            margin: "0 0 28px",
           }}
         >
           Vraag een{" "}
@@ -234,6 +234,26 @@ export default function HomeOfferSection() {
           </Link>
           .
         </p>
+        <Link
+          href="/proefles-aanvragen"
+          className="btn btn-secondary"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "12px 32px",
+            fontSize: "15px",
+            borderRadius: "9999px",
+            backgroundColor: "#D90429",
+            color: "#ffffff",
+            fontWeight: 700,
+            border: "none",
+            textDecoration: "none",
+            marginBottom: "28px",
+          }}
+        >
+          Proefles aanvragen
+        </Link>
         <p
           style={{
             fontSize: "15px",

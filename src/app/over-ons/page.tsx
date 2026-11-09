@@ -99,23 +99,14 @@ export default function OverOnsPage() {
 
         <section style={{ backgroundColor: "#f7f7f7", padding: "72px 24px" }}>
           <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-            <h2 style={h2}>Janssen Voetbalschool</h2>
+            <h2 style={h2}>Hoe het begon</h2>
             <p style={p}>
-              Bij Janssen Voetbalschool (KvK {BUSINESS.kvk}) trainen we
-              jeugdspelers in kleine groepjes in Velden, gemeente Venlo. Geen
-              grote massa-training: sessies van 60 minuten met echte aandacht
-              per speler — techniek, spelinzicht en zelfvertrouwen, naast de
-              club.
-            </p>
-            <p style={p}>
-              Eigenaar Jelte Janssen combineert de voetbalschool met ervaring
-              als hoofdtrainer FCV JO15-1 en assistent bij VVV-Venlo jeugd.
-              Samen met trainers Rik en Wout werken we aan duidelijke doelen:
-              beter handelen onder druk, sterker in 1-tegen-1, of meer zekerheid
-              in de wedstrijd.
-            </p>
-            <p style={p}>
-              We trainen op{" "}
+              Ik ben Jelte Janssen. Na jaren jeugdtraining bij IVO Velden wilde
+              ik iets wat in de grote clubgroep vaak mist: échte aandacht per
+              speler. Extra training naast de club, in kleine groepjes, waarin
+              je merkt dat je vooruitgaat — techniek, keuzes onder druk,
+              zelfvertrouwen. Daarom startte ik Janssen Voetbalschool (KvK{" "}
+              {BUSINESS.kvk}) op{" "}
               <a
                 href={getMapsUrl()}
                 target="_blank"
@@ -124,22 +115,7 @@ export default function OverOnsPage() {
               >
                 {getFullAddressLine()}
               </a>
-              . Voor de allerjongsten is er de{" "}
-              <Link href="/mini-voetbalschool" style={link}>
-                Mini Voetbalschool
-              </Link>{" "}
-              (3 t/m 5 jaar). Bekijk ook onze{" "}
-              <Link href="/pakketten" style={link}>
-                pakketten &amp; tarieven
-              </Link>{" "}
-              of de{" "}
-              <Link href="/trainingen" style={link}>
-                trainingsplanning
-              </Link>
-              .
-            </p>
-            <p style={{ ...p, marginBottom: 0 }}>
-              Over het ontstaan van de school schreef{" "}
+              .{" "}
               <a
                 href={omroepUrl}
                 target="_blank"
@@ -148,7 +124,31 @@ export default function OverOnsPage() {
               >
                 Omroep Venlo
               </a>{" "}
-              eerder. Vragen? Mail{" "}
+              schreef daar al vroeg over.
+            </p>
+            <p style={p}>
+              Wat klein begon, groeide mee. Meer ouders en spelers wilden mee —
+              en ik wilde de kwaliteit hoog houden. Daarom trainen Rik en Wout
+              nu mee. Samen geven we sessies van 60 minuten, gericht op jouw
+              doelen: sneller handelen, sterker in 1-tegen-1, of meer zekerheid
+              in de wedstrijd. Naast de school werk ik zelf als hoofdtrainer van
+              FCV JO15-1 en assistent bij VVV-Venlo jeugd — die ervaring nemen
+              we mee naar elke training.
+            </p>
+            <p style={{ ...p, marginBottom: 0 }}>
+              Voor de allerjongsten is er de{" "}
+              <Link href="/mini-voetbalschool" style={link}>
+                Mini Voetbalschool
+              </Link>{" "}
+              (3 t/m 5 jaar). Bekijk de{" "}
+              <Link href="/pakketten" style={link}>
+                pakketten &amp; tarieven
+              </Link>{" "}
+              of de{" "}
+              <Link href="/trainingen" style={link}>
+                trainingsplanning
+              </Link>
+              . Vragen? Mail{" "}
               <a href={`mailto:${BUSINESS.email}`} style={link}>
                 {BUSINESS.email}
               </a>{" "}

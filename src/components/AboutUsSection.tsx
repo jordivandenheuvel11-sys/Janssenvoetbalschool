@@ -33,41 +33,51 @@ const AboutUsSection = () => {
       id="mijn-verhaal"
       ref={sectionRef}
       style={{
-        minHeight: '100vh',
+        minHeight: 'auto',
         display: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap',
+        alignItems: 'center',
         backgroundColor: '#ffffff',
         color: '#0f0f0f',
         position: 'relative',
-        zIndex: 20
+        zIndex: 20,
+        padding: '40px 0',
       }}
     >
-      {/* Left Side: Full Height Image with Rounding */}
+      {/* Left Side: Image (smaller, not full-viewport) */}
       <div style={{
-        flex: '1 1 500px',
-        minHeight: '50vh',
-        position: 'relative',
-        overflow: 'hidden',
-        padding: '24px' // Padding to show the rounding
+        flex: '1 1 420px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '40px 24px',
       }}>
-        <Image
-          src="/about-us-new.webp"
-          alt="Janssen Voetbal Training"
-          width={1200}
-          height={800}
-          sizes="(max-width: 768px) 100vw, 50vw"
-          quality={90}
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            borderRadius: '32px',
-            opacity: isVisible ? 1 : 0,
-            transform: isVisible ? 'scale(1)' : 'scale(1.1)',
-            transition: 'all 1.5s cubic-bezier(0.16, 1, 0.3, 1)',
-          }}
-        />
+        <div style={{
+          width: '100%',
+          maxWidth: '420px',
+          aspectRatio: '4 / 5',
+          position: 'relative',
+          overflow: 'hidden',
+          borderRadius: '28px',
+        }}>
+          <Image
+            src="/about-us-new.webp"
+            alt="Janssen Voetbal Training"
+            width={840}
+            height={1050}
+            sizes="(max-width: 768px) 85vw, 420px"
+            quality={90}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? 'scale(1)' : 'scale(1.08)',
+              transition: 'all 1.5s cubic-bezier(0.16, 1, 0.3, 1)',
+            }}
+          />
+        </div>
       </div>
 
       {/* Right Side: Story Text */}
@@ -77,7 +87,7 @@ const AboutUsSection = () => {
         alignItems: 'center',
         justifyContent: 'center',
         padding: '40px 24px',
-        minHeight: '50vh',
+        minHeight: 'auto',
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? 'translateY(0)' : 'translateY(40px)',
         transition: 'all 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s'

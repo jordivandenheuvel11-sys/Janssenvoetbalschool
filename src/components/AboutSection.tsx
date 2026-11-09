@@ -75,35 +75,21 @@ const AboutSection = () => {
             Omroep Venlo schreef eerder over de oprichting van de voetbalschool. Diezelfde drive staat nog steeds centraal: elke speler serieus nemen, duidelijk feedback geven en resultaat boeken zonder het plezier uit het oog te verliezen.
           </p>
 
-          <div style={{
-            marginTop: '34px',
-            padding: '22px 22px',
-            borderRadius: '20px',
-            backgroundColor: 'rgba(217, 4, 41, 0.06)',
-            border: '1px solid rgba(217, 4, 41, 0.18)',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '14px'
-          }}>
-            <p style={{ margin: 0, fontSize: '16px', lineHeight: 1.7, color: '#1a1a1b', fontWeight: 600 }}>
-              Benieuwd wat een persoonlijke aanpak voor jou kan doen? Vraag een proefles aan en we plannen samen een moment.
-            </p>
-            <div>
-              <Link href="/proefles-aanvragen" style={{
-                display: 'inline-block',
-                backgroundColor: '#1a1a1b',
-                color: '#ffffff',
-                padding: '14px 22px',
-                borderRadius: '9999px',
-                fontWeight: 800,
-                textDecoration: 'none',
-                letterSpacing: '0.04em',
-                textTransform: 'uppercase',
-                fontSize: '13px'
-              }}>
-                Proefles aanvragen
-              </Link>
-            </div>
+          <div style={{ marginTop: '34px' }}>
+            <Link href="/proefles-aanvragen" style={{
+              display: 'inline-block',
+              backgroundColor: '#1a1a1b',
+              color: '#ffffff',
+              padding: '14px 22px',
+              borderRadius: '9999px',
+              fontWeight: 800,
+              textDecoration: 'none',
+              letterSpacing: '0.04em',
+              textTransform: 'uppercase',
+              fontSize: '13px'
+            }}>
+              Proefles aanvragen
+            </Link>
           </div>
         </div>
 

@@ -224,49 +224,6 @@ function VisualMini() {
   );
 }
 
-/** Proefles arrow / start mark */
-function VisualProefles() {
-  return (
-    <div
-      aria-hidden="true"
-      style={{
-        position: "relative",
-        width: "100%",
-        aspectRatio: "16 / 10",
-        maxWidth: "520px",
-        backgroundColor: "#0f0f0f",
-        overflow: "hidden",
-      }}
-    >
-      <div
-        style={{
-          position: "absolute",
-          left: "-10%",
-          top: "20%",
-          width: "70%",
-          height: "60%",
-          background: "linear-gradient(90deg, #D90429 0%, transparent 100%)",
-          opacity: 0.9,
-          animation: "aanbodSlide 5s ease-in-out infinite",
-        }}
-      />
-      <span
-        style={{
-          position: "absolute",
-          left: "10%",
-          bottom: "16%",
-          fontSize: "clamp(2rem, 6vw, 3rem)",
-          fontWeight: 900,
-          letterSpacing: "-0.04em",
-          color: "#ffffff",
-        }}
-      >
-        Start →
-      </span>
-    </div>
-  );
-}
-
 const audiences = [
   {
     title: "Jeugdspelers naast de club",
@@ -345,10 +302,6 @@ export default function HomeOfferSection() {
         @keyframes aanbodFloat {
           0%, 100% { transform: translateY(0); }
           50% { transform: translateY(-10px); }
-        }
-        @keyframes aanbodSlide {
-          0%, 100% { transform: translateX(0); opacity: 0.85; }
-          50% { transform: translateX(8%); opacity: 1; }
         }
       `}</style>
 
@@ -467,9 +420,6 @@ export default function HomeOfferSection() {
           alignItems: "center",
         }}
       >
-        <div style={{ width: "100%", maxWidth: "420px", marginBottom: "28px" }}>
-          <VisualProefles />
-        </div>
         <h3
           style={{
             fontSize: "clamp(1.5rem, 3vw, 2rem)",

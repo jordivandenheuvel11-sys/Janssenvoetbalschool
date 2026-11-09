@@ -1,0 +1,102 @@
+{
+  "url": "https://www.janssenvoetbalschool.nl/",
+  "domain": "janssenvoetbalschool.nl",
+  "tier": 0,
+  "sources": {
+    "commoncrawl": true,
+    "moz": false,
+    "bing": false,
+    "keywordseverywhere": false,
+    "dataforseo": false,
+    "verify": false
+  },
+  "cc_data": {
+    "status": "success",
+    "data": {
+      "domain": "janssenvoetbalschool.nl",
+      "in_crawl": false,
+      "in_rankings": false,
+      "pagerank": null,
+      "pagerank_rank": null,
+      "harmonic_centrality": null,
+      "harmonic_centrality_rank": null,
+      "n_hosts": null,
+      "note": "Domain not found in Common Crawl data. It may be too new, too small, or not yet crawled."
+    },
+    "error": null,
+    "metadata": {
+      "source": "commoncrawl",
+      "release": "cc-main-2026-jan-feb-mar",
+      "from_cache": true,
+      "timestamp": "2026-11-09T15:58:28Z",
+      "cached_at": 1794239908.3335788
+    }
+  },
+  "moz_data": null,
+  "bing_data": null,
+  "dataforseo_data": null,
+  "scoring_factors": {
+    "referring_domain_count": {
+      "assessed": false,
+      "score": "Not Assessed",
+      "source": "not-assessed"
+    },
+    "domain_quality_distribution": {
+      "assessed": false,
+      "score": "Not Assessed",
+      "source": "not-assessed"
+    },
+    "anchor_text_naturalness": {
+      "assessed": false,
+      "score": "Not Assessed",
+      "source": "not-assessed"
+    },
+    "toxic_link_ratio": {
+      "assessed": false,
+      "score": "Not Assessed",
+      "source": "not-assessed"
+    },
+    "link_velocity_trend": {
+      "assessed": false,
+      "score": "Not Assessed",
+      "source": "not-assessed"
+    },
+    "follow_nofollow_ratio": {
+      "assessed": false,
+      "score": "Not Assessed",
+      "source": "not-assessed"
+    },
+    "geographic_relevance": {
+      "assessed": false,
+      "score": "Not Assessed",
+      "source": "not-assessed"
+    }
+  },
+  "findings": [
+    {
+      "id": "cc-presence",
+      "source": "commoncrawl",
+      "severity": "info",
+      "message": "Domain not found in Common Crawl web graph (cc-main-2026-jan-feb-mar). PageRank/harmonic centrality unavailable.",
+      "score": "Not Assessed"
+    },
+    {
+      "id": "health-score",
+      "source": "not-assessed",
+      "severity": "info",
+      "message": "Backlink Health Score: INSUFFICIENT DATA (0/7 factors). Common Crawl only \u2014 no Moz/Bing/DataForSEO.",
+      "score": "Not Assessed",
+      "value": "Not Assessed",
+      "health_score": "Not Assessed"
+    },
+    {
+      "id": "setup",
+      "source": "not-assessed",
+      "severity": "medium",
+      "message": "Run /seo backlinks setup to add free Moz and Bing API keys for richer data.",
+      "score": "Not Assessed"
+    }
+  ],
+  "health_score": "Not Assessed",
+  "health_score_label": "INSUFFICIENT DATA (0/7 factors scored)"
+}

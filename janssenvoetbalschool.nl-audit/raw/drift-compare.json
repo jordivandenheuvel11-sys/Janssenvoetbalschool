@@ -1,0 +1,168 @@
+{
+  "status": "ok",
+  "url": "https://www.janssenvoetbalschool.nl/",
+  "baseline_id": 1,
+  "baseline_timestamp": "2026-11-09T17:18:48.923985+00:00",
+  "comparison_timestamp": "2026-11-09T19:44:35.724119+00:00",
+  "summary": {
+    "total_rules": 17,
+    "triggered": 6,
+    "critical": 1,
+    "warning": 3,
+    "info": 2
+  },
+  "triggered_findings": [
+    {
+      "rule": "h1_changed",
+      "severity": "CRITICAL",
+      "triggered": true,
+      "old_value": "Train, ontwikkel en beheers elke vaardigheid.",
+      "new_value": "Individuele voetbaltraining in Velden",
+      "message": "H1 changed significantly (similarity: 24%). Verify keyword targeting is preserved."
+    },
+    {
+      "rule": "title_changed",
+      "severity": "WARNING",
+      "triggered": true,
+      "old_value": "Janssen Voetbalschool | Voetbaltraining in Velden & Gemeente Venlo",
+      "new_value": "Janssen Voetbalschool | Extra voetbaltraining Limburg \u00b7 Venlo",
+      "message": "Title tag text has changed. Monitor CTR in Search Console over 2 weeks."
+    },
+    {
+      "rule": "meta_description_changed",
+      "severity": "WARNING",
+      "triggered": true,
+      "old_value": "Professionele voetbaltraining in Velden, gemeente Venlo. Individuele techniektraining voor jeugdspelers in de regio Venl...",
+      "new_value": "Extra voetbaltraining in Limburg naast je club: kleine groepjes in Velden (gemeente Venlo). Individuele voetbaltrainer J...",
+      "message": "Meta description has changed. Verify it includes target keywords and CTA."
+    },
+    {
+      "rule": "schema_modified",
+      "severity": "WARNING",
+      "triggered": true,
+      "old_value": "9c257f317592...",
+      "new_value": "30af84137a43...",
+      "message": "Schema/JSON-LD content has been modified. Validate with /seo schema."
+    },
+    {
+      "rule": "h2_structure_changed",
+      "severity": "INFO",
+      "triggered": true,
+      "old_value": "5 H2s",
+      "new_value": "7 H2s",
+      "message": "H2 heading structure changed (5 -> 7 headings)."
+    },
+    {
+      "rule": "content_hash_changed",
+      "severity": "INFO",
+      "triggered": true,
+      "old_value": "3965e71fee0f...",
+      "new_value": "4519971f914a...",
+      "message": "Page content has changed (HTML body hash differs from baseline)."
+    }
+  ],
+  "untriggered_findings": [
+    {
+      "rule": "schema_removed",
+      "severity": "CRITICAL",
+      "triggered": false,
+      "old_value": "3 schema block(s)",
+      "new_value": "0 schema blocks",
+      "message": "Schema presence unchanged."
+    },
+    {
+      "rule": "canonical_changed",
+      "severity": "CRITICAL",
+      "triggered": false,
+      "old_value": "https://www.janssenvoetbalschool.nl",
+      "new_value": "https://www.janssenvoetbalschool.nl",
+      "message": "Canonical URL unchanged."
+    },
+    {
+      "rule": "canonical_removed",
+      "severity": "CRITICAL",
+      "triggered": false,
+      "old_value": "https://www.janssenvoetbalschool.nl",
+      "new_value": null,
+      "message": "Canonical tag presence unchanged."
+    },
+    {
+      "rule": "noindex_added",
+      "severity": "CRITICAL",
+      "triggered": false,
+      "old_value": "index, follow",
+      "new_value": "index, follow",
+      "message": "Robots directives unchanged regarding noindex."
+    },
+    {
+      "rule": "h1_removed",
+      "severity": "CRITICAL",
+      "triggered": false,
+      "old_value": "Train, ontwikkel en beheers elke vaardigheid.",
+      "new_value": null,
+      "message": "H1 presence unchanged."
+    },
+    {
+      "rule": "title_removed",
+      "severity": "CRITICAL",
+      "triggered": false,
+      "old_value": "Janssen Voetbalschool | Voetbaltraining in Velden & Gemeente Venlo",
+      "new_value": null,
+      "message": "Title tag presence unchanged."
+    },
+    {
+      "rule": "status_code_error",
+      "severity": "CRITICAL",
+      "triggered": false,
+      "old_value": 200,
+      "new_value": 200,
+      "message": "Status code: 200 -> 200."
+    },
+    {
+      "rule": "cwv_regressed",
+      "severity": "WARNING",
+      "triggered": false,
+      "old_value": null,
+      "new_value": null,
+      "message": "CWV comparison skipped (data unavailable)."
+    },
+    {
+      "rule": "perf_score_dropped",
+      "severity": "WARNING",
+      "triggered": false,
+      "old_value": null,
+      "new_value": null,
+      "message": "Performance score comparison skipped."
+    },
+    {
+      "rule": "og_tags_removed",
+      "severity": "WARNING",
+      "triggered": false,
+      "old_value": [
+        "og:title",
+        "og:description",
+        "og:url",
+        "og:site_name",
+        "og:locale",
+        "og:image",
+        "og:image:type",
+        "og:image:width",
+        "og:image:height",
+        "og:image:alt",
+        "og:type"
+      ],
+      "new_value": [],
+      "message": "OG tags presence unchanged."
+    },
+    {
+      "rule": "schema_added",
+      "severity": "INFO",
+      "triggered": false,
+      "old_value": "0 schema blocks",
+      "new_value": "3 schema block(s)",
+      "message": "No new schema added."
+    }
+  ],
+  "current_status_code": 200,
+  "cwv_compared": false
+}

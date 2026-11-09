@@ -1,0 +1,560 @@
+{
+  "title": "Janssen Voetbalschool | Extra voetbaltraining Limburg \u00b7 Venlo",
+  "meta_description": "Extra voetbaltraining in Limburg naast je club: kleine groepjes in Velden (gemeente Venlo). Individuele voetbaltrainer Jelte Janssen \u2014 techniek en zelfvertrouwen voor jeugdspelers uit heel Limburg.",
+  "meta_robots": "index, follow",
+  "canonical": "https://www.janssenvoetbalschool.nl",
+  "h1": [
+    "Individuele voetbaltraining in Velden"
+  ],
+  "h2": [
+    "Jelte Janssen (19) heeft zijn eigen voetbalschool",
+    "Voor wie is Janssen Voetbalschool?",
+    "Zelfvertrouwen op het veld.",
+    "Waarom Janssen Voetbalschool?",
+    "Aangenaam.",
+    "Veelgestelde vragen",
+    "Klaar voor de eerste training?"
+  ],
+  "h3": [
+    "Jeugdspelers naast de club",
+    "Techniek, 1-tegen-1 en spelinzicht",
+    "Mini Voetbalschool (3 t/m 5 jaar)",
+    "Start met een proefles",
+    "Individuele aandacht",
+    "Meetbaar resultaat",
+    "Plezier \u00e9n focus",
+    "Janssen Voetbalschool"
+  ],
+  "images": [
+    {
+      "src": "https://www.janssenvoetbalschool.nl/hero-studio-glow.jpg",
+      "alt": "",
+      "width": "1920",
+      "height": "1072",
+      "loading": null,
+      "lazy_method": "none"
+    },
+    {
+      "src": "https://www.janssenvoetbalschool.nl/press/omroep-venlo-dark.svg",
+      "alt": "Omroep Venlo",
+      "width": "166",
+      "height": "35",
+      "loading": null,
+      "lazy_method": "none"
+    },
+    {
+      "src": "https://www.janssenvoetbalschool.nl/_next/image?url=%2Fgallery%2Fg1.jpg&w=1920&q=75",
+      "alt": "Trainer met jeugdspelers in een huddle tijdens training in Velden",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://www.janssenvoetbalschool.nl/_next/image?url=%2Fgallery%2Fg3.jpg&w=1920&q=75",
+      "alt": "Jeugdspeler met de bal tijdens individuele techniektraining op Sportpark Theo Lommen",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://www.janssenvoetbalschool.nl/_next/image?url=%2Fgallery%2Fg4.jpg&w=1920&q=75",
+      "alt": "Jonge kinderen met de bal bij Mini Voetbalschool Janssen",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://www.janssenvoetbalschool.nl/_next/image?url=%2Fabout-us-new.webp&w=1920&q=75",
+      "alt": "Janssen Voetbal Training",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://www.janssenvoetbalschool.nl/_next/image?url=%2Fgallery%2Fg2.jpg&w=1920&q=75",
+      "alt": "Jeugdspeler klaar voor individuele training bij Janssen Voetbalschool in Velden",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://www.janssenvoetbalschool.nl/_next/image?url=%2Fgallery%2Fg5.jpg&w=1920&q=75",
+      "alt": "Techniektraining met meerdere ballen op Sportpark Theo Lommen",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://www.janssenvoetbalschool.nl/_next/image?url=%2Fgallery%2Fg6.jpg&w=1920&q=75",
+      "alt": "Trainingsballen klaar voor een gefocuste sessie bij Janssen Voetbalschool",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://www.janssenvoetbalschool.nl/_next/image?url=%2Ftrainer-new.webp&w=1920&q=75",
+      "alt": "Trainer Jelte Janssen van Janssen Voetbalschool",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://www.janssenvoetbalschool.nl/gallery/g1.jpg",
+      "alt": "",
+      "width": "1600",
+      "height": "1067",
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://www.janssenvoetbalschool.nl/_next/image?url=%2Flogo.webp&w=1920&q=75",
+      "alt": "Logo Janssen Voetbalschool",
+      "width": "200",
+      "height": "80",
+      "loading": "lazy",
+      "lazy_method": "native"
+    }
+  ],
+  "links": {
+    "internal": [
+      {
+        "href": "https://www.janssenvoetbalschool.nl/proefles-aanvragen",
+        "text": "Proefles aanvragen",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/jeugd-voetbaltraining",
+        "text": "jeugdtraining",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/trainingen",
+        "text": "trainingsplanning",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/individuele-techniektraining",
+        "text": "individuele techniektraining",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/mini-voetbalschool",
+        "text": "Mini Voetbalschool",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/proefles-aanvragen",
+        "text": "proefles",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/pakketten",
+        "text": "pakketten",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/proefles-aanvragen",
+        "text": "Proefles aanvragen",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/pakketten",
+        "text": "pakketten & tarieven",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/trainingen",
+        "text": "trainingsplanning",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/mini-voetbalschool",
+        "text": "Mini Voetbalschool",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/over-mij",
+        "text": "Meer over mij",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/proefles-aanvragen",
+        "text": "Proefles aanvragen",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/jeugd-voetbaltraining",
+        "text": "jeugd voetbaltraining",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/mini-voetbalschool",
+        "text": "Mini Voetbalschool",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/locatie-sportpark-theo-lommen",
+        "text": "Sportpark Theo Lommen",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/voetbaltraining-limburg",
+        "text": "extra voetbaltraining in Limburg",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/voetbaltraining-velden",
+        "text": "training in Velden",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/voetbaltraining-venlo",
+        "text": "training in Venlo",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/voetbaltraining-limburg",
+        "text": "extra voetbaltraining in Limburg",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/proefles-aanvragen",
+        "text": "proefles",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/trainingen",
+        "text": "trainingsplanning",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/proefles-aanvragen",
+        "text": "proefles aanvragen",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/faq",
+        "text": "volledige FAQ",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/contact",
+        "text": "neem contact op",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/proefles-aanvragen",
+        "text": "Proefles aanvragen",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/",
+        "text": "",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/",
+        "text": "Home",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/trainingen",
+        "text": "Wanneer trainen",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/mini-voetbalschool",
+        "text": "Mini Voetbalschool",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/pakketten",
+        "text": "Pakketten",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/voetbaltraining-limburg",
+        "text": "Training Limburg",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/voetbaltraining-velden",
+        "text": "Training Velden",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/voetbaltraining-venlo",
+        "text": "Training Venlo",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/prive-voetbaltraining",
+        "text": "Kleine groepjes",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/individuele-voetbaltrainer-venlo",
+        "text": "Trainer Venlo",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/locatie-sportpark-theo-lommen",
+        "text": "Locatie",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/over-mij",
+        "text": "Over mij",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/faq",
+        "text": "FAQ",
+        "rel": []
+      },
+      {
+        "href": "https://www.janssenvoetbalschool.nl/contact",
+        "text": "Contact",
+        "rel": []
+      }
+    ],
+    "external": [
+      {
+        "href": "https://omroepvenlo.nl/nieuws/artikel/jelte-janssen-19-heeft-zijn-eigen-voetbalschool",
+        "text": "Jelte Janssen (19) heeft zijn eigen voetbalschoolOmroep Venlo belicht hoe Jelte iedere week op het k",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      },
+      {
+        "href": "mailto:jelte.janssen@ziggo.nl",
+        "text": "jelte.janssen@ziggo.nl",
+        "rel": []
+      },
+      {
+        "href": "tel:+31611250476",
+        "text": "+31 6 11250476",
+        "rel": []
+      },
+      {
+        "href": "https://www.google.com/maps/search/?api=1&query=Schandeloseweg%201a%2C%205941%20CP%20Velden",
+        "text": "Sportpark Theo Lommen, Schandeloseweg 1a, 5941 CP Velden",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      },
+      {
+        "href": "https://www.instagram.com/jordivdhvl",
+        "text": "Website door Jordi van den Heuvel",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      },
+      {
+        "href": "https://www.instagram.com/janssenvoetbal/",
+        "text": "INSTAGRAM",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      },
+      {
+        "href": "https://www.tiktok.com/@janssenvoetbalsch",
+        "text": "TIKTOK",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      }
+    ]
+  },
+  "schema": [
+    {
+      "@type": "SportsActivityLocation",
+      "@id": "https://www.janssenvoetbalschool.nl/#business",
+      "name": "Janssen Voetbalschool",
+      "legalName": "Janssen Voetbalschool",
+      "description": "Extra voetbaltraining in Limburg naast de club: kleine groepjes voor jeugdspelers in Velden, gemeente Venlo. Individuele voetbaltrainer Jelte Janssen op Sportpark Theo Lommen \u2014 bereikbaar voor heel Limburg.",
+      "url": "https://www.janssenvoetbalschool.nl",
+      "image": [
+        "https://www.janssenvoetbalschool.nl/trainer-new.webp",
+        "https://www.janssenvoetbalschool.nl/opengraph-image"
+      ],
+      "logo": "https://www.janssenvoetbalschool.nl/logo.webp",
+      "telephone": "+31611250476",
+      "email": "jelte.janssen@ziggo.nl",
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "KvK",
+        "value": "4218918"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Schandeloseweg 1a",
+        "addressLocality": "Velden",
+        "addressRegion": "Limburg",
+        "postalCode": "5941 CP",
+        "addressCountry": "NL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.41547297,
+        "longitude": 6.16981933
+      },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=Schandeloseweg%201a%2C%205941%20CP%20Velden",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "15:30",
+          "closes": "19:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Velden"
+        },
+        {
+          "@type": "City",
+          "name": "Venlo"
+        },
+        {
+          "@type": "City",
+          "name": "Tegelen"
+        },
+        {
+          "@type": "City",
+          "name": "Blerick"
+        },
+        {
+          "@type": "City",
+          "name": "Horst"
+        },
+        {
+          "@type": "City",
+          "name": "Roermond"
+        },
+        {
+          "@type": "City",
+          "name": "Weert"
+        },
+        {
+          "@type": "City",
+          "name": "Panningen"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Gemeente Venlo"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Noord-Limburg"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Limburg"
+        }
+      ],
+      "knowsAbout": [
+        "voetbaltraining Limburg",
+        "extra voetbaltraining naast club",
+        "voetbaltraining kleine groepjes",
+        "individuele voetbaltraining",
+        "jeugd voetbaltraining Limburg",
+        "individuele voetbaltrainer Venlo",
+        "individuele voetbaltrainer Limburg",
+        "jeugd voetbaltechniek"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/janssenvoetbal/",
+        "https://www.tiktok.com/@janssenvoetbalsch",
+        "https://www.linkedin.com/in/jelte-janssen-168236321/",
+        "https://omroepvenlo.nl/nieuws/artikel/jelte-janssen-19-heeft-zijn-eigen-voetbalschool"
+      ],
+      "employee": {
+        "@id": "https://www.janssenvoetbalschool.nl/#trainer"
+      },
+      "founder": {
+        "@id": "https://www.janssenvoetbalschool.nl/#trainer"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.janssenvoetbalschool.nl/#trainer",
+      "name": "Jelte Janssen",
+      "jobTitle": "Individuele voetbaltrainer",
+      "description": "Individuele voetbaltrainer in Venlo en Limburg. Extra voetbaltraining in kleine groepjes voor jeugdspelers uit heel Limburg.",
+      "worksFor": {
+        "@id": "https://www.janssenvoetbalschool.nl/#business"
+      },
+      "image": "https://www.janssenvoetbalschool.nl/trainer-new.webp",
+      "url": "https://www.janssenvoetbalschool.nl/individuele-voetbaltrainer-venlo",
+      "areaServed": [
+        "Velden",
+        "Venlo",
+        "Limburg",
+        "Noord-Limburg",
+        "Roermond",
+        "Weert",
+        "Horst"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/janssenvoetbal/",
+        "https://omroepvenlo.nl/nieuws/artikel/jelte-janssen-19-heeft-zijn-eigen-voetbalschool"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.janssenvoetbalschool.nl/#website",
+      "url": "https://www.janssenvoetbalschool.nl",
+      "name": "Janssen Voetbalschool",
+      "inLanguage": "nl-NL",
+      "publisher": {
+        "@id": "https://www.janssenvoetbalschool.nl/#business"
+      }
+    }
+  ],
+  "open_graph": {
+    "og:title": "Janssen Voetbalschool | Extra voetbaltraining Limburg \u00b7 Venlo",
+    "og:description": "Extra voetbaltraining in Limburg naast je club: kleine groepjes in Velden (gemeente Venlo). Individuele voetbaltrainer Jelte Janssen \u2014 techniek en zelfvertrouwen voor jeugdspelers uit heel Limburg.",
+    "og:url": "https://www.janssenvoetbalschool.nl",
+    "og:site_name": "Janssen Voetbalschool",
+    "og:locale": "nl_NL",
+    "og:image": "https://www.janssenvoetbalschool.nl/opengraph-image?80443a81989673e0",
+    "og:image:type": "image/png",
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:image:alt": "Janssen Voetbalschool",
+    "og:type": "website"
+  },
+  "twitter_card": {
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Janssen Voetbalschool | Extra voetbaltraining Limburg \u00b7 Venlo",
+    "twitter:description": "Extra voetbaltraining in Limburg naast je club: kleine groepjes in Velden (gemeente Venlo). Individuele voetbaltrainer Jelte Janssen \u2014 techniek en zelfvertrouwen voor jeugdspelers uit heel Limburg.",
+    "twitter:image": "https://www.janssenvoetbalschool.nl/opengraph-image?80443a81989673e0",
+    "twitter:image:alt": "Janssen Voetbalschool",
+    "twitter:image:type": "image/png",
+    "twitter:image:width": "1200",
+    "twitter:image:height": "630"
+  },
+  "word_count": 687,
+  "hreflang": []
+}

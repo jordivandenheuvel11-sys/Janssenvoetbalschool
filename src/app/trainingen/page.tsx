@@ -85,7 +85,7 @@ export default async function TrainingenPage() {
                 key={training._id}
                 style={{
                   backgroundColor: '#1a1a1a',
-                  borderRadius: '32px',
+                  borderRadius: 'var(--radius)',
                   padding: '40px',
                   border: '1px solid rgba(255,255,255,0.05)',
                   transition: 'transform 0.3s ease, border-color 0.3s ease',
@@ -151,7 +151,7 @@ export default async function TrainingenPage() {
                       marginTop: '20px', 
                       padding: '16px', 
                       backgroundColor: 'rgba(217, 4, 41, 0.1)', 
-                      borderRadius: '16px',
+                      borderRadius: 'var(--radius)',
                       border: '1px solid rgba(217, 4, 41, 0.2)',
                       fontSize: '14px',
                       lineHeight: '1.5',

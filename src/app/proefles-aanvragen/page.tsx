@@ -77,7 +77,7 @@ export default function ProeflesAanvragenPage() {
           style={{
             display: "inline-block",
             padding: "14px 28px",
-            borderRadius: "9999px",
+            borderRadius: 'var(--radius)',
             backgroundColor: "#D90429",
             color: "#ffffff",
             fontWeight: 800,

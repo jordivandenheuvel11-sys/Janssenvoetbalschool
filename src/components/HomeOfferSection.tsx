@@ -150,6 +150,7 @@ export default function HomeOfferSection() {
                 position: "relative",
                 aspectRatio: "4 / 3",
                 overflow: "hidden",
+                borderRadius: "var(--radius)",
               }}
             >
               <Image
@@ -247,7 +248,7 @@ export default function HomeOfferSection() {
             justifyContent: "center",
             padding: "12px 32px",
             fontSize: "15px",
-            borderRadius: "9999px",
+            borderRadius: 'var(--radius)',
             backgroundColor: "#D90429",
             color: "#ffffff",
             fontWeight: 700,

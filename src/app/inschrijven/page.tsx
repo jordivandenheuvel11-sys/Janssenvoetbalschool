@@ -55,7 +55,7 @@ export default async function InschrijvenPage({ searchParams }: InschrijvenPageP
             style={{
               backgroundColor: "rgba(217, 4, 41, 0.1)",
               border: "1px solid rgba(217, 4, 41, 0.2)",
-              borderRadius: "16px",
+              borderRadius: 'var(--radius)',
               padding: "16px 20px",
               marginBottom: "32px",
             }}

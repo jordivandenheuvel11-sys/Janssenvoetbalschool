@@ -123,7 +123,7 @@ const Navbar = () => {
       <div style={{
         backgroundColor: 'rgba(10, 10, 10, 0.98)',
         backdropFilter: 'blur(12px)',
-        borderRadius: '24px',
+        borderRadius: 'var(--radius)',
         height: '72px',
         display: 'flex',
         alignItems: 'center',
@@ -163,7 +163,7 @@ const Navbar = () => {
               backgroundColor: '#ffffff',
               color: '#0f0f0f',
               padding: '12px 28px',
-              borderRadius: '9999px',
+              borderRadius: 'var(--radius)',
               fontWeight: '700',
               textDecoration: 'none'
             }}>
@@ -209,7 +209,7 @@ const Navbar = () => {
             right: '24px',
             backgroundColor: 'rgba(15, 15, 15, 0.95)',
             backdropFilter: 'blur(12px)',
-            borderRadius: '24px',
+            borderRadius: 'var(--radius)',
             padding: '32px 24px',
             display: 'flex',
             flexDirection: 'column',
@@ -229,7 +229,7 @@ const Navbar = () => {
             backgroundColor: '#D90429',
             color: '#ffffff',
             padding: '16px',
-            borderRadius: '9999px',
+            borderRadius: 'var(--radius)',
             fontWeight: '700',
             textAlign: 'center',
             textDecoration: 'none',

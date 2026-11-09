@@ -124,7 +124,7 @@ const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionP
               key={pkg.name}
               style={{
                 backgroundColor: pkg.popular ? '#1a1a1a' : 'rgba(255, 255, 255, 0.03)',
-                borderRadius: '32px',
+                borderRadius: 'var(--radius)',
                 padding: '48px 40px',
                 border: pkg.popular ? '2px solid #D90429' : '1px solid rgba(255, 255, 255, 0.05)',
                 position: 'relative',
@@ -148,7 +148,7 @@ const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionP
                   backgroundColor: '#D90429',
                   color: '#ffffff',
                   padding: '4px 12px',
-                  borderRadius: '999px',
+                  borderRadius: 'var(--radius)',
                   fontSize: '12px',
                   fontWeight: '800',
                   textTransform: 'uppercase',
@@ -188,7 +188,7 @@ const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionP
                   color: '#ffffff',
                   border: pkg.popular ? 'none' : '2px solid rgba(255, 255, 255, 0.1)',
                   padding: '16px',
-                  borderRadius: '16px',
+                  borderRadius: 'var(--radius)',
                   textAlign: 'center',
                   fontWeight: '800',
                   fontSize: '16px',

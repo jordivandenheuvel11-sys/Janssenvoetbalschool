@@ -220,7 +220,7 @@ export default function OverMijPage() {
                   backgroundColor: "#D90429",
                   color: "#ffffff",
                   padding: "14px 22px",
-                  borderRadius: 0,
+                  borderRadius: 'var(--radius)',
                   fontWeight: 800,
                   textDecoration: "none",
                   fontSize: "14px",
@@ -239,7 +239,7 @@ export default function OverMijPage() {
                   backgroundColor: "#0f0f0f",
                   color: "#ffffff",
                   padding: "14px 22px",
-                  borderRadius: 0,
+                  borderRadius: 'var(--radius)',
                   fontWeight: 800,
                   textDecoration: "none",
                   fontSize: "14px",
@@ -262,6 +262,7 @@ export default function OverMijPage() {
               width: "100%",
               margin: "0 auto",
               overflow: "hidden",
+              borderRadius: "var(--radius)",
             }}
           >
             <Image
@@ -458,7 +459,7 @@ export default function OverMijPage() {
                 backgroundColor: "#D90429",
                 color: "#ffffff",
                 padding: "14px 28px",
-                borderRadius: 0,
+                borderRadius: 'var(--radius)',
                 fontWeight: 800,
                 textDecoration: "none",
                 fontSize: "14px",

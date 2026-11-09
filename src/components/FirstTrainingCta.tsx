@@ -99,7 +99,7 @@ export default function FirstTrainingCta({
           style={{
             display: "inline-block",
             padding: "16px 34px",
-            borderRadius: "9999px",
+            borderRadius: 'var(--radius)',
             backgroundColor: "#ffffff",
             color: "#0f0f0f",
             fontWeight: 900,

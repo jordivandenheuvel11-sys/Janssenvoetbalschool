@@ -90,7 +90,7 @@ const AboutSection = () => {
                 backgroundColor: '#0f0f0f',
                 color: '#ffffff',
                 padding: '14px 22px',
-                borderRadius: 0,
+                borderRadius: 'var(--radius)',
                 fontWeight: 800,
                 textDecoration: 'none',
                 letterSpacing: '0.04em',
@@ -108,7 +108,7 @@ const AboutSection = () => {
                 backgroundColor: '#D90429',
                 color: '#ffffff',
                 padding: '14px 22px',
-                borderRadius: 0,
+                borderRadius: 'var(--radius)',
                 fontWeight: 800,
                 textDecoration: 'none',
                 letterSpacing: '0.04em',
@@ -131,6 +131,7 @@ const AboutSection = () => {
             width: '100%',
             margin: '0 auto',
             overflow: 'hidden',
+            borderRadius: 'var(--radius)',
           }}
         >
           <Image

@@ -6,8 +6,9 @@
   --text-muted: #5b5c5e;
   --bg-main: #ffffff;
   --bg-banner: #000000;
+  --radius: 12px;
   --border-radius-full: 9999px;
-  --border-radius-md: 12px;
+  --border-radius-md: var(--radius);
   --janssen-red: #D90429;
   --max-width: 1200px;
   --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
@@ -80,7 +81,7 @@ button {
 /* Buttons */
 .btn {
   padding: 10px 20px;
-  border-radius: var(--border-radius-full);
+  border-radius: var(--radius);
   font-weight: 600;
   transition: all 0.2s ease;
   font-size: 14px;
@@ -249,7 +250,7 @@ button {
   width: 100%;
   aspect-ratio: 16/9; /* Use an aspect ratio for wider, less high look */
   height: 60vh; /* Reduced from 80vh to match the visual requirement */
-  border-radius: 32px;
+  border-radius: var(--radius);
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -340,7 +341,7 @@ button {
   padding: 30px;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  border-radius: 20px;
+  border-radius: var(--radius);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(0, 0, 0, 0.05);
   pointer-events: auto;
@@ -448,7 +449,7 @@ button {
   height: 80vh;
   min-height: 500px;
   background-color: #1a1a1a;
-  border-radius: 32px;
+  border-radius: var(--radius);
   overflow: hidden;
   box-shadow: 0 40px 100px rgba(0,0,0,0.15);
   flex-shrink: 0;

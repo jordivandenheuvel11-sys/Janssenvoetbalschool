@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
-import ContactSection from "@/components/ContactSection";
 import FirstTrainingCta from "@/components/FirstTrainingCta";
 
 export const metadata: Metadata = {
@@ -140,7 +139,7 @@ export default function MiniVoetbalschoolPage() {
           </p>
           <div className="hero-buttons" style={{ justifyContent: "center" }}>
             <Link
-              href="#aanmelden"
+              href="/contact?onderwerp=Mini%20Voetbalschool"
               className="btn btn-secondary"
               style={{
                 padding: "14px 32px",
@@ -153,7 +152,7 @@ export default function MiniVoetbalschoolPage() {
                 textTransform: "uppercase",
               }}
             >
-              Aanmelden
+              Contact
             </Link>
           </div>
         </div>
@@ -416,20 +415,9 @@ export default function MiniVoetbalschoolPage() {
 
       <FirstTrainingCta
         description="Meld je kind aan voor mijn Mini Voetbalschool. Start vanaf 6 september."
-        href="#aanmelden"
-        ctaLabel="Direct aanmelden"
+        href="/contact?onderwerp=Mini%20Voetbalschool"
+        ctaLabel="Contact"
       />
-
-      <div id="aanmelden">
-        <ContactSection
-          aanvraagType="mini-voetbalschool"
-          heading="Aanmelden Mini Voetbalschool"
-          description="Laat je gegevens achter. Ik neem zo snel mogelijk contact met je op over de start vanaf 6 september."
-          submitLabel="Aanmelding versturen"
-          initialSubject="Aanmelding Mini Voetbalschool"
-          initialMessage="Ik wil mijn kind graag aanmelden voor de Mini Voetbalschool (3 t/m 5 jaar)."
-        />
-      </div>
 
       <style>{`
         @media (max-width: 768px) {

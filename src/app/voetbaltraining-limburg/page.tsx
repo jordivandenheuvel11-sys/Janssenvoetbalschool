@@ -158,6 +158,29 @@ export default function VoetbaltrainingLimburgPage() {
           .
         </p>
 
+        <h2 style={h2}>Meer lezen</h2>
+        <p>
+          Dieper in op Venlo:{" "}
+          <Link
+            href="/blog/extra-voetbaltraining-venlo-naast-club"
+            style={link}
+          >
+            extra voetbaltraining in Venlo naast je club
+          </Link>
+          . Of de gids{" "}
+          <Link
+            href="/blog/voetbaltraining-limburg-naast-club-kiezen"
+            style={link}
+          >
+            voetbaltraining in Limburg naast je club kiezen
+          </Link>
+          . Alle artikelen:{" "}
+          <Link href="/blog" style={link}>
+            blog
+          </Link>
+          .
+        </p>
+
         <h2 style={h2}>Zo start je</h2>
         <p>
           Bekijk de{" "}

@@ -106,6 +106,7 @@ const Footer = () => {
               { name: 'Locatie', href: '/locatie-sportpark-theo-lommen' },
               { name: 'Over mij', href: '/over-mij' },
               { name: 'FAQ', href: '/faq' },
+              { name: 'Blog', href: '/blog' },
               { name: 'Contact', href: '/contact', contact: true as const }
             ].map((item) => (
               <li key={item.name}>

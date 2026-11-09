@@ -60,7 +60,11 @@ export default function VoetbaltrainingVenloPage() {
           trainingsdagen
         </Link>
         . Omroep Venlo schreef eerder over de oprichting van de voetbalschool —
-        diezelfde focus op jeugd in de regio staat nog centraal.
+        diezelfde focus op jeugd in de regio staat nog centraal. Meer uitleg:{" "}
+        <Link href="/blog/extra-voetbaltraining-venlo-naast-club" style={link}>
+          extra voetbaltraining in Venlo naast je club
+        </Link>
+        .
       </p>
     </LocalGuideLayout>
   );

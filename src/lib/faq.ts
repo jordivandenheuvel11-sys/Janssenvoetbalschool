@@ -61,9 +61,22 @@ export const FAQ_ITEMS: FaqItem[] = [
         href: "/voetbaltraining-limburg",
         label: "extra voetbaltraining in Limburg",
       },
-      " of start met een ",
+      ", het blogartikel ",
+      {
+        href: "/blog/extra-voetbaltraining-venlo-naast-club",
+        label: "extra voetbaltraining in Venlo naast je club",
+      },
+      ", of start met een ",
       { href: "/proefles-aanvragen", label: "proefles" },
       ".",
+    ],
+  },
+  {
+    question: "Heb je tips of uitleg over training in Venlo?",
+    parts: [
+      "Ja. Op de ",
+      { href: "/blog", label: "blog" },
+      " staan gidsen over Venlo (extra training, trainer kiezen, techniek) en Limburg.",
     ],
   },
   {

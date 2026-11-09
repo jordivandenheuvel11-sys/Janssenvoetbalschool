@@ -103,7 +103,7 @@ const Footer = () => {
               { name: 'Privé training', href: '/prive-voetbaltraining' },
               { name: 'Trainer Venlo', href: '/individuele-voetbaltrainer-venlo' },
               { name: 'Locatie', href: '/locatie-sportpark-theo-lommen' },
-              { name: 'Over mij', href: '/#over-mij' },
+              { name: 'Over mij', href: '/over-mij' },
               { name: 'FAQ', href: '/faq' },
               { name: 'Contact', href: '/contact', contact: true as const }
             ].map((item) => (

@@ -156,7 +156,7 @@ const Navbar = () => {
               <Link href="/mini-voetbalschool" className="navbar-item" style={{ color: '#ffffff' }}>Mini Voetbalschool</Link>
               <Link href="/trainingen" className="navbar-item" style={{ color: '#ffffff' }}>Wanneer trainen</Link>
               <Link href="/pakketten" className="navbar-item" style={{ color: '#ffffff' }}>Pakketten</Link>
-              <Link href="/#over-mij" className="navbar-item" onClick={(e) => handleScrollClick(e, '/#over-mij')} style={{ color: '#ffffff' }}>Over mij</Link>
+              <Link href="/over-mij" className="navbar-item" style={{ color: '#ffffff' }}>Over mij</Link>
               <ContactLink href="/contact" type="contact" className="navbar-item" style={{ color: '#ffffff' }}>Contact</ContactLink>
             </div>
             <ContactLink href="/proefles-aanvragen" type="proefles" className="btn" style={{
@@ -222,7 +222,7 @@ const Navbar = () => {
           <Link href="/mini-voetbalschool" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Mini Voetbalschool</Link>
           <Link href="/trainingen" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Wanneer trainen</Link>
           <Link href="/pakketten" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Pakketten</Link>
-          <Link href="/#over-mij" onClick={(e) => handleScrollClick(e, '/#over-mij')} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Over mij</Link>
+          <Link href="/over-mij" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Over mij</Link>
           <ContactLink href="/contact" type="contact" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none', paddingBottom: '16px', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>Contact</ContactLink>
 
           <ContactLink href="/proefles-aanvragen" type="proefles" onClick={() => setIsMenuOpen(false)} style={{

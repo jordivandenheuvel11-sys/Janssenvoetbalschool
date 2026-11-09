@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { BUSINESS, getFullAddressLine } from "@/lib/business";
+import { getFullAddressLine } from "@/lib/business";
 
 type StickyFeaturesProps = {
   sectionHeading?: string;
@@ -18,11 +18,10 @@ const reasons = [
     aspectRatio: "5 / 4",
     body: (
       <>
-        Bij Janssen Voetbalschool train je niet weg in een grote groep.{" "}
-        {BUSINESS.trainerName} kijkt mee naar jouw aanname, dribbelen, passen en
-        schieten — en stuurt gericht bij. Zo groeit techniek sneller dan bij
-        alleen clubtraining, of je nu uit Velden, Venlo of elders in de gemeente
-        komt.
+        Bij mij train je niet weg in een grote groep. Ik kijk mee naar jouw
+        aanname, dribbelen, passen en schieten — en stuur gericht bij. Zo groeit
+        techniek sneller dan bij alleen clubtraining, of je nu uit Velden, Venlo
+        of elders in de gemeente komt.
       </>
     ),
   },
@@ -34,9 +33,9 @@ const reasons = [
     aspectRatio: "1 / 1",
     body: (
       <>
-        Elke sessie van 60 minuten heeft een duidelijk doel: beter handelen onder
-        druk, sterker in 1-tegen-1, meer zelfvertrouwen in de wedstrijd. We
-        bouwen door in vaste blokken — zie{" "}
+        Elke sessie van 60 minuten geef ik een duidelijk doel: beter handelen
+        onder druk, sterker in 1-tegen-1, meer zelfvertrouwen in de wedstrijd.
+        We bouwen door in vaste blokken — zie mijn{" "}
         <Link href="/pakketten" style={link}>
           pakketten &amp; tarieven
         </Link>{" "}
@@ -56,10 +55,10 @@ const reasons = [
     aspectRatio: "4 / 5",
     body: (
       <>
-        Goede voetballers blijven trainen omdat het leuk is. De aanpak is
+        Goede voetballers blijven trainen omdat het leuk is. Mijn aanpak is
         serieus maar toegankelijk: duidelijke feedback, veel balcontact en een
-        veilige sfeer op {getFullAddressLine()}. Voor de allerjongsten is er ook
-        de{" "}
+        veilige sfeer op {getFullAddressLine()}. Voor de allerjongsten bied ik
+        ook de{" "}
         <Link href="/mini-voetbalschool" style={link}>
           Mini Voetbalschool
         </Link>{" "}
@@ -124,9 +123,8 @@ export default function StickyFeatures({ sectionHeading }: StickyFeaturesProps) 
             maxWidth: "42rem",
           }}
         >
-          Individuele voetbaltraining in Velden (gemeente Venlo) voor
-          jeugdspelers die techniek, spelinzicht en zelfvertrouwen willen
-          versterken — naast hun club.
+          Ik train jeugdspelers in Velden (gemeente Venlo) die techniek,
+          spelinzicht en zelfvertrouwen willen versterken — naast hun club.
         </p>
       </div>
 

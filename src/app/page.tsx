@@ -5,6 +5,7 @@ import PressMentionSection from "@/components/PressMentionSection";
 import HomeOfferSection from "@/components/HomeOfferSection";
 import StickyFeatures from "@/components/StickyFeatures";
 import FaqSection from "@/components/FaqSection";
+import FirstTrainingCta from "@/components/FirstTrainingCta";
 import { BUSINESS, getMapsUrl } from "@/lib/business";
 import { getSiteUrl } from "@/lib/site";
 
@@ -102,6 +103,11 @@ export default function Home() {
         <StickyFeatures />
         <AboutSection />
         <FaqSection limit={5} />
+        <FirstTrainingCta
+          description="Vraag een proefles aan — ik plan samen met jou een moment op Sportpark Theo Lommen in Velden."
+          href="/proefles-aanvragen"
+          ctaLabel="Proefles aanvragen"
+        />
       </main>
     </>
   );

@@ -6,7 +6,6 @@ import Link from 'next/link';
 /**
  * Sharp hero stills from native 720p/1080p frames (srcSet).
  * Video only on desktop after idle — mobile keeps the high-res poster.
- * Bottom strip: “Klaar voor de eerste training?” (zonder mini-copy).
  */
 const Hero = () => {
   const [isMobile, setIsMobile] = React.useState(false);
@@ -70,11 +69,10 @@ const Hero = () => {
         minHeight: isMobile ? '100dvh' : '100vh',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         position: 'relative',
         margin: '0',
-        paddingTop: isMobile ? '88px' : '120px',
-        paddingBottom: isMobile ? '28px' : '40px',
+        paddingTop: isMobile ? '0' : '220px',
         overflow: 'hidden',
         backgroundColor: '#0a0a0a',
       }}
@@ -131,22 +129,11 @@ const Hero = () => {
           height: '100%',
           backgroundColor: 'rgba(0, 0, 0, 0.4)',
           backgroundImage:
-            'linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.82) 100%)',
+            'linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%)',
           zIndex: 1,
         }}
       />
-
-      <div
-        className="container"
-        style={{
-          position: 'relative',
-          zIndex: 2,
-          flex: 1,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-        }}
-      >
+      <div className="container" style={{ position: 'relative', zIndex: 2 }}>
         <h1
           style={{
             marginBottom: '32px',
@@ -177,9 +164,8 @@ const Hero = () => {
             fontWeight: 500,
           }}
         >
-          Individuele voetbaltraining in <strong>Velden</strong>, gemeente{' '}
-          <strong>Venlo</strong> – voor jeugdspelers die het beste uit zichzelf
-          willen halen.
+          Ik train jeugdspelers individueel in <strong>Velden</strong>, gemeente{' '}
+          <strong>Venlo</strong> — zodat jij het beste uit jezelf haalt.
         </p>
 
         <div className="hero-buttons" style={{ justifyContent: 'center' }}>
@@ -201,51 +187,6 @@ const Hero = () => {
             Proefles aanvragen
           </Link>
         </div>
-      </div>
-
-      <div
-        style={{
-          position: 'relative',
-          zIndex: 2,
-          textAlign: 'center',
-          padding: '0 24px',
-          maxWidth: '640px',
-          margin: '0 auto',
-          width: '100%',
-        }}
-      >
-        <Link
-          href="/proefles-aanvragen"
-          style={{
-            display: 'block',
-            textDecoration: 'none',
-            color: 'inherit',
-          }}
-        >
-          <p
-            style={{
-              margin: '0 0 8px',
-              fontSize: 'clamp(1.25rem, 3vw, 1.65rem)',
-              fontWeight: 900,
-              letterSpacing: '-0.02em',
-              color: '#ffffff',
-              lineHeight: 1.2,
-            }}
-          >
-            Klaar voor de eerste training?
-          </p>
-          <p
-            style={{
-              margin: 0,
-              fontSize: '15px',
-              lineHeight: 1.5,
-              color: 'rgba(255,255,255,0.82)',
-              fontWeight: 500,
-            }}
-          >
-            Vraag een proefles aan bij Janssen Voetbalschool in Velden.
-          </p>
-        </Link>
       </div>
     </section>
   );

@@ -13,10 +13,10 @@ const audiences = [
     aspectRatio: "5 / 4",
     body: (
       <>
-        Voor spelers uit {BUSINESS.addressLocality} en gemeente Venlo die naast
-        clubtraining extra willen werken aan balvaardigheid, sneller handelen en
-        meer zelfvertrouwen in de wedstrijd. Persoonlijke aandacht van{" "}
-        {BUSINESS.trainerName} — geen grote groep.
+        Ik train spelers uit {BUSINESS.addressLocality} en gemeente Venlo die
+        naast clubtraining extra willen werken aan balvaardigheid, sneller
+        handelen en meer zelfvertrouwen in de wedstrijd. Persoonlijke aandacht —
+        geen grote groep.
       </>
     ),
   },
@@ -27,9 +27,9 @@ const audiences = [
     aspectRatio: "1 / 1",
     body: (
       <>
-        Sessies van 60 minuten met focus op aannemen, dribbelen, passen,
+        Mijn sessies duren 60 minuten, met focus op aannemen, dribbelen, passen,
         schieten en keuzes onder druk. In vaste trainingsblokken op{" "}
-        {getFullAddressLine()}. Zie de{" "}
+        {getFullAddressLine()}. Bekijk mijn{" "}
         <Link href="/trainingen" style={linkStyle}>
           trainingsplanning
         </Link>{" "}
@@ -44,7 +44,7 @@ const audiences = [
     aspectRatio: "4 / 5",
     body: (
       <>
-        Voor de allerjongsten is er de{" "}
+        Voor de allerjongsten bied ik de{" "}
         <Link href="/mini-voetbalschool" style={linkStyle}>
           Mini Voetbalschool
         </Link>
@@ -56,7 +56,7 @@ const audiences = [
 ];
 
 /**
- * “Voor wie”-sectie: crawlable copy + visuals (geen lap tekst).
+ * “Voor wie”-sectie: crawlable copy + visuals (eerste persoon).
  */
 export default function HomeOfferSection() {
   return (
@@ -82,7 +82,7 @@ export default function HomeOfferSection() {
             marginBottom: "16px",
           }}
         >
-          Individuele voetbaltraining
+          Mijn training
         </span>
         <h2
           id="aanbod-heading"
@@ -96,7 +96,7 @@ export default function HomeOfferSection() {
             maxWidth: "18ch",
           }}
         >
-          Voor wie is Janssen Voetbalschool?
+          Voor wie train ik?
         </h2>
         <p
           style={{
@@ -108,8 +108,8 @@ export default function HomeOfferSection() {
             maxWidth: "40rem",
           }}
         >
-          Individuele techniektraining in Velden voor jeugdspelers die groeien
-          willen — en voor de allerjongsten via Mini.
+          Ik geef individuele techniektraining in Velden aan jeugdspelers die
+          willen groeien — en via Mini ook aan de allerjongsten.
         </p>
       </div>
 
@@ -190,7 +190,6 @@ export default function HomeOfferSection() {
         })}
       </div>
 
-      {/* Start + links — compact, geen tekstmuur */}
       <div
         style={{
           maxWidth: "1000px",
@@ -249,11 +248,11 @@ export default function HomeOfferSection() {
               margin: "0 0 24px",
             }}
           >
-            Via{" "}
+            Vraag een{" "}
             <Link href="/proefles-aanvragen" style={linkStyle}>
-              proefles aanvragen
+              proefles
             </Link>{" "}
-            plan je een moment. Tarieven staan bij{" "}
+            aan — dan plan ik samen met jou een moment. Mijn tarieven staan bij{" "}
             <Link href="/pakketten" style={linkStyle}>
               pakketten
             </Link>

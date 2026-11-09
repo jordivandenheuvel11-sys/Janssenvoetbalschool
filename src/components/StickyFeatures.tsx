@@ -175,7 +175,13 @@ export default function StickyFeatures({ sectionHeading }: StickyFeaturesProps) 
                   style={{ objectFit: "cover" }}
                 />
               </div>
-              <div style={{ flex: "1 1 320px", minWidth: "280px" }}>
+              <div
+                style={{
+                  flex: "1 1 260px",
+                  minWidth: "240px",
+                  maxWidth: "380px",
+                }}
+              >
                 <h3
                   style={{
                     fontSize: "clamp(1.5rem, 3vw, 2rem)",

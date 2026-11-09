@@ -4,11 +4,13 @@ import React from 'react';
 import Link from 'next/link';
 
 /**
- * Studio hero still — subject rechts, tekst in donkere ruimte links.
- * Geen video: stilstaand beeld is de achtergrond.
+ * Hero: scherpe poster (LCP) + gecomprimeerde loop-video op desktop.
+ * Video ~2.2 MB (720p / 24 fps / 900 kbps, geen audio) — idle-load, niet op mobiel.
  */
 const Hero = () => {
   const [isMobile, setIsMobile] = React.useState(false);
+  const [loadVideo, setLoadVideo] = React.useState(false);
+  const videoRef = React.useRef<HTMLVideoElement>(null);
 
   React.useEffect(() => {
     const mq = window.matchMedia('(max-width: 768px)');
@@ -17,6 +19,47 @@ const Hero = () => {
     mq.addEventListener('change', sync);
     return () => mq.removeEventListener('change', sync);
   }, []);
+
+  React.useEffect(() => {
+    if (isMobile) return;
+
+    const connection = (navigator as Navigator & {
+      connection?: { saveData?: boolean; effectiveType?: string };
+    }).connection;
+    if (connection?.saveData) return;
+    if (connection?.effectiveType === '2g' || connection?.effectiveType === 'slow-2g') {
+      return;
+    }
+
+    let cancelled = false;
+    const start = () => {
+      if (!cancelled) setLoadVideo(true);
+    };
+
+    const w = window as Window & {
+      requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number;
+      cancelIdleCallback?: (id: number) => void;
+    };
+
+    if (typeof w.requestIdleCallback === 'function') {
+      const id = w.requestIdleCallback(start, { timeout: 2500 });
+      return () => {
+        cancelled = true;
+        w.cancelIdleCallback?.(id);
+      };
+    }
+
+    const t = window.setTimeout(start, 1500);
+    return () => {
+      cancelled = true;
+      window.clearTimeout(t);
+    };
+  }, [isMobile]);
+
+  React.useEffect(() => {
+    if (!loadVideo || !videoRef.current) return;
+    videoRef.current.play().catch(() => {});
+  }, [loadVideo]);
 
   return (
     <section
@@ -35,12 +78,12 @@ const Hero = () => {
       }}
     >
       <img
-        src="/hero-bg-1920.webp"
-        srcSet="/hero-bg.webp 1280w, /hero-bg-1920.webp 1920w"
+        src="/hero-loop-poster-1920.webp"
+        srcSet="/hero-loop-poster.webp 1280w, /hero-loop-poster-1920.webp 1920w"
         sizes="100vw"
         alt=""
         width={1920}
-        height={1072}
+        height={1080}
         fetchPriority="high"
         decoding="async"
         style={{
@@ -50,10 +93,32 @@ const Hero = () => {
           width: '100%',
           height: '100%',
           objectFit: 'cover',
-          objectPosition: 'right center',
           zIndex: 0,
         }}
       />
+
+      {loadVideo && !isMobile && (
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="none"
+          poster="/hero-loop-poster-1920.webp"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            zIndex: 0,
+          }}
+        >
+          <source src="/hero-loop.mp4" type="video/mp4" />
+        </video>
+      )}
 
       <div
         style={{
@@ -83,7 +148,7 @@ const Hero = () => {
       >
         <h1
           style={{
-            maxWidth: '16ch',
+            maxWidth: '18ch',
             lineHeight: '1.08',
             fontSize: 'clamp(2.1rem, 5.5vw, 3.8rem)',
             color: '#ffffff',
@@ -92,7 +157,7 @@ const Hero = () => {
             fontWeight: 800,
           }}
         >
-          Train, ontwikkel en beheers elke vaardigheid.
+          Individuele voetbaltraining in Velden
         </h1>
 
         <p
@@ -105,7 +170,7 @@ const Hero = () => {
             fontWeight: 500,
           }}
         >
-          Ik train jeugdspelers individueel in <strong>Velden</strong>, gemeente{' '}
+          Ik geef privé 1-op-1 training aan jeugdspelers in gemeente{' '}
           <strong>Venlo</strong> — zodat jij het beste uit jezelf haalt.
         </p>
 

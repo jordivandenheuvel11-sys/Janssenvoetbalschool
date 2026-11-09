@@ -66,7 +66,6 @@ const WelcomePopup = () => {
                 style={{ 
                   width: '56px', 
                   height: '56px', 
-                  borderRadius: '50%', 
                   objectFit: 'cover',
                   border: '2px solid #D90429'
                 }} 

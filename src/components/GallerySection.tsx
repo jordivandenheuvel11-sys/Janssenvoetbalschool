@@ -69,13 +69,11 @@ const GallerySection = () => {
           <div 
             key={index}
             style={{
-              borderRadius: '24px',
               overflow: 'hidden',
               height: '350px',
               aspectRatio: '4/3',
               backgroundColor: '#f5f5f5',
               cursor: 'pointer',
-              boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
               transition: 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
               flexShrink: 0
             }}

@@ -190,7 +190,6 @@ export default function MiniVoetbalschoolPage() {
               height: "100%",
               minHeight: "420px",
               objectFit: "cover",
-              borderRadius: "32px",
             }}
           />
         </div>
@@ -388,7 +387,6 @@ export default function MiniVoetbalschoolPage() {
                   className="mini-gallery-item"
                   style={{
                     ...spans,
-                    borderRadius: "24px",
                     overflow: "hidden",
                     position: "relative",
                   }}

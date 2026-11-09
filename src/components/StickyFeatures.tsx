@@ -196,53 +196,6 @@ export default function StickyFeatures({ sectionHeading }: StickyFeaturesProps) 
           );
         })}
       </div>
-
-      <div
-        style={{
-          maxWidth: "1000px",
-          margin: "64px auto 0",
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "12px",
-          alignItems: "center",
-        }}
-      >
-        <Link
-          href="/proefles-aanvragen"
-          style={{
-            display: "inline-block",
-            backgroundColor: "#D90429",
-            color: "#ffffff",
-            padding: "14px 22px",
-            borderRadius: "9999px",
-            fontWeight: 800,
-            textDecoration: "none",
-            fontSize: "13px",
-            letterSpacing: "0.04em",
-            textTransform: "uppercase",
-          }}
-        >
-          Proefles aanvragen
-        </Link>
-        <Link
-          href="/voetbaltraining-velden"
-          style={{
-            color: "#D90429",
-            fontWeight: 700,
-            fontSize: "15px",
-            marginLeft: "8px",
-          }}
-        >
-          Training in Velden
-        </Link>
-        <span style={{ color: "#ccc" }}>·</span>
-        <Link
-          href="/voetbaltraining-venlo"
-          style={{ color: "#D90429", fontWeight: 700, fontSize: "15px" }}
-        >
-          Training in Venlo
-        </Link>
-      </div>
     </section>
   );
 }

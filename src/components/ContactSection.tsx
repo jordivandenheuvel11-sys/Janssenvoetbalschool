@@ -9,6 +9,8 @@ type ContactSectionProps = {
   heading?: string;
   description?: string;
   submitLabel?: string;
+  /** Use h1 on dedicated pages for SEO; default h2 for embedded sections */
+  headingAs?: 'h1' | 'h2';
 };
 
 const ContactSection = ({
@@ -18,6 +20,7 @@ const ContactSection = ({
   heading,
   description,
   submitLabel,
+  headingAs = 'h2',
 }: ContactSectionProps) => {
   const [formData, setFormData] = useState({
     subject: initialSubject ?? '',
@@ -90,16 +93,20 @@ const ContactSection = ({
         }}>
           Direct Contact
         </span>
-        <h2 style={{
-          fontSize: 'clamp(2.5rem, 5vw, 4rem)',
-          fontWeight: '900',
-          letterSpacing: '-0.04em',
-          lineHeight: '1.1',
-          marginBottom: '24px',
-          color: '#ffffff'
-        }}>
-          {heading ?? 'Klaar voor de volgende stap?'}
-        </h2>
+        {React.createElement(
+          headingAs,
+          {
+            style: {
+              fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+              fontWeight: '900',
+              letterSpacing: '-0.04em',
+              lineHeight: '1.1',
+              marginBottom: '24px',
+              color: '#ffffff',
+            },
+          },
+          heading ?? 'Klaar voor de volgende stap?',
+        )}
         <p style={{
           fontSize: '20px',
           color: '#a0a0a0',

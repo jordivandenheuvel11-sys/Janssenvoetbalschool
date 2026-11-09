@@ -50,11 +50,15 @@ const packages = [
 ];
 
 type PackagesSectionProps = {
-  /** Override section H2 (e.g. /venlo) */
+  /** Override section heading text (e.g. /pakketten) */
   headingOverride?: string;
+  /** Use h1 on dedicated pages for SEO; default h2 for embedded sections */
+  headingAs?: 'h1' | 'h2';
 };
 
-const PackagesSection = ({ headingOverride }: PackagesSectionProps) => {
+const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionProps) => {
+  const Heading = headingAs === 'h1' ? motion.h1 : motion.h2;
+
   return (
     <section id="pakketten" style={{
       padding: '120px 24px',
@@ -85,7 +89,7 @@ const PackagesSection = ({ headingOverride }: PackagesSectionProps) => {
           >
             Trainen & Ontwikkelen
           </motion.span>
-          <motion.h2 
+          <Heading
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -105,7 +109,7 @@ const PackagesSection = ({ headingOverride }: PackagesSectionProps) => {
                 Kies jouw <span style={{ color: '#D90429' }}>pakket</span>
               </>
             )}
-          </motion.h2>
+          </Heading>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

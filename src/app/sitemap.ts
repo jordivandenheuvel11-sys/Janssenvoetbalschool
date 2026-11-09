@@ -1,18 +1,24 @@
 import type { MetadataRoute } from "next";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+import { getSiteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = siteUrl ? new URL(siteUrl) : null;
+  const baseUrl = new URL(getSiteUrl());
   const now = new Date();
 
-  const paths = ["/", "/trainingen", "/pakketten", "/contact", "/mini-voetbalschool", "/inschrijven"];
+  const paths = [
+    "/",
+    "/trainingen",
+    "/pakketten",
+    "/proefles-aanvragen",
+    "/contact",
+    "/mini-voetbalschool",
+    "/inschrijven",
+  ];
 
   return paths.map((path) => ({
-    url: baseUrl ? new URL(path, baseUrl).toString() : path,
+    url: new URL(path, baseUrl).toString(),
     lastModified: now,
     changeFrequency: path === "/" ? "weekly" : "monthly",
-    priority: path === "/" ? 1 : 0.7,
+    priority: path === "/" ? 1 : path === "/proefles-aanvragen" ? 0.9 : 0.7,
   }));
 }
-

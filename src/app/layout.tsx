@@ -7,16 +7,17 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollHandler from "@/components/ScrollHandler";
 import { Suspense } from "react";
 import { Analytics } from "@vercel/analytics/next";
+import { getSiteUrl } from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+const siteUrl = getSiteUrl();
 const siteName = "Janssen Voetbalschool";
 const siteDescription =
   "Professionele voetbaltraining in Velden, gemeente Venlo. Individuele techniektraining voor jeugdspelers in de regio Venlo. Vraag een gratis proefles aan!";
 
 export const metadata: Metadata = {
-  metadataBase: siteUrl ? new URL(siteUrl) : undefined,
+  metadataBase: new URL(siteUrl),
   title: {
     default: `${siteName} | Voetbaltraining in Velden & Gemeente Venlo`,
     template: `%s | ${siteName}`,

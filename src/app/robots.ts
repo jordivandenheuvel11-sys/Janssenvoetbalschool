@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+import { getSiteUrl } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
+  const origin = getSiteUrl().replace(/\/+$/, "");
+
   return {
     rules: [
       {
@@ -11,7 +12,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/studio/"],
       },
     ],
-    sitemap: siteUrl ? `${siteUrl.replace(/\/+$/, "")}/sitemap.xml` : undefined,
+    sitemap: `${origin}/sitemap.xml`,
   };
 }
-

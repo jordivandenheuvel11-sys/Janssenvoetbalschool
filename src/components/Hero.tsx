@@ -6,6 +6,7 @@ import Link from 'next/link';
 /**
  * Sharp hero stills from native 720p/1080p frames (srcSet).
  * Video only on desktop after idle — mobile keeps the high-res poster.
+ * Bottom strip: “Klaar voor de eerste training?” (zonder mini-copy).
  */
 const Hero = () => {
   const [isMobile, setIsMobile] = React.useState(false);
@@ -69,15 +70,15 @@ const Hero = () => {
         minHeight: isMobile ? '100dvh' : '100vh',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         position: 'relative',
         margin: '0',
-        paddingTop: isMobile ? '0' : '220px',
+        paddingTop: isMobile ? '88px' : '120px',
+        paddingBottom: isMobile ? '28px' : '40px',
         overflow: 'hidden',
         backgroundColor: '#0a0a0a',
       }}
     >
-      {/* Sharp LCP still — real 1280 + 1920 sources, no upscale blur */}
       <img
         src="/hero-bg-1920.webp"
         srcSet="/hero-bg.webp 1280w, /hero-bg-1920.webp 1920w"
@@ -130,11 +131,22 @@ const Hero = () => {
           height: '100%',
           backgroundColor: 'rgba(0, 0, 0, 0.4)',
           backgroundImage:
-            'linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%)',
+            'linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.82) 100%)',
           zIndex: 1,
         }}
       />
-      <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+
+      <div
+        className="container"
+        style={{
+          position: 'relative',
+          zIndex: 2,
+          flex: 1,
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+        }}
+      >
         <h1
           style={{
             marginBottom: '32px',
@@ -147,6 +159,7 @@ const Hero = () => {
             letterSpacing: '-0.02em',
             fontWeight: '800',
             textTransform: 'none',
+            textAlign: 'center',
           }}
         >
           Train, ontwikkel en beheers elke vaardigheid.
@@ -188,6 +201,51 @@ const Hero = () => {
             Proefles aanvragen
           </Link>
         </div>
+      </div>
+
+      <div
+        style={{
+          position: 'relative',
+          zIndex: 2,
+          textAlign: 'center',
+          padding: '0 24px',
+          maxWidth: '640px',
+          margin: '0 auto',
+          width: '100%',
+        }}
+      >
+        <Link
+          href="/proefles-aanvragen"
+          style={{
+            display: 'block',
+            textDecoration: 'none',
+            color: 'inherit',
+          }}
+        >
+          <p
+            style={{
+              margin: '0 0 8px',
+              fontSize: 'clamp(1.25rem, 3vw, 1.65rem)',
+              fontWeight: 900,
+              letterSpacing: '-0.02em',
+              color: '#ffffff',
+              lineHeight: 1.2,
+            }}
+          >
+            Klaar voor de eerste training?
+          </p>
+          <p
+            style={{
+              margin: 0,
+              fontSize: '15px',
+              lineHeight: 1.5,
+              color: 'rgba(255,255,255,0.82)',
+              fontWeight: 500,
+            }}
+          >
+            Vraag een proefles aan bij Janssen Voetbalschool in Velden.
+          </p>
+        </Link>
       </div>
     </section>
   );

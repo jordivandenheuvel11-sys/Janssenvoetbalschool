@@ -1,80 +1,126 @@
-'use client';
+import React from "react";
+import { TESTIMONIALS } from "@/lib/testimonials";
+import { BUSINESS } from "@/lib/business";
+import { getSiteUrl } from "@/lib/site";
 
-import React from 'react';
+/**
+ * Social proof with clear attribution — one job: parent feedback.
+ * Server-rendered for crawlability; Review JSON-LD without fake star ratings.
+ */
+export default function TestimonialsSection() {
+  const siteUrl = getSiteUrl();
 
-const testimonials = [
-  {
-    quote: "De individuele aandacht heeft mijn techniek naar een hoger niveau getild. Een echte aanrader!",
-    author: "Speler (U15)",
-    role: "Talentontwikkeling"
-  },
-  {
-    quote: "Professionele trainingen met een duidelijke focus op resultaat. De passie voor het spel is overal voelbaar.",
-    author: "Ouder",
-    role: "Persoonlijke Coaching"
-  },
-  {
-    quote: "Een unieke voetbalschool waar persoonlijke groei centraal staat. De vooruitgang is al na een paar sessies zichtbaar.",
-    author: "Technisch Coördinator",
-    role: "Expert Review"
-  }
-];
+  const reviewJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": TESTIMONIALS.map((t) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: t.authorName },
+      reviewBody: t.quote,
+      itemReviewed: {
+        "@type": "SportsActivityLocation",
+        name: BUSINESS.name,
+        "@id": `${siteUrl}/#business`,
+      },
+    })),
+  };
 
-const TestimonialsSection = () => {
   return (
-    <section id="testimonials" style={{
-      padding: '20px 24px 60px', // Smaller top padding
-      backgroundColor: '#ffffff',
-      color: '#0f0f0f',
-      position: 'relative',
-      zIndex: 20
-    }}>
-      <div style={{
-        maxWidth: '1200px',
-        margin: '0 auto',
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-        gap: '40px'
-      }}>
-        {testimonials.map((t, index) => (
-          <div 
-            key={index}
-            style={{
-              padding: '40px',
-              backgroundColor: '#f9f9f9',
-              borderRadius: '24px',
-              border: '1px solid #eeeeee',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              height: '100%',
-              transition: 'transform 0.3s ease',
-            }}
-          >
-            <div>
-              <div style={{ fontSize: '40px', color: '#D90429', marginBottom: '20px', lineHeight: '1' }}>&quot;</div>
-              <p style={{
-                fontSize: '18px',
-                lineHeight: '1.6',
-                color: '#333333',
-                marginBottom: '40px',
-                fontWeight: '500',
-                fontStyle: 'italic'
-              }}>
-                {t.quote}
+    <section
+      id="ervaringen"
+      aria-labelledby="ervaringen-heading"
+      style={{
+        backgroundColor: "#0a0a0a",
+        color: "#ffffff",
+        padding: "100px 24px",
+        position: "relative",
+        zIndex: 20,
+      }}
+    >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }}
+      />
+      <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+        <span
+          style={{
+            fontSize: "13px",
+            fontWeight: 900,
+            color: "#D90429",
+            letterSpacing: "0.2em",
+            textTransform: "uppercase",
+            display: "block",
+            marginBottom: "16px",
+          }}
+        >
+          Ervaringen
+        </span>
+        <h2
+          id="ervaringen-heading"
+          style={{
+            fontSize: "clamp(2rem, 4vw, 3rem)",
+            fontWeight: 900,
+            letterSpacing: "-0.04em",
+            lineHeight: 1.1,
+            marginBottom: "40px",
+          }}
+        >
+          Wat ouders zeggen
+        </h2>
+
+        <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
+          {TESTIMONIALS.map((t) => (
+            <blockquote
+              key={t.id}
+              style={{
+                margin: 0,
+                padding: 0,
+                borderLeft: "3px solid #D90429",
+                paddingLeft: "24px",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "clamp(1.15rem, 2.5vw, 1.35rem)",
+                  lineHeight: 1.65,
+                  fontWeight: 500,
+                  color: "rgba(255,255,255,0.92)",
+                  margin: "0 0 16px",
+                }}
+              >
+                “{t.quote}”
               </p>
-            </div>
-            <div>
-              <h4 style={{ fontSize: '18px', fontWeight: '800', marginBottom: '4px' }}>{t.author}</h4>
-              <span style={{ fontSize: '14px', color: '#888888', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                {t.role}
-              </span>
-            </div>
-          </div>
-        ))}
+              <footer style={{ fontSize: "15px", color: "#a0a0a0", fontWeight: 600 }}>
+                <cite style={{ fontStyle: "normal", color: "#ffffff" }}>
+                  {t.authorName}
+                </cite>
+                {" · "}
+                {t.attribution}
+              </footer>
+            </blockquote>
+          ))}
+        </div>
+
+        <p
+          style={{
+            marginTop: "48px",
+            fontSize: "15px",
+            lineHeight: 1.65,
+            color: "#888",
+            fontWeight: 500,
+          }}
+        >
+          Ook genoemd door{" "}
+          <a
+            href="https://omroepvenlo.nl/nieuws/artikel/jelte-janssen-19-heeft-zijn-eigen-voetbalschool"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#ffffff", fontWeight: 700 }}
+          >
+            Omroep Venlo
+          </a>
+          . Trainingen op Sportpark Theo Lommen in {BUSINESS.addressLocality}.
+        </p>
       </div>
     </section>
   );
-};
-
-export default TestimonialsSection;
+}

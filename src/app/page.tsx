@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
 import PressMentionSection from "@/components/PressMentionSection";
 import HomeOfferSection from "@/components/HomeOfferSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import { BUSINESS, getMapsUrl } from "@/lib/business";
 import { getSiteUrl } from "@/lib/site";
 
@@ -97,6 +98,7 @@ export default function Home() {
         <Hero />
         <PressMentionSection />
         <HomeOfferSection />
+        <TestimonialsSection />
         <AboutUsSection />
         <StickyFeatures />
         <AboutSection />

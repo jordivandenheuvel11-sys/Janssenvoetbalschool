@@ -14,7 +14,15 @@ Janssen Voetbalschool biedt persoonlijke techniektrainingen (blokken van 60 minu
 - [Contact](https://www.janssenvoetbalschool.nl/contact): Vragen en aanvragen
 - [Inschrijven](https://www.janssenvoetbalschool.nl/inschrijven): Inschrijving trainingspakket
 
-## Contact
+## Lokale gidsen
+
+- [Voetbaltraining in Velden](https://www.janssenvoetbalschool.nl/voetbaltraining-velden)
+- [Voetbaltraining in Venlo](https://www.janssenvoetbalschool.nl/voetbaltraining-venlo)
+- [Jeugd voetbaltraining](https://www.janssenvoetbalschool.nl/jeugd-voetbaltraining)
+- [Individuele techniektraining](https://www.janssenvoetbalschool.nl/individuele-techniektraining)
+- [Locatie Sportpark Theo Lommen](https://www.janssenvoetbalschool.nl/locatie-sportpark-theo-lommen)
+
+## Contact (NAP)
 
 - Telefoon: +31 6 11250476
 - E-mail: jelte.janssen@ziggo.nl

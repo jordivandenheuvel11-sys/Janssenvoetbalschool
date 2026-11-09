@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { TRAINERS } from '@/lib/trainers';
 
 type TrainersSectionProps = {
-  /** Lighter intro when embedded under Over mij */
+  /** Lighter intro when embedded under Over ons */
   eyebrow?: string;
   heading?: string;
   intro?: string;

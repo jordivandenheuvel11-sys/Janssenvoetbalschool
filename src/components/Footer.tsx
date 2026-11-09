@@ -104,7 +104,7 @@ const Footer = () => {
               { name: 'Kleine groepjes', href: '/prive-voetbaltraining' },
               { name: 'Trainer Venlo', href: '/individuele-voetbaltrainer-venlo' },
               { name: 'Locatie', href: '/locatie-sportpark-theo-lommen' },
-              { name: 'Over mij', href: '/over-mij' },
+              { name: 'Over ons', href: '/over-ons' },
               { name: 'FAQ', href: '/faq' },
               { name: 'Blog', href: '/blog' },
               { name: 'Contact', href: '/contact', contact: true as const }

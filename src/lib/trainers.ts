@@ -1,4 +1,4 @@
-/** Team trainers shown on homepage + over-mij. */
+/** Team trainers shown on homepage + over-ons. */
 
 export type Trainer = {
   id: string;

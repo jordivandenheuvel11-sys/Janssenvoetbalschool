@@ -27,7 +27,7 @@ export default function BlogPostLayout({ post, children }: BlogPostLayoutProps) 
     author: {
       "@type": "Person",
       name: BUSINESS.trainerName,
-      url: `${siteUrl}/over-mij`,
+      url: `${siteUrl}/over-ons`,
     },
     publisher: {
       "@type": "Organization",

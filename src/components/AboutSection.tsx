@@ -7,8 +7,8 @@ import ContactLink from '@/components/contact/ContactLink';
 const AboutSection = () => {
   return (
     <section
-      id="over-mij"
-      aria-labelledby="over-mij-heading"
+      id="over-ons"
+      aria-labelledby="over-ons-heading"
       style={{
         padding: '100px 24px',
         backgroundColor: '#ffffff',
@@ -39,10 +39,10 @@ const AboutSection = () => {
               marginBottom: '16px',
             }}
           >
-            Over mij
+            Over ons
           </span>
           <h2
-            id="over-mij-heading"
+            id="over-ons-heading"
             style={{
               fontSize: 'clamp(2.2rem, 4.5vw, 3.4rem)',
               fontWeight: 700,
@@ -84,7 +84,7 @@ const AboutSection = () => {
 
           <div style={{ marginTop: '28px', display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
             <Link
-              href="/over-mij"
+              href="/over-ons"
               style={{
                 display: 'inline-block',
                 backgroundColor: '#0f0f0f',
@@ -98,7 +98,7 @@ const AboutSection = () => {
                 fontSize: '13px',
               }}
             >
-              Meer over mij
+              Meer over ons
             </Link>
             <ContactLink
               href="/proefles-aanvragen"

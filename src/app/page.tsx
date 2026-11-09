@@ -98,7 +98,7 @@ const homeJsonLd = {
         "Individuele voetbaltrainer in Venlo en Limburg. Extra voetbaltraining in kleine groepjes voor jeugdspelers uit heel Limburg.",
       worksFor: { "@id": `${siteUrl}/#business` },
       image: `${siteUrl}/trainers/jelte.webp`,
-      url: `${siteUrl}/over-mij`,
+      url: `${siteUrl}/over-ons`,
       areaServed: [
         "Velden",
         "Venlo",

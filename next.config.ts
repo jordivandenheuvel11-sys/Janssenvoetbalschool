@@ -28,6 +28,15 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ["framer-motion", "lucide-react"],
     inlineCss: true,
   },
+  async redirects() {
+    return [
+      {
+        source: "/over-mij",
+        destination: "/over-ons",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

@@ -13,15 +13,15 @@ const omroepUrl =
   "https://omroepvenlo.nl/nieuws/artikel/jelte-janssen-19-heeft-zijn-eigen-voetbalschool";
 
 export const metadata: Metadata = {
-  title: "Over mij — Jelte Janssen",
+  title: "Over ons — Janssen Voetbalschool",
   description:
-    "Jelte Janssen: eigenaar Janssen Voetbalschool, hoofdtrainer FCV JO15-1, VC2/UEFA B Jeugd (KNVB). Individuele voetbaltraining in Velden & gemeente Venlo.",
-  alternates: { canonical: "/over-mij" },
+    "Over ons: Jelte Janssen, Rik en Wout van Janssen Voetbalschool. Individuele voetbaltraining in kleine groepjes in Velden & gemeente Venlo.",
+  alternates: { canonical: "/over-ons" },
   openGraph: {
-    title: "Over mij — Jelte Janssen | Janssen Voetbalschool",
+    title: "Over ons — Janssen Voetbalschool",
     description:
-      "Eigenaar Janssen Voetbalschool | Hoofdtrainer FCV JO15-1 | UEFA B / KNVB VC2 | CIOS Sport & Bewegen – Buurtsportcoach.",
-    url: "/over-mij",
+      "Het team van Janssen Voetbalschool: Jelte Janssen (eigenaar), Rik en Wout. Training in Velden, gemeente Venlo.",
+    url: "/over-ons",
   },
 };
 
@@ -36,7 +36,7 @@ const personJsonLd = {
     name: BUSINESS.name,
     url: siteUrl,
   },
-  url: `${siteUrl}/over-mij`,
+  url: `${siteUrl}/over-ons`,
   image: `${siteUrl}/trainer-new.webp`,
   email: BUSINESS.email,
   telephone: BUSINESS.telephone,
@@ -165,7 +165,7 @@ export default function OverMijPage() {
                 marginBottom: "16px",
               }}
             >
-              Over mij
+              Over ons
             </span>
             <h1
               style={{
@@ -176,7 +176,7 @@ export default function OverMijPage() {
                 margin: "0 0 16px",
               }}
             >
-              Jelte Janssen
+              Janssen Voetbalschool
             </h1>
             <p
               style={{

@@ -81,8 +81,8 @@ export default function ExtraVoetbaltrainingVenloPage() {
           proefles
         </ContactLink>{" "}
         aan. Trainer Jelte Janssen legt op de{" "}
-        <Link href="/over-mij" style={link}>
-          Over mij
+        <Link href="/over-ons" style={link}>
+          Over ons
         </Link>
         -pagina uit wie er achter Janssen Voetbalschool zit.
       </p>

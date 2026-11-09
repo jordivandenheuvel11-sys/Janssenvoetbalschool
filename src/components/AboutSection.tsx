@@ -144,6 +144,7 @@ const AboutSection = () => {
                   width={500}
                   height={750}
                   sizes="(max-width: 768px) 90vw, 400px"
+                  quality={90}
                   style={{
                     width: '100%',
                     height: '100%',

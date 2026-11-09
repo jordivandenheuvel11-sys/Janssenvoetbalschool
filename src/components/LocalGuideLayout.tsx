@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import ContactLink from "@/components/contact/ContactLink";
 import { BUSINESS, getFullAddressLine, getMapsUrl } from "@/lib/business";
 
 export type LocalGuideRelated = { href: string; label: string };
@@ -124,8 +125,9 @@ export default function LocalGuideLayout({
           </p>
 
           <div style={{ marginTop: "28px", display: "flex", flexWrap: "wrap", gap: "12px" }}>
-            <Link
+            <ContactLink
               href="/proefles-aanvragen"
+              type="proefles"
               style={{
                 display: "inline-block",
                 backgroundColor: "#D90429",
@@ -140,7 +142,7 @@ export default function LocalGuideLayout({
               }}
             >
               Proefles aanvragen
-            </Link>
+            </ContactLink>
             <Link
               href="/pakketten"
               style={{

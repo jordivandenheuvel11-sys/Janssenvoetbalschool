@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import ContactLink from '@/components/contact/ContactLink';
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -156,9 +157,9 @@ const Navbar = () => {
               <Link href="/trainingen" className="navbar-item" style={{ color: '#ffffff' }}>Wanneer trainen</Link>
               <Link href="/pakketten" className="navbar-item" style={{ color: '#ffffff' }}>Pakketten</Link>
               <Link href="/#over-mij" className="navbar-item" onClick={(e) => handleScrollClick(e, '/#over-mij')} style={{ color: '#ffffff' }}>Over mij</Link>
-              <Link href="/contact" className="navbar-item" style={{ color: '#ffffff' }}>Contact</Link>
+              <ContactLink href="/contact" type="contact" className="navbar-item" style={{ color: '#ffffff' }}>Contact</ContactLink>
             </div>
-            <Link href="/proefles-aanvragen" className="btn" style={{
+            <ContactLink href="/proefles-aanvragen" type="proefles" className="btn" style={{
               backgroundColor: '#ffffff',
               color: '#0f0f0f',
               padding: '12px 28px',
@@ -167,7 +168,7 @@ const Navbar = () => {
               textDecoration: 'none'
             }}>
               Proefles aanvragen
-            </Link>
+            </ContactLink>
           </div>
         )}
 
@@ -222,9 +223,9 @@ const Navbar = () => {
           <Link href="/trainingen" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Wanneer trainen</Link>
           <Link href="/pakketten" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Pakketten</Link>
           <Link href="/#over-mij" onClick={(e) => handleScrollClick(e, '/#over-mij')} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Over mij</Link>
-          <Link href="/contact" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none', paddingBottom: '16px', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>Contact</Link>
+          <ContactLink href="/contact" type="contact" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none', paddingBottom: '16px', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>Contact</ContactLink>
 
-          <Link href="/proefles-aanvragen" onClick={() => setIsMenuOpen(false)} style={{
+          <ContactLink href="/proefles-aanvragen" type="proefles" onClick={() => setIsMenuOpen(false)} style={{
             backgroundColor: '#D90429',
             color: '#ffffff',
             padding: '16px',
@@ -235,7 +236,7 @@ const Navbar = () => {
             marginTop: '8px'
           }}>
             Proefles aanvragen
-          </Link>
+          </ContactLink>
         </div>
       )}
     </nav>

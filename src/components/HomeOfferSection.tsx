@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ContactLink from "@/components/contact/ContactLink";
 import { BUSINESS, getFullAddressLine } from "@/lib/business";
 
 const linkStyle: React.CSSProperties = { color: "#D90429", fontWeight: 700 };
@@ -227,17 +228,18 @@ export default function HomeOfferSection() {
           }}
         >
           Vraag een{" "}
-          <Link href="/proefles-aanvragen" style={linkStyle}>
+          <ContactLink href="/proefles-aanvragen" type="proefles" style={linkStyle}>
             proefles
-          </Link>{" "}
+          </ContactLink>{" "}
           aan — dan plan ik samen met jou een moment. Mijn tarieven staan bij{" "}
           <Link href="/pakketten" style={linkStyle}>
             pakketten
           </Link>
           .
         </p>
-        <Link
+        <ContactLink
           href="/proefles-aanvragen"
+          type="proefles"
           className="btn btn-secondary"
           style={{
             display: "inline-flex",
@@ -255,7 +257,7 @@ export default function HomeOfferSection() {
           }}
         >
           Proefles aanvragen
-        </Link>
+        </ContactLink>
         <p
           style={{
             fontSize: "15px",

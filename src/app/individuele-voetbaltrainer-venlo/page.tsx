@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import ContactLink from "@/components/contact/ContactLink";
 import LocalGuideLayout from "@/components/LocalGuideLayout";
 import { relatedExcept } from "@/lib/local-guides";
 import { BUSINESS, getFullAddressLine } from "@/lib/business";
@@ -78,17 +79,17 @@ export default function IndividueleVoetbaltrainerVenloPage() {
       <h2 style={h2}>Proefles &amp; tarieven</h2>
       <p>
         Start met een{" "}
-        <Link href="/proefles-aanvragen" style={link}>
+        <ContactLink href="/proefles-aanvragen" type="proefles" style={link}>
           proefles
-        </Link>
+        </ContactLink>
         . Tarieven en blokken:{" "}
         <Link href="/pakketten" style={link}>
           pakketten
         </Link>
         . Vragen?{" "}
-        <Link href="/contact" style={link}>
+        <ContactLink href="/contact" type="contact" style={link}>
           Contact
-        </Link>{" "}
+        </ContactLink>{" "}
         of bel{" "}
         <a href={`tel:${BUSINESS.telephone}`} style={link}>
           {BUSINESS.telephoneDisplay}

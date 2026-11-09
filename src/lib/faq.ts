@@ -72,6 +72,30 @@ export const FAQ_ITEMS: FaqItem[] = [
     ],
   },
   {
+    question: "Bied je privé voetbaltraining / 1-op-1?",
+    parts: [
+      "Ja. Ik geef ",
+      { href: "/prive-voetbaltraining", label: "privé voetbaltraining" },
+      " (1-op-1) en ",
+      {
+        href: "/individuele-techniektraining",
+        label: "individuele techniektraining",
+      },
+      " in Velden, gemeente Venlo (Limburg).",
+    ],
+  },
+  {
+    question: "Ben jij een individuele voetbaltrainer in Venlo of Limburg?",
+    parts: [
+      "Ja. Ik ben ",
+      {
+        href: "/individuele-voetbaltrainer-venlo",
+        label: "individuele voetbaltrainer in Venlo en Limburg",
+      },
+      " — Jelte Janssen van Janssen Voetbalschool.",
+    ],
+  },
+  {
     question: "Wat is het verschil met clubtraining?",
     parts: [
       "Bij de club train je in een groep. Bij mij krijg je individuele aandacht — zie ook ",
@@ -79,6 +103,8 @@ export const FAQ_ITEMS: FaqItem[] = [
         href: "/individuele-techniektraining",
         label: "individuele techniektraining",
       },
+      " en ",
+      { href: "/prive-voetbaltraining", label: "privé voetbaltraining" },
       ".",
     ],
   },

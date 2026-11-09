@@ -343,8 +343,9 @@ export default function HomeOfferSection() {
             maxWidth: "40rem",
           }}
         >
-          Ik geef individuele techniektraining in Velden aan jeugdspelers die
-          willen groeien — en via Mini ook aan de allerjongsten.
+          Ik geef privé / individuele voetbaltraining in Velden (Venlo, Limburg)
+          aan jeugdspelers die willen groeien — en via Mini ook aan de
+          allerjongsten.
         </p>
       </div>
 
@@ -460,21 +461,21 @@ export default function HomeOfferSection() {
             margin: 0,
           }}
         >
-          <Link href="/voetbaltraining-velden" style={linkStyle}>
-            Velden
-          </Link>
-          {" · "}
-          <Link href="/voetbaltraining-venlo" style={linkStyle}>
-            Venlo
-          </Link>
-          {" · "}
-          <Link href="/jeugd-voetbaltraining" style={linkStyle}>
-            Jeugd
-          </Link>
-          {" · "}
-          <Link href="/locatie-sportpark-theo-lommen" style={linkStyle}>
-            Locatie
-          </Link>
+            <Link href="/prive-voetbaltraining" style={linkStyle}>
+              Privé training
+            </Link>
+            {" · "}
+            <Link href="/individuele-voetbaltrainer-venlo" style={linkStyle}>
+              Trainer Venlo
+            </Link>
+            {" · "}
+            <Link href="/voetbaltraining-velden" style={linkStyle}>
+              Velden
+            </Link>
+            {" · "}
+            <Link href="/voetbaltraining-venlo" style={linkStyle}>
+              Venlo
+            </Link>
         </p>
       </div>
     </section>

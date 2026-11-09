@@ -19,15 +19,23 @@ const inter = Inter({
 const siteUrl = getSiteUrl();
 const siteName = "Janssen Voetbalschool";
 const siteDescription =
-  "Professionele voetbaltraining in Velden, gemeente Venlo. Individuele techniektraining voor jeugdspelers in de regio Venlo. Vraag een gratis proefles aan!";
+  "Privé en individuele voetbaltraining in Velden, gemeente Venlo (Limburg). Individuele voetbaltrainer Jelte Janssen — 1-op-1 techniek voor jeugdspelers. Vraag een proefles aan.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${siteName} | Voetbaltraining in Velden & Gemeente Venlo`,
+    default: `${siteName} | Privé & individuele voetbaltraining Venlo Limburg`,
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
+  keywords: [
+    "privé voetbaltraining",
+    "individuele voetbaltrainer Venlo",
+    "individuele voetbaltrainer Limburg",
+    "1-op-1 voetbaltraining",
+    "voetbaltraining Velden",
+    "voetbaltraining Venlo",
+  ],
   alternates: {
     canonical: "/",
   },
@@ -39,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "nl_NL",
-    title: `${siteName} | Voetbaltraining in Velden & Gemeente Venlo`,
+    title: `${siteName} | Privé & individuele voetbaltraining Venlo Limburg`,
     description: siteDescription,
     siteName,
     url: "/",
@@ -47,7 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteName} | Voetbaltraining in Velden & Gemeente Venlo`,
+    title: `${siteName} | Privé & individuele voetbaltraining Venlo Limburg`,
     description: siteDescription,
   },
   robots: {

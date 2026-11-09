@@ -62,7 +62,7 @@ const InschrijvingForm = ({ initialPakket }: InschrijvingFormProps) => {
 
   const inputStyle: React.CSSProperties = {
     padding: '16px',
-    borderRadius: '8px',
+    borderRadius: 'var(--radius)',
     border: '1px solid #333333',
     fontSize: '16px',
     backgroundColor: '#1a1a1a',
@@ -176,7 +176,7 @@ const InschrijvingForm = ({ initialPakket }: InschrijvingFormProps) => {
         style={{
           marginTop: '12px',
           padding: '20px',
-          borderRadius: '9999px',
+          borderRadius: 'var(--radius)',
           backgroundColor: '#ffffff',
           color: '#0a0a0a',
           fontSize: '16px',

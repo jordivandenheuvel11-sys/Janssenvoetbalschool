@@ -88,7 +88,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
           style={{
             display: "inline-block",
             padding: "14px 28px",
-            borderRadius: "9999px",
+            borderRadius: 'var(--radius)',
             backgroundColor: "#ffffff",
             color: "#0a0a0a",
             fontWeight: 800,

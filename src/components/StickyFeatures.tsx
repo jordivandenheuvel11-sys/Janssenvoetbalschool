@@ -156,6 +156,7 @@ export default function StickyFeatures({ sectionHeading }: StickyFeaturesProps) 
                   position: "relative",
                   aspectRatio: "4 / 3",
                   overflow: "hidden",
+                  borderRadius: "var(--radius)",
                 }}
               >
                 <Image

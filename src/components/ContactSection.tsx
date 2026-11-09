@@ -137,7 +137,7 @@ const ContactSection = ({
             onChange={handleChange}
             style={{
               padding: '16px',
-              borderRadius: '8px',
+              borderRadius: 'var(--radius)',
               border: '1px solid #333333',
               fontSize: '16px',
               backgroundColor: '#1a1a1a',
@@ -163,7 +163,7 @@ const ContactSection = ({
               required
               style={{
                 padding: '16px',
-                borderRadius: '8px',
+                borderRadius: 'var(--radius)',
                 border: '1px solid #333333',
                 fontSize: '16px',
                 backgroundColor: '#1a1a1a',
@@ -182,7 +182,7 @@ const ContactSection = ({
               required
               style={{
                 padding: '16px',
-                borderRadius: '8px',
+                borderRadius: 'var(--radius)',
                 border: '1px solid #333333',
                 fontSize: '16px',
                 backgroundColor: '#1a1a1a',
@@ -202,7 +202,7 @@ const ContactSection = ({
             onChange={handleChange}
             style={{
               padding: '16px',
-              borderRadius: '8px',
+              borderRadius: 'var(--radius)',
               border: '1px solid #333333',
               fontSize: '16px',
               backgroundColor: '#1a1a1a',
@@ -222,7 +222,7 @@ const ContactSection = ({
             required
             style={{
               padding: '16px',
-              borderRadius: '8px',
+              borderRadius: 'var(--radius)',
               border: '1px solid #333333',
               fontSize: '16px',
               backgroundColor: '#1a1a1a',
@@ -237,7 +237,7 @@ const ContactSection = ({
           style={{
             marginTop: '12px',
             padding: '20px',
-            borderRadius: '9999px',
+            borderRadius: 'var(--radius)',
             backgroundColor: '#ffffff',
             color: '#0a0a0a',
             fontSize: '16px',

@@ -110,6 +110,7 @@ const AboutUsSection = () => {
             position: 'relative',
             aspectRatio: '5 / 4',
             overflow: 'hidden',
+            borderRadius: 'var(--radius)',
           }}
         >
           <Image

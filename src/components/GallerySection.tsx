@@ -70,6 +70,7 @@ const GallerySection = () => {
             key={index}
             style={{
               overflow: 'hidden',
+              borderRadius: 'var(--radius)',
               height: '350px',
               aspectRatio: '4/3',
               backgroundColor: '#f5f5f5',

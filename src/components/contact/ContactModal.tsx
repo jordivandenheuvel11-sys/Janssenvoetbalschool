@@ -147,7 +147,7 @@ export default function ContactModal({
 
   const inputStyle: React.CSSProperties = {
     padding: "14px 16px",
-    borderRadius: 0,
+    borderRadius: 'var(--radius)',
     border: "1px solid #333333",
     fontSize: "16px",
     backgroundColor: "#1a1a1a",
@@ -168,7 +168,7 @@ export default function ContactModal({
 
   const primaryBtn: React.CSSProperties = {
     padding: "14px 22px",
-    borderRadius: 0,
+    borderRadius: 'var(--radius)',
     backgroundColor: "#ffffff",
     color: "#0a0a0a",
     fontSize: "15px",
@@ -180,7 +180,7 @@ export default function ContactModal({
 
   const ghostBtn: React.CSSProperties = {
     padding: "14px 18px",
-    borderRadius: 0,
+    borderRadius: 'var(--radius)',
     backgroundColor: "transparent",
     color: "rgba(255,255,255,0.7)",
     fontSize: "14px",
@@ -216,7 +216,7 @@ export default function ContactModal({
           overflowY: "auto",
           backgroundColor: "#111111",
           color: "#ffffff",
-          borderRadius: 0,
+          borderRadius: 'var(--radius)',
           border: "1px solid rgba(255,255,255,0.1)",
           boxShadow: "0 28px 80px rgba(0,0,0,0.55)",
           padding: "28px 24px 24px",
@@ -233,7 +233,7 @@ export default function ContactModal({
             right: "16px",
             width: "36px",
             height: "36px",
-            borderRadius: 0,
+            borderRadius: 'var(--radius)',
             border: "1px solid rgba(255,255,255,0.15)",
             background: "transparent",
             color: "#ffffff",
@@ -271,7 +271,7 @@ export default function ContactModal({
                   style={{
                     flex: 1,
                     height: "4px",
-                    borderRadius: 0,
+                    borderRadius: 'var(--radius)',
                     backgroundColor:
                       i < step ? "#D90429" : "rgba(255,255,255,0.15)",
                   }}
@@ -317,7 +317,7 @@ export default function ContactModal({
                     style={{
                       textAlign: "left",
                       padding: "16px 18px",
-                      borderRadius: 0,
+                      borderRadius: 'var(--radius)',
                       border: active
                         ? "2px solid #D90429"
                         : "1px solid rgba(255,255,255,0.14)",

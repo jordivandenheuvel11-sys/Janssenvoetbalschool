@@ -48,7 +48,7 @@ const WelcomePopup = () => {
             backgroundColor: 'rgba(26, 26, 27, 0.98)',
             backdropFilter: 'blur(20px)',
             padding: '24px',
-            borderRadius: '24px',
+            borderRadius: 'var(--radius)',
             border: '1px solid rgba(255, 255, 255, 0.1)',
             boxShadow: '0 30px 60px rgba(0, 0, 0, 0.6)',
             color: '#ffffff',
@@ -97,7 +97,7 @@ const WelcomePopup = () => {
             fontWeight: '500',
             backgroundColor: 'rgba(255,255,255,0.05)',
             padding: '16px',
-            borderRadius: '16px',
+            borderRadius: 'var(--radius)',
             borderBottomLeftRadius: '4px' // Message bubble style
           }}>
             Heb je vragen over de trainingen of wil je weten wanneer de volgende sessie is? 👋 <br /><br />
@@ -112,7 +112,7 @@ const WelcomePopup = () => {
                 backgroundColor: '#ffffff',
                 color: '#1a1a1b',
                 padding: '14px',
-                borderRadius: '999px',
+                borderRadius: 'var(--radius)',
                 textAlign: 'center',
                 fontWeight: '700',
                 fontSize: '15px',

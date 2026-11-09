@@ -124,7 +124,7 @@ const Hero = () => {
             style={{
               padding: '12px 32px',
               fontSize: '15px',
-              borderRadius: '9999px',
+              borderRadius: 'var(--radius)',
               backgroundColor: '#ffffff',
               color: '#1a1a1b',
               fontWeight: 700,

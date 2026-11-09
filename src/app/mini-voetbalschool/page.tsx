@@ -147,7 +147,7 @@ export default function MiniVoetbalschoolPage() {
               style={{
                 padding: "14px 32px",
                 fontSize: "15px",
-                borderRadius: "9999px",
+                borderRadius: 'var(--radius)',
                 backgroundColor: "#ffffff",
                 color: "#0f0f0f",
                 fontWeight: 800,
@@ -193,6 +193,7 @@ export default function MiniVoetbalschoolPage() {
               height: "100%",
               minHeight: "420px",
               objectFit: "cover",
+              borderRadius: "var(--radius)",
             }}
           />
         </div>
@@ -391,6 +392,7 @@ export default function MiniVoetbalschoolPage() {
                   style={{
                     ...spans,
                     overflow: "hidden",
+                    borderRadius: "var(--radius)",
                     position: "relative",
                   }}
                 >

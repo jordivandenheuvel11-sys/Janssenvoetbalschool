@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import ContactSection from "@/components/ContactSection";
+import FirstTrainingCta from "@/components/FirstTrainingCta";
 
 export const metadata: Metadata = {
   title: "Mini Voetbalschool Janssen",
@@ -413,81 +414,11 @@ export default function MiniVoetbalschoolPage() {
         </div>
       </section>
 
-      {/* CTA strip */}
-      <section
-        style={{
-          position: "relative",
-          overflow: "hidden",
-          padding: "100px 24px",
-          textAlign: "center",
-          zIndex: 20,
-        }}
-      >
-        <img
-          src="/gallery/g1.jpg"
-          alt=""
-          aria-hidden="true"
-          width={1600}
-          height={1067}
-          loading="lazy"
-          decoding="async"
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            zIndex: 0,
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            backgroundColor: "rgba(15, 15, 15, 0.78)",
-            zIndex: 1,
-          }}
-        />
-        <div style={{ position: "relative", zIndex: 2, maxWidth: "640px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontSize: "clamp(1.85rem, 4vw, 2.75rem)",
-              fontWeight: 900,
-              letterSpacing: "-0.03em",
-              lineHeight: 1.15,
-              margin: "0 0 16px 0",
-            }}
-          >
-            Klaar voor de eerste training?
-          </h2>
-          <p
-            style={{
-              margin: "0 0 32px 0",
-              fontSize: "17px",
-              lineHeight: 1.65,
-              color: "rgba(255,255,255,0.85)",
-            }}
-          >
-            Meld je kind aan voor Mini Voetbalschool Janssen. Start vanaf 6 september.
-          </p>
-          <Link
-            href="#aanmelden"
-            style={{
-              display: "inline-block",
-              padding: "16px 34px",
-              borderRadius: "9999px",
-              backgroundColor: "#ffffff",
-              color: "#0f0f0f",
-              fontWeight: 900,
-              letterSpacing: "0.06em",
-              textTransform: "uppercase",
-              fontSize: "14px",
-            }}
-          >
-            Direct aanmelden
-          </Link>
-        </div>
-      </section>
+      <FirstTrainingCta
+        description="Meld je kind aan voor mijn Mini Voetbalschool. Start vanaf 6 september."
+        href="#aanmelden"
+        ctaLabel="Direct aanmelden"
+      />
 
       <div id="aanmelden">
         <ContactSection

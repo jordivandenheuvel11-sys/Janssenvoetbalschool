@@ -196,14 +196,14 @@ const Footer = () => {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
           <p style={{
             fontSize: '14px',
-            color: '#666666',
+            color: '#b8b8b8',
             margin: 0
           }}>
             &copy; {new Date().getFullYear()} Janssen Voetbalschool. Alle rechten voorbehouden.
           </p>
           <p style={{
             fontSize: '13px',
-            color: '#666666',
+            color: '#b8b8b8',
             margin: 0
           }}>
             KvK {BUSINESS.kvk}
@@ -214,12 +214,12 @@ const Footer = () => {
             rel="noopener noreferrer" 
             style={{ 
               fontSize: '12px', 
-              color: '#444444', 
+              color: '#b8b8b8', 
               textDecoration: 'none',
               transition: 'color 0.2s ease' 
             }}
             onMouseEnter={(e) => e.currentTarget.style.color = '#D90429'}
-            onMouseLeave={(e) => e.currentTarget.style.color = '#444444'}
+            onMouseLeave={(e) => e.currentTarget.style.color = '#b8b8b8'}
           >
             Website door Jordi van den Heuvel
           </a>

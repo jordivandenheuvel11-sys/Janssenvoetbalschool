@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import PressMentionSection from "@/components/PressMentionSection";
 import HomeOfferSection from "@/components/HomeOfferSection";
 import StickyFeatures from "@/components/StickyFeatures";
+import FaqSection from "@/components/FaqSection";
 import { BUSINESS, getMapsUrl } from "@/lib/business";
 import { getSiteUrl } from "@/lib/site";
 
@@ -100,6 +101,7 @@ export default function Home() {
         <AboutUsSection />
         <StickyFeatures />
         <AboutSection />
+        <FaqSection limit={5} />
       </main>
     </>
   );

@@ -10,6 +10,7 @@ Janssen Voetbalschool biedt persoonlijke techniektrainingen (blokken van 60 minu
 - [Trainingsdagen](https://www.janssenvoetbalschool.nl/trainingen): Planning en tijden
 - [Pakketten](https://www.janssenvoetbalschool.nl/pakketten): Tarieven en trainingsblokken
 - [Proefles aanvragen](https://www.janssenvoetbalschool.nl/proefles-aanvragen): Start met een proefles
+- [FAQ](https://www.janssenvoetbalschool.nl/faq): Veelgestelde vragen
 - [Mini Voetbalschool](https://www.janssenvoetbalschool.nl/mini-voetbalschool): 3 t/m 5 jaar
 - [Contact](https://www.janssenvoetbalschool.nl/contact): Vragen en aanvragen
 - [Inschrijven](https://www.janssenvoetbalschool.nl/inschrijven): Inschrijving trainingspakket

@@ -46,6 +46,7 @@ const TrainersSection = ({
       id="trainers"
       ref={sectionRef}
       aria-labelledby="trainers-heading"
+      className="trainers-section"
       style={{
         padding: topPadding ? '140px 24px 100px' : '100px 24px',
         backgroundColor: background,
@@ -53,6 +54,87 @@ const TrainersSection = ({
         zIndex: 20,
       }}
     >
+      <style>{`
+        .trainers-grid {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 28px 24px;
+        }
+        .trainers-card {
+          min-width: 0;
+        }
+        .trainers-photo {
+          position: relative;
+          aspect-ratio: 3 / 4;
+          width: 100%;
+          overflow: hidden;
+          border-radius: var(--radius);
+          background-color: #1a1a1a;
+        }
+        .trainers-name {
+          margin: 16px 0 4px;
+          font-size: 1.25rem;
+          font-weight: 700;
+          letter-spacing: 0.01em;
+          color: #0f0f0f;
+        }
+        .trainers-role {
+          margin: 0;
+          font-size: 15px;
+          font-weight: 600;
+          color: #5a5a5a;
+          letter-spacing: 0.02em;
+        }
+
+        @media (max-width: 1024px) {
+          .trainers-grid {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px 28px;
+          }
+          .trainers-card {
+            flex: 0 0 auto;
+            width: auto;
+            text-align: center;
+          }
+          .trainers-photo {
+            width: 96px;
+            height: 96px;
+            aspect-ratio: 1 / 1;
+            margin: 0 auto;
+            border-radius: 50%;
+          }
+          .trainers-name {
+            margin: 12px 0 0;
+            font-size: 0.95rem;
+            line-height: 1.25;
+            max-width: 7.5rem;
+          }
+          .trainers-role {
+            display: none;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .trainers-grid {
+            gap: 16px 18px;
+          }
+          .trainers-photo {
+            width: 80px;
+            height: 80px;
+          }
+          .trainers-name {
+            font-size: 0.85rem;
+            max-width: 5.75rem;
+          }
+        }
+      `}</style>
+
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
         <div
           style={{
@@ -103,66 +185,29 @@ const TrainersSection = ({
           </p>
         </div>
 
-        <ul
-          style={{
-            listStyle: 'none',
-            margin: 0,
-            padding: 0,
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-            gap: '28px 24px',
-          }}
-        >
+        <ul className="trainers-grid">
           {TRAINERS.map((trainer, index) => (
             <li
               key={trainer.id}
+              className="trainers-card"
               style={{
                 opacity: isVisible ? 1 : 0,
                 transform: isVisible ? 'translateY(0)' : 'translateY(28px)',
                 transition: `opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1) ${0.12 + index * 0.1}s, transform 0.85s cubic-bezier(0.16, 1, 0.3, 1) ${0.12 + index * 0.1}s`,
               }}
             >
-              <div
-                style={{
-                  position: 'relative',
-                  aspectRatio: '3 / 4',
-                  width: '100%',
-                  overflow: 'hidden',
-                  borderRadius: 'var(--radius)',
-                  backgroundColor: '#1a1a1a',
-                }}
-              >
+              <div className="trainers-photo">
                 <Image
                   src={trainer.image}
                   alt={trainer.imageAlt}
                   fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 45vw, 340px"
+                  sizes="(max-width: 1024px) 96px, 340px"
                   quality={75}
                   style={{ objectFit: 'cover', objectPosition: 'center top' }}
                 />
               </div>
-              <p
-                style={{
-                  margin: '16px 0 4px',
-                  fontSize: '1.25rem',
-                  fontWeight: 700,
-                  letterSpacing: '0.01em',
-                  color: '#0f0f0f',
-                }}
-              >
-                {trainer.name}
-              </p>
-              <p
-                style={{
-                  margin: 0,
-                  fontSize: '15px',
-                  fontWeight: 600,
-                  color: '#5a5a5a',
-                  letterSpacing: '0.02em',
-                }}
-              >
-                {trainer.role}
-              </p>
+              <p className="trainers-name">{trainer.name}</p>
+              <p className="trainers-role">{trainer.role}</p>
             </li>
           ))}
         </ul>

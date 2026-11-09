@@ -47,3 +47,5 @@ next-env.d.ts
 .agents/skills/**/.setup.lock
 **/.venv/
 **/ms-playwright/
+__pycache__/
+*.pyc

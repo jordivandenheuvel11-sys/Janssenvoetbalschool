@@ -3,12 +3,12 @@ import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
 import PressMentionSection from "@/components/PressMentionSection";
 import HomeOfferSection from "@/components/HomeOfferSection";
+import StickyFeatures from "@/components/StickyFeatures";
 import { BUSINESS, getMapsUrl } from "@/lib/business";
 import { getSiteUrl } from "@/lib/site";
 
 /** Below-fold client sections: split JS so hero LCP stays light */
 const AboutUsSection = dynamic(() => import("@/components/AboutUsSection"));
-const StickyFeatures = dynamic(() => import("@/components/StickyFeatures"));
 const AboutSection = dynamic(() => import("@/components/AboutSection"));
 
 const siteUrl = getSiteUrl();

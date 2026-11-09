@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Claude SEO / Agent Skills runtime (regenerate with setup)
+.agents/skills/**/.venv/
+.agents/skills/**/ms-playwright/
+.agents/skills/**/runtime-state.json
+.agents/skills/**/.setup.lock
+**/.venv/
+**/ms-playwright/
+__pycache__/
+*.pyc

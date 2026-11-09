@@ -11,14 +11,14 @@ Nodig voor Phase 4 monitoring: PageSpeed Insights, CrUX, Search Console.
    - Google Search Console API
    - (optioneel) Indexing API, GA4 Data API
 
-## 2. API-key (Tier 0 — PSI + CrUX)
+## 2. API-key (Tier 0 — PSI + CrUX) — ✅ gedaan
 
-1. **APIs & Services → Credentials → Create → API key**
-2. Restrict tot PageSpeed Insights + Chrome UX Report
-3. Zet lokaal (niet committen):
+Key is opgeslagen als Vercel env `GOOGLE_API_KEY` (sensitive) op project
+`janssen-voetbalschool`. Lokaal voor claude-seo:
 
 ```bash
 mkdir -p ~/.config/claude-seo
+# gebruik de key uit Vercel / Google Cloud — nooit committen
 cat > ~/.config/claude-seo/google-api.json <<'EOF'
 {
   "api_key": "JE_API_KEY",
@@ -27,7 +27,10 @@ cat > ~/.config/claude-seo/google-api.json <<'EOF'
 EOF
 ```
 
-Of env: `export GOOGLE_API_KEY=...`
+Of: `export GOOGLE_API_KEY=...`
+
+**Belangrijk:** restrict de key in Google Cloud tot PageSpeed Insights + Chrome UX Report.
+Als de key in chat/logs stond: overweeg te roteren.
 
 ## 3. Search Console (Tier 1)
 

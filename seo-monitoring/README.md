@@ -41,11 +41,22 @@ Of handmatig:
 
 ## Google APIs (PSI / CrUX / GSC)
 
-Nog **niet** gekoppeld in deze Cloud Agent. Volg `GOOGLE-SETUP.md`.
+**Tier 0 actief** (PageSpeed + CrUX): `GOOGLE_API_KEY` staat als *sensitive* in Vercel
+(`janssen-voetbalschool`) en lokaal in `~/.config/claude-seo/google-api.json` — **niet** in git.
 
-Zodra er een API-key is:
+Eerste lab-baseline: `psi/homepage-summary.json` (9 nov 2026, Europe/Amsterdam):
+
+| | Performance | Accessibility | Best practices | SEO |
+|--|-------------|---------------|----------------|-----|
+| Mobile | 87 | 96 | 100 | 100 |
+| Desktop | 100 | 96 | 100 | 100 |
+
+CrUX field data: nog niet beschikbaar (te weinig Chrome-verkeer).
+
+GSC (Tier 1) nog open — service account nodig, zie `GOOGLE-SETUP.md`.
 
 ```bash
+export GOOGLE_API_KEY=...   # of Vercel env pull
 "$CLAUDE_PLUGIN_ROOT/scripts/claude-seo" run google_auth.py --check --json
 "$CLAUDE_PLUGIN_ROOT/scripts/claude-seo" run pagespeed_check.py https://www.janssenvoetbalschool.nl/ --json
 ```

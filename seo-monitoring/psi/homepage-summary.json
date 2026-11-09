@@ -1,0 +1,205 @@
+{
+  "url": "https://www.janssenvoetbalschool.nl/",
+  "captured_at": "2026-11-09T17:28:00Z",
+  "tier": 0,
+  "psi": {
+    "mobile": {
+      "strategy": "mobile",
+      "lighthouse_version": "13.6.0",
+      "lighthouse_scores": {
+        "performance": 87,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lab_metrics": {
+        "first-contentful-paint": {
+          "score": 1,
+          "display_value": null,
+          "numeric_value": null
+        },
+        "largest-contentful-paint": {
+          "score": 0.56,
+          "display_value": null,
+          "numeric_value": null
+        },
+        "total-blocking-time": {
+          "score": 1,
+          "display_value": null,
+          "numeric_value": null
+        },
+        "cumulative-layout-shift": {
+          "score": 1,
+          "display_value": null,
+          "numeric_value": null
+        },
+        "speed-index": {
+          "score": 0.83,
+          "display_value": null,
+          "numeric_value": null
+        },
+        "interactive": {
+          "score": 0.9,
+          "display_value": null,
+          "numeric_value": null
+        }
+      },
+      "opportunities": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": null,
+          "display_value": null,
+          "savings_ms": 150
+        }
+      ],
+      "failed_audits": [
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0.5
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.56
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.83
+        }
+      ],
+      "passed_audits_count": 82,
+      "analysis_timestamp": "2026-11-09T17:28:33.539Z",
+      "error": null
+    },
+    "desktop": {
+      "strategy": "desktop",
+      "lighthouse_version": "13.6.0",
+      "lighthouse_scores": {
+        "performance": 100,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lab_metrics": {
+        "first-contentful-paint": {
+          "score": 1,
+          "display_value": null,
+          "numeric_value": null
+        },
+        "largest-contentful-paint": {
+          "score": 0.99,
+          "display_value": null,
+          "numeric_value": null
+        },
+        "total-blocking-time": {
+          "score": 1,
+          "display_value": null,
+          "numeric_value": null
+        },
+        "cumulative-layout-shift": {
+          "score": 1,
+          "display_value": null,
+          "numeric_value": null
+        },
+        "speed-index": {
+          "score": 1,
+          "display_value": null,
+          "numeric_value": null
+        },
+        "interactive": {
+          "score": 1,
+          "display_value": null,
+          "numeric_value": null
+        }
+      },
+      "opportunities": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": null,
+          "display_value": null,
+          "savings_ms": 10
+        }
+      ],
+      "failed_audits": [
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0.5
+        },
+        {
+          "id": "total-byte-weight",
+          "title": "Avoid enormous network payloads",
+          "score": 0.5
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0.5
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5
+        }
+      ],
+      "passed_audits_count": 84,
+      "analysis_timestamp": "2026-11-09T17:28:47.036Z",
+      "error": null
+    }
+  },
+  "crux": {
+    "target": "https://www.janssenvoetbalschool.nl/",
+    "metrics": {},
+    "collection_period": null,
+    "form_factor": "ALL",
+    "error": "No CrUX data for this origin. The site likely has insufficient Chrome traffic volume for eligibility."
+  },
+  "notes": [
+    "CrUX: nog geen field data (te weinig Chrome-verkeer). Lab (Lighthouse) wel beschikbaar.",
+    "GOOGLE_API_KEY staat in Vercel (sensitive) + lokale claude-seo config; niet in git."
+  ]
+}

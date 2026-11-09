@@ -89,13 +89,13 @@ const TrainersSection = ({
           letter-spacing: 0.02em;
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 640px) {
           .trainers-grid {
             display: flex;
             flex-wrap: nowrap;
             justify-content: center;
             align-items: flex-start;
-            gap: 20px 28px;
+            gap: 16px 18px;
           }
           .trainers-card {
             flex: 0 0 auto;
@@ -103,34 +103,20 @@ const TrainersSection = ({
             text-align: center;
           }
           .trainers-photo {
-            width: 96px;
-            height: 96px;
+            width: 80px;
+            height: 80px;
             aspect-ratio: 1 / 1;
             margin: 0 auto;
             border-radius: 50%;
           }
           .trainers-name {
             margin: 12px 0 0;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             line-height: 1.25;
-            max-width: 7.5rem;
+            max-width: 5.75rem;
           }
           .trainers-role {
             display: none;
-          }
-        }
-
-        @media (max-width: 480px) {
-          .trainers-grid {
-            gap: 16px 18px;
-          }
-          .trainers-photo {
-            width: 80px;
-            height: 80px;
-          }
-          .trainers-name {
-            font-size: 0.85rem;
-            max-width: 5.75rem;
           }
         }
       `}</style>
@@ -201,7 +187,7 @@ const TrainersSection = ({
                   src={trainer.image}
                   alt={trainer.imageAlt}
                   fill
-                  sizes="(max-width: 1024px) 96px, 340px"
+                  sizes="(max-width: 640px) 80px, 340px"
                   quality={75}
                   style={{ objectFit: 'cover', objectPosition: 'center top' }}
                 />

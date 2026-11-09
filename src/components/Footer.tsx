@@ -25,7 +25,7 @@ const Footer = () => {
       color: '#ffffff',
       padding: '80px 24px 40px',
       borderTop: '1px solid #1f1f1f',
-      fontFamily: 'var(--font-inter)'
+      fontFamily: 'var(--font-sans)'
     }}>
       <div style={{
         maxWidth: '1200px',

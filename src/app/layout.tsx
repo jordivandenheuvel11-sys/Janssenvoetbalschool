@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { preload } from "react-dom";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -11,7 +11,7 @@ import { Suspense } from "react";
 import { Analytics } from "@vercel/analytics/next";
 import { getSiteUrl } from "@/lib/site";
 
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
   preload: true,
@@ -82,7 +82,7 @@ export default function RootLayout({
 
   return (
     <html lang="nl">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Suspense fallback={null}>
           <ScrollHandler />
         </Suspense>

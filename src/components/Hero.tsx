@@ -4,8 +4,8 @@ import React from 'react';
 import Link from 'next/link';
 
 /**
- * Studio hero still — subject rechts, tekst in donkere ruimte links.
- * Geen video: stilstaand beeld is de achtergrond.
+ * Studio hero still (nieuwe bestandsnamen i.v.m. CDN immutable-cache).
+ * Geen video.
  */
 const Hero = () => {
   const [isMobile, setIsMobile] = React.useState(false);
@@ -34,26 +34,33 @@ const Hero = () => {
         backgroundColor: '#0a0a0a',
       }}
     >
-      <img
-        src="/hero-bg-1920.webp"
-        srcSet="/hero-bg.webp 1280w, /hero-bg-1920.webp 1920w"
-        sizes="100vw"
-        alt=""
-        width={1920}
-        height={1072}
-        fetchPriority="high"
-        decoding="async"
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          objectPosition: 'right center',
-          zIndex: 0,
-        }}
-      />
+      <picture>
+        <source
+          type="image/webp"
+          srcSet="/hero-studio.webp 1376w, /hero-studio-1920.webp 1920w"
+          sizes="100vw"
+        />
+        <img
+          src="/hero-player.jpg"
+          srcSet="/hero-player.jpg 1376w, /hero-studio-1920.jpg 1920w"
+          sizes="100vw"
+          alt=""
+          width={1920}
+          height={1072}
+          fetchPriority="high"
+          decoding="async"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'right center',
+            zIndex: 0,
+          }}
+        />
+      </picture>
 
       <div
         style={{

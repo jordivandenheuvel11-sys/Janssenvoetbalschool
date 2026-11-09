@@ -1,233 +1,15 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { BUSINESS, getFullAddressLine } from "@/lib/business";
 
 const linkStyle: React.CSSProperties = { color: "#D90429", fontWeight: 700 };
 
-/** Abstract pitch / 1-op-1 visual */
-function VisualClub() {
-  return (
-    <div
-      aria-hidden="true"
-      style={{
-        position: "relative",
-        width: "100%",
-        aspectRatio: "1 / 1",
-        maxWidth: "420px",
-        background:
-          "linear-gradient(145deg, #0f0f0f 0%, #1a1a1b 55%, #2a1216 100%)",
-        overflow: "hidden",
-      }}
-    >
-      {/* pitch lines */}
-      <div
-        style={{
-          position: "absolute",
-          inset: "12%",
-          border: "2px solid rgba(255,255,255,0.18)",
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          left: "12%",
-          right: "12%",
-          top: "50%",
-          height: 2,
-          background: "rgba(255,255,255,0.18)",
-          transform: "translateY(-50%)",
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          left: "50%",
-          top: "50%",
-          width: "28%",
-          aspectRatio: "1",
-          border: "2px solid rgba(255,255,255,0.18)",
-          borderRadius: "50%",
-          transform: "translate(-50%, -50%)",
-        }}
-      />
-      {/* big 1 */}
-      <span
-        style={{
-          position: "absolute",
-          left: "10%",
-          bottom: "6%",
-          fontSize: "clamp(5rem, 18vw, 8rem)",
-          fontWeight: 900,
-          letterSpacing: "-0.08em",
-          lineHeight: 0.85,
-          color: "#D90429",
-          animation: "aanbodPulse 4s ease-in-out infinite",
-        }}
-      >
-        1
-      </span>
-      <span
-        style={{
-          position: "absolute",
-          right: "12%",
-          top: "14%",
-          fontSize: "13px",
-          fontWeight: 800,
-          letterSpacing: "0.18em",
-          textTransform: "uppercase",
-          color: "rgba(255,255,255,0.7)",
-        }}
-      >
-        Jij + ik
-      </span>
-    </div>
-  );
-}
-
-/** 60' technique rings */
-function VisualTechnique() {
-  return (
-    <div
-      aria-hidden="true"
-      style={{
-        position: "relative",
-        width: "100%",
-        aspectRatio: "1 / 1",
-        maxWidth: "420px",
-        background: "#f3f1ee",
-        overflow: "hidden",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <div
-        style={{
-          position: "absolute",
-          width: "78%",
-          aspectRatio: "1",
-          border: "2px solid rgba(217,4,41,0.25)",
-          borderRadius: "50%",
-          animation: "aanbodSpin 28s linear infinite",
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          width: "54%",
-          aspectRatio: "1",
-          border: "2px dashed rgba(15,15,15,0.2)",
-          borderRadius: "50%",
-          animation: "aanbodSpin 18s linear infinite reverse",
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          width: "28%",
-          aspectRatio: "1",
-          backgroundColor: "#D90429",
-          borderRadius: "50%",
-          boxShadow: "0 12px 40px rgba(217,4,41,0.35)",
-        }}
-      />
-      <span
-        style={{
-          position: "relative",
-          zIndex: 1,
-          fontSize: "clamp(2.4rem, 8vw, 3.4rem)",
-          fontWeight: 900,
-          letterSpacing: "-0.04em",
-          color: "#ffffff",
-        }}
-      >
-        60′
-      </span>
-      <span
-        style={{
-          position: "absolute",
-          bottom: "14%",
-          fontSize: "12px",
-          fontWeight: 800,
-          letterSpacing: "0.2em",
-          textTransform: "uppercase",
-          color: "#0f0f0f",
-        }}
-      >
-        Per sessie
-      </span>
-    </div>
-  );
-}
-
-/** Mini age stack */
-function VisualMini() {
-  return (
-    <div
-      aria-hidden="true"
-      style={{
-        position: "relative",
-        width: "100%",
-        aspectRatio: "1 / 1",
-        maxWidth: "420px",
-        background:
-          "radial-gradient(circle at 30% 30%, #ffe8ec 0%, #ffffff 45%, #f0f0ee 100%)",
-        overflow: "hidden",
-      }}
-    >
-      {[0, 1, 2].map((i) => (
-        <div
-          key={i}
-          style={{
-            position: "absolute",
-            left: `${18 + i * 12}%`,
-            bottom: `${16 + i * 10}%`,
-            width: `${42 - i * 6}%`,
-            height: `${42 - i * 6}%`,
-            border: "3px solid #D90429",
-            backgroundColor: i === 2 ? "#D90429" : "transparent",
-            opacity: 1 - i * 0.15,
-            animation: `aanbodFloat ${3.2 + i * 0.4}s ease-in-out infinite`,
-            animationDelay: `${i * 0.2}s`,
-          }}
-        />
-      ))}
-      <span
-        style={{
-          position: "absolute",
-          right: "10%",
-          top: "12%",
-          fontSize: "clamp(2.8rem, 10vw, 4rem)",
-          fontWeight: 900,
-          letterSpacing: "-0.06em",
-          color: "#0f0f0f",
-          lineHeight: 1,
-        }}
-      >
-        3–5
-      </span>
-      <span
-        style={{
-          position: "absolute",
-          right: "10%",
-          top: "calc(12% + 3.2rem)",
-          fontSize: "12px",
-          fontWeight: 800,
-          letterSpacing: "0.16em",
-          textTransform: "uppercase",
-          color: "#D90429",
-        }}
-      >
-        Mini
-      </span>
-    </div>
-  );
-}
-
 const audiences = [
   {
     title: "Jeugdspelers naast de club",
-    Visual: VisualClub,
+    image: "/gallery/g2.jpg",
+    imageAlt: "Jeugdspeler tijdens individuele voetbaltraining in Velden",
     body: (
       <>
         Ik train spelers uit {BUSINESS.addressLocality} en gemeente Venlo die
@@ -243,7 +25,8 @@ const audiences = [
   },
   {
     title: "Techniek, 1-tegen-1 en spelinzicht",
-    Visual: VisualTechnique,
+    image: "/gallery/g5.jpg",
+    imageAlt: "Techniektraining: dribbelen en aannemen op Sportpark Theo Lommen",
     body: (
       <>
         Mijn sessies duren 60 minuten, met focus op aannemen, dribbelen, passen,
@@ -261,7 +44,8 @@ const audiences = [
   },
   {
     title: "Mini Voetbalschool (3 t/m 5 jaar)",
-    Visual: VisualMini,
+    image: "/gallery/g4.jpg",
+    imageAlt: "Jonge kinderen met de bal bij Mini Voetbalschool Janssen",
     body: (
       <>
         Voor de allerjongsten bied ik de{" "}
@@ -276,7 +60,7 @@ const audiences = [
 ];
 
 /**
- * “Voor wie”-sectie: creatieve visuals links, tekst rechts (geen foto’s).
+ * “Voor wie”-sectie: foto’s links (zelfde formaat), tekst rechts.
  */
 export default function HomeOfferSection() {
   return (
@@ -290,21 +74,6 @@ export default function HomeOfferSection() {
         zIndex: 20,
       }}
     >
-      <style>{`
-        @keyframes aanbodPulse {
-          0%, 100% { transform: scale(1); opacity: 1; }
-          50% { transform: scale(1.04); opacity: 0.92; }
-        }
-        @keyframes aanbodSpin {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-        @keyframes aanbodFloat {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-10px); }
-        }
-      `}</style>
-
       <div style={{ maxWidth: "1000px", margin: "0 auto 56px" }}>
         <span
           style={{
@@ -358,57 +127,70 @@ export default function HomeOfferSection() {
           gap: "64px",
         }}
       >
-        {audiences.map((item) => {
-          const Visual = item.Visual;
-          return (
+        {audiences.map((item) => (
+          <div
+            key={item.title}
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "center",
+              gap: "40px",
+              flexDirection: "row",
+            }}
+          >
             <div
-              key={item.title}
               style={{
-                display: "flex",
-                flexWrap: "wrap",
-                alignItems: "center",
-                gap: "40px",
-                flexDirection: "row",
+                flex: "1 1 280px",
+                minWidth: "240px",
+                maxWidth: "480px",
+                width: "100%",
+                position: "relative",
+                aspectRatio: "4 / 3",
+                overflow: "hidden",
               }}
             >
-              <div
+              <Image
+                src={item.image}
+                alt={item.imageAlt}
+                fill
+                sizes="(max-width: 768px) 100vw, 480px"
+                quality={90}
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            <div
+              style={{
+                flex: "1 1 260px",
+                minWidth: "240px",
+                maxWidth: "380px",
+              }}
+            >
+              <h3
                 style={{
-                  flex: "1 1 280px",
-                  minWidth: "240px",
-                  maxWidth: "420px",
-                  width: "100%",
+                  fontSize: "clamp(1.5rem, 3vw, 2rem)",
+                  fontWeight: 900,
+                  letterSpacing: "-0.03em",
+                  lineHeight: 1.15,
+                  margin: "0 0 16px",
+                  color: "#0f0f0f",
                 }}
               >
-                <Visual />
-              </div>
-              <div style={{ flex: "1 1 320px", minWidth: "280px" }}>
-                <h3
-                  style={{
-                    fontSize: "clamp(1.5rem, 3vw, 2rem)",
-                    fontWeight: 900,
-                    letterSpacing: "-0.03em",
-                    lineHeight: 1.15,
-                    margin: "0 0 16px",
-                    color: "#0f0f0f",
-                  }}
-                >
-                  {item.title}
-                </h3>
-                <p
-                  style={{
-                    fontSize: "17px",
-                    lineHeight: 1.75,
-                    color: "#3a3a3a",
-                    fontWeight: 500,
-                    margin: 0,
-                  }}
-                >
-                  {item.body}
-                </p>
-              </div>
+                {item.title}
+              </h3>
+              <p
+                style={{
+                  fontSize: "17px",
+                  lineHeight: 1.75,
+                  color: "#3a3a3a",
+                  fontWeight: 500,
+                  margin: 0,
+                }}
+              >
+                {item.body}
+              </p>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
 
       <div
@@ -461,21 +243,21 @@ export default function HomeOfferSection() {
             margin: 0,
           }}
         >
-            <Link href="/prive-voetbaltraining" style={linkStyle}>
-              Privé training
-            </Link>
-            {" · "}
-            <Link href="/individuele-voetbaltrainer-venlo" style={linkStyle}>
-              Trainer Venlo
-            </Link>
-            {" · "}
-            <Link href="/voetbaltraining-velden" style={linkStyle}>
-              Velden
-            </Link>
-            {" · "}
-            <Link href="/voetbaltraining-venlo" style={linkStyle}>
-              Venlo
-            </Link>
+          <Link href="/prive-voetbaltraining" style={linkStyle}>
+            Privé training
+          </Link>
+          {" · "}
+          <Link href="/individuele-voetbaltrainer-venlo" style={linkStyle}>
+            Trainer Venlo
+          </Link>
+          {" · "}
+          <Link href="/voetbaltraining-velden" style={linkStyle}>
+            Velden
+          </Link>
+          {" · "}
+          <Link href="/voetbaltraining-venlo" style={linkStyle}>
+            Venlo
+          </Link>
         </p>
       </div>
     </section>

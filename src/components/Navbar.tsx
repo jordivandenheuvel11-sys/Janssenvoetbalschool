@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -132,14 +132,16 @@ const Navbar = () => {
         color: '#ffffff',
       }}>
         <Link href="/" onClick={handleHomeClick} style={{ display: 'flex', alignItems: 'center' }}>
-          <img
-            src="/logo.png"
-            alt="Logo"
-            fetchPriority="high"
+          <Image
+            src="/logo.webp"
+            alt="Janssen Voetbalschool"
+            width={160}
+            height={50}
+            priority
             style={{
               height: '50px',
               width: 'auto',
-              display: 'block'
+              display: 'block',
             }}
           />
         </Link>
@@ -194,51 +196,46 @@ const Navbar = () => {
         )}
       </div>
 
-      {/* Mobile Menu Overlay */}
-      <AnimatePresence>
-        {(isMobile && isMenuOpen) && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.2 }}
-            style={{
-              position: 'absolute',
-              top: '84px',
-              left: '24px',
-              right: '24px',
-              backgroundColor: 'rgba(15, 15, 15, 0.95)',
-              backdropFilter: 'blur(12px)',
-              borderRadius: '24px',
-              padding: '32px 24px',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '24px',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
-              boxShadow: '0 12px 40px rgba(0, 0, 0, 0.4)',
-            }}
-          >
-            <Link href="/mini-voetbalschool" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Mini Voetbalschool</Link>
-            <Link href="/trainingen" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Wanneer trainen</Link>
-            <Link href="/pakketten" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Pakketten</Link>
-            <Link href="/#over-mij" onClick={(e) => handleScrollClick(e, '/#over-mij')} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Over mij</Link>
-            <Link href="/contact" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none', paddingBottom: '16px', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>Contact</Link>
+      {/* Mobile Menu Overlay — CSS only (no framer-motion on every page) */}
+      {isMobile && isMenuOpen && (
+        <div
+          style={{
+            position: 'absolute',
+            top: '84px',
+            left: '24px',
+            right: '24px',
+            backgroundColor: 'rgba(15, 15, 15, 0.95)',
+            backdropFilter: 'blur(12px)',
+            borderRadius: '24px',
+            padding: '32px 24px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '24px',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
+            boxShadow: '0 12px 40px rgba(0, 0, 0, 0.4)',
+            animation: 'navMenuIn 0.2s ease-out',
+          }}
+        >
+          <Link href="/mini-voetbalschool" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Mini Voetbalschool</Link>
+          <Link href="/trainingen" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Wanneer trainen</Link>
+          <Link href="/pakketten" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Pakketten</Link>
+          <Link href="/#over-mij" onClick={(e) => handleScrollClick(e, '/#over-mij')} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none' }}>Over mij</Link>
+          <Link href="/contact" onClick={() => setIsMenuOpen(false)} style={{ color: '#ffffff', fontSize: '18px', fontWeight: '600', textDecoration: 'none', paddingBottom: '16px', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>Contact</Link>
 
-            <Link href="/proefles-aanvragen" onClick={() => setIsMenuOpen(false)} style={{
-              backgroundColor: '#D90429',
-              color: '#ffffff',
-              padding: '16px',
-              borderRadius: '9999px',
-              fontWeight: '700',
-              textAlign: 'center',
-              textDecoration: 'none',
-              marginTop: '8px'
-            }}>
-              Proefles aanvragen
-            </Link>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          <Link href="/proefles-aanvragen" onClick={() => setIsMenuOpen(false)} style={{
+            backgroundColor: '#D90429',
+            color: '#ffffff',
+            padding: '16px',
+            borderRadius: '9999px',
+            fontWeight: '700',
+            textAlign: 'center',
+            textDecoration: 'none',
+            marginTop: '8px'
+          }}>
+            Proefles aanvragen
+          </Link>
+        </div>
+      )}
     </nav>
     </>
   );

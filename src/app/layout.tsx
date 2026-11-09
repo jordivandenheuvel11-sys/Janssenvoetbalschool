@@ -9,7 +9,11 @@ import { Suspense } from "react";
 import { Analytics } from "@vercel/analytics/next";
 import { getSiteUrl } from "@/lib/site";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  preload: true,
+});
 
 const siteUrl = getSiteUrl();
 const siteName = "Janssen Voetbalschool";

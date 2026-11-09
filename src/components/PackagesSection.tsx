@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const packages = [
@@ -50,14 +49,12 @@ const packages = [
 ];
 
 type PackagesSectionProps = {
-  /** Override section heading text (e.g. /pakketten) */
   headingOverride?: string;
-  /** Use h1 on dedicated pages for SEO; default h2 for embedded sections */
   headingAs?: 'h1' | 'h2';
 };
 
 const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionProps) => {
-  const Heading = headingAs === 'h1' ? motion.h1 : motion.h2;
+  const Heading = headingAs === 'h1' ? 'h1' : 'h2';
 
   return (
     <section id="pakketten" style={{
@@ -73,10 +70,7 @@ const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionP
     }}>
       <div style={{ maxWidth: '1200px', width: '100%', position: 'relative', zIndex: 1 }}>
         <div style={{ textAlign: 'center', marginBottom: '80px' }}>
-          <motion.span 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <span
             style={{
               fontSize: '14px',
               fontWeight: '900',
@@ -88,12 +82,8 @@ const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionP
             }}
           >
             Trainen & Ontwikkelen
-          </motion.span>
+          </span>
           <Heading
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
             style={{
               fontSize: 'clamp(2.5rem, 5vw, 4rem)',
               fontWeight: '900',
@@ -110,11 +100,7 @@ const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionP
               </>
             )}
           </Heading>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+          <p
             style={{
               fontSize: '18px',
               color: '#a0a0a0',
@@ -124,7 +110,7 @@ const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionP
             }}
           >
             Investeer in je toekomst op het veld met onze op maat gemaakte trainingstrajecten.
-          </motion.p>
+          </p>
         </div>
 
         <div style={{
@@ -133,14 +119,9 @@ const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionP
           gap: '32px',
           paddingBottom: '20px'
         }}>
-          {packages.map((pkg, idx) => (
-            <motion.div
+          {packages.map((pkg) => (
+            <div
               key={pkg.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
-              whileHover={{ y: -10 }}
               style={{
                 backgroundColor: pkg.popular ? '#1a1a1a' : 'rgba(255, 255, 255, 0.03)',
                 borderRadius: '32px',
@@ -150,7 +131,13 @@ const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionP
                 display: 'flex',
                 flexDirection: 'column',
                 boxShadow: pkg.popular ? '0 20px 50px rgba(217, 4, 41, 0.15)' : 'none',
-                transition: 'border-color 0.3s ease'
+                transition: 'transform 0.3s ease, border-color 0.3s ease',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
               {pkg.popular && (
@@ -176,7 +163,7 @@ const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionP
                 <span style={{ fontSize: '48px', fontWeight: '900', color: '#ffffff' }}>€{pkg.price}</span>
                 <span style={{ fontSize: '16px', color: '#666', fontWeight: '700' }}>{pkg.priceSuffix}</span>
               </div>
-              
+
               <p style={{ color: '#a0a0a0', fontSize: '15px', lineHeight: '1.6', marginBottom: '32px' }}>
                 {pkg.description}
               </p>
@@ -227,7 +214,7 @@ const PackagesSection = ({ headingOverride, headingAs = 'h2' }: PackagesSectionP
               >
                 Inschrijven
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

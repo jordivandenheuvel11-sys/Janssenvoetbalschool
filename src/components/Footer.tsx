@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { BUSINESS, getFullAddressLine, getMapsUrl } from '@/lib/business';
 
@@ -36,16 +37,18 @@ const Footer = () => {
         {/* Brand Column */}
         <div>
           <Link href="/" onClick={handleHomeClick} style={{ display: 'block', width: 'fit-content' }}>
-            <img 
-              src="/logo.png" 
-              alt="Logo Janssen Voetbalschool" 
-              loading="lazy"
-              style={{ 
-                height: '80px', 
+            <Image
+              src="/logo.webp"
+              alt="Logo Janssen Voetbalschool"
+              width={200}
+              height={80}
+              sizes="200px"
+              style={{
+                height: '80px',
                 width: 'auto',
                 marginBottom: '24px',
-                display: 'block'
-              }} 
+                display: 'block',
+              }}
             />
           </Link>
           <h3 style={{

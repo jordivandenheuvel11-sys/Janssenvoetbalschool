@@ -1,16 +1,14 @@
 import Link from "next/link";
-import { FAQ_ITEMS } from "@/lib/faq";
+import { FAQ_ITEMS, isFaqLink } from "@/lib/faq";
 
 type FaqSectionProps = {
-  /** Show intro + link to full /faq page */
   showFooterLink?: boolean;
   heading?: string;
-  /** Limit items on homepage; omit for full list */
   limit?: number;
 };
 
 /**
- * Crawlable FAQ (native details/summary — no client JS required).
+ * Crawlable FAQ (native details/summary) met links naar actuele pagina’s.
  */
 export default function FaqSection({
   showFooterLink = true,
@@ -18,6 +16,7 @@ export default function FaqSection({
   limit,
 }: FaqSectionProps) {
   const items = typeof limit === "number" ? FAQ_ITEMS.slice(0, limit) : FAQ_ITEMS;
+  const linkStyle = { color: "#D90429", fontWeight: 700 as const };
 
   return (
     <section
@@ -90,7 +89,15 @@ export default function FaqSection({
                   fontWeight: 500,
                 }}
               >
-                {item.answer}
+                {item.parts.map((part, i) =>
+                  isFaqLink(part) ? (
+                    <Link key={`${item.question}-${i}`} href={part.href} style={linkStyle}>
+                      {part.label}
+                    </Link>
+                  ) : (
+                    <span key={`${item.question}-${i}`}>{part}</span>
+                  ),
+                )}
               </p>
             </details>
           ))}
@@ -106,11 +113,11 @@ export default function FaqSection({
             }}
           >
             Meer vragen? Bekijk de{" "}
-            <Link href="/faq" style={{ color: "#D90429", fontWeight: 700 }}>
+            <Link href="/faq" style={linkStyle}>
               volledige FAQ
             </Link>{" "}
             of{" "}
-            <Link href="/contact" style={{ color: "#D90429", fontWeight: 700 }}>
+            <Link href="/contact" style={linkStyle}>
               neem contact op
             </Link>
             .

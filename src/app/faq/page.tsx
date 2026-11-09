@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import FaqSection from "@/components/FaqSection";
-import { FAQ_ITEMS } from "@/lib/faq";
+import { FAQ_ITEMS, faqAnswerText } from "@/lib/faq";
 import { getSiteUrl } from "@/lib/site";
 
 const siteUrl = getSiteUrl();
@@ -26,7 +26,7 @@ const faqJsonLd = {
     name: item.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: item.answer,
+      text: faqAnswerText(item),
     },
   })),
 };

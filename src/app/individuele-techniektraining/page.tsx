@@ -3,17 +3,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import LocalGuideLayout from "@/components/LocalGuideLayout";
 import { relatedExcept } from "@/lib/local-guides";
-import { BUSINESS } from "@/lib/business";
+import { BUSINESS, getFullAddressLine } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Individuele techniektraining",
+  title: "Individuele techniektraining voetbal | Velden & Venlo",
   description:
-    "Individuele techniektraining voetbal in Velden: 60 minuten focus op jouw sterke en zwakke punten. Janssen Voetbalschool, gemeente Venlo.",
+    "Individuele techniektraining en privé 1-op-1 voetbaltraining in Velden (gemeente Venlo, Limburg). Focus op jouw aanname, dribbelen, passen en schieten.",
   alternates: { canonical: "/individuele-techniektraining" },
   openGraph: {
     title: "Individuele techniektraining | Janssen Voetbalschool",
     description:
-      "Persoonlijke voetbaltechniek: aannemen, dribbelen, passen, schieten en 1-tegen-1.",
+      "Persoonlijke voetbaltechniek in Limburg: aannemen, dribbelen, passen, schieten en 1-tegen-1.",
     url: "/individuele-techniektraining",
   },
 };
@@ -28,8 +28,15 @@ export default function IndividueleTechniektrainingPage() {
     >
       <p>
         <strong>Individuele techniektraining</strong> is de kern van Janssen
-        Voetbalschool. {BUSINESS.trainerName} stemt de sessie af op wat jij nodig
-        hebt: eerste aanname, dribbelen, passen, schieten of 1-tegen-1.
+        Voetbalschool — dezelfde aanpak als{" "}
+        <Link href="/prive-voetbaltraining" style={link}>
+          privé voetbaltraining
+        </Link>
+        : jij en je{" "}
+        <Link href="/individuele-voetbaltrainer-venlo" style={link}>
+          individuele voetbaltrainer
+        </Link>
+        , afgestemd op wat jij nodig hebt.
       </p>
       <h2 style={h2}>Opbouw van een sessie</h2>
       <ol>
@@ -38,6 +45,19 @@ export default function IndividueleTechniektrainingPage() {
         <li>Toepassing onder druk (tempo / duelvorm)</li>
         <li>Korte evaluatie: wat neem je mee naar de wedstrijd?</li>
       </ol>
+      <h2 style={h2}>Locatie in Limburg</h2>
+      <p>
+        Trainingen op {getFullAddressLine()} — ideaal vanuit Venlo, Velden en
+        omgeving. Meer over{" "}
+        <Link href="/voetbaltraining-venlo" style={link}>
+          training in Venlo
+        </Link>{" "}
+        en de{" "}
+        <Link href="/locatie-sportpark-theo-lommen" style={link}>
+          locatie
+        </Link>
+        .
+      </p>
       <h2 style={h2}>Blokken &amp; tarieven</h2>
       <p>
         Je kunt starten met een proefles en daarna kiezen voor een trainingsblok
@@ -49,7 +69,7 @@ export default function IndividueleTechniektrainingPage() {
         <Link href="/proefles-aanvragen" style={link}>
           proefles aanvragen
         </Link>
-        . Locatie: Sportpark Theo Lommen in Velden.
+        .
       </p>
     </LocalGuideLayout>
   );

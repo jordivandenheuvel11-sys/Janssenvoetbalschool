@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           : path.startsWith("/voetbal") ||
               path.startsWith("/jeugd") ||
               path.startsWith("/individuele") ||
+              path.startsWith("/prive") ||
               path.startsWith("/locatie")
             ? 0.8
             : 0.7,

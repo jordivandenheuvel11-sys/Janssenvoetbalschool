@@ -121,20 +121,23 @@ const WhatsAppButton = () => {
             }}
           >
             <span style={{ position: 'relative', flexShrink: 0 }}>
-              <img
-                src="/trainer-new.webp"
-                alt=""
-                width={40}
-                height={40}
-                style={{
-                  width: 40,
-                  height: 40,
-                  borderRadius: '50%',
-                  objectFit: 'cover',
-                  display: 'block',
-                  backgroundColor: '#25D366',
-                }}
-              />
+              <picture>
+                <source srcSet="/whatsapp-avatar.webp" type="image/webp" />
+                <img
+                  src="/whatsapp-avatar.jpg"
+                  alt=""
+                  width={40}
+                  height={40}
+                  style={{
+                    width: 40,
+                    height: 40,
+                    borderRadius: '50%',
+                    objectFit: 'cover',
+                    display: 'block',
+                    backgroundColor: '#25D366',
+                  }}
+                />
+              </picture>
               <span
                 aria-hidden
                 style={{

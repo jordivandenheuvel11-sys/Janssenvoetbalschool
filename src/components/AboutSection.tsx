@@ -59,12 +59,26 @@ const AboutSection = () => {
               color: '#3a3a3a',
               lineHeight: 1.75,
               fontWeight: 500,
-              margin: 0,
+              margin: '0 0 16px',
             }}
           >
             Ik ben Jelte Janssen. Op Sportpark Theo Lommen in Velden train ik
             jeugdspelers persoonlijk — techniek, spelinzicht en zelfvertrouwen,
             gericht op jouw doelen.
+          </p>
+          <p
+            style={{
+              fontSize: '17px',
+              color: '#3a3a3a',
+              lineHeight: 1.75,
+              fontWeight: 500,
+              margin: 0,
+            }}
+          >
+            Mijn aanpak is direct en persoonlijk: of je nu sneller wilt handelen,
+            sterker in 1-tegen-1 wilt worden of meer zekerheid zoekt in de
+            wedstrijd — ik werk samen met jou aan resultaat, zonder het plezier
+            uit het oog te verliezen.
           </p>
 
           <div style={{ marginTop: '28px' }}>

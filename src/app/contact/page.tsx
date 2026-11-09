@@ -5,12 +5,12 @@ import ContactSection from "@/components/ContactSection";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Neem contact op met Janssen Voetbalschool in Velden (gemeente Venlo). Vragen over trainingen, pakketten of de Mini Voetbalschool? Ik help je graag.",
+    "Neem contact op met Janssen Voetbalschool in Velden (gemeente Venlo). Sportpark Theo Lommen, Schandeloseweg 1a, 5941 CP Velden. Vragen over trainingen of de Mini Voetbalschool? Ik help je graag.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact | Janssen Voetbalschool",
     description:
-      "Neem contact op met Janssen Voetbalschool in Velden, gemeente Venlo.",
+      "Contact Janssen Voetbalschool — Sportpark Theo Lommen, Schandeloseweg 1a, 5941 CP Velden.",
     url: "/contact",
   },
 };

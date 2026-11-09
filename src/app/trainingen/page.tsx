@@ -42,7 +42,7 @@ export default async function TrainingenPage() {
     { name: "Groep 2", time: "16:45 - 17:45" },
     { name: "Groep 3", time: "18:00 - 19:00" }
   ];
-  const FIXED_LOCATION = "Sportpark Theo Lommen Velden";
+  const FIXED_LOCATION = "Sportpark Theo Lommen, Schandeloseweg 1a, 5941 CP Velden";
 
   return (
     <main style={{ backgroundColor: '#0f0f0f', minHeight: '100vh', color: '#ffffff' }}>

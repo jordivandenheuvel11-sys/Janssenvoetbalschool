@@ -54,7 +54,16 @@ const AboutSection = () => {
             fontWeight: '500',
             marginBottom: '20px'
           }}>
-            Welkom bij Janssen Voetbalschool. Mijn naam is Jelte Janssen, en ik ben gedreven door de passie om jong talent naar het volgende niveau te tillen. Met jarenlange ervaring op het veld geloof ik dat de juiste begeleiding het verschil maakt.
+            Welkom bij Janssen Voetbalschool. Mijn naam is Jelte Janssen, en ik ben gedreven door de passie om jong talent naar het volgende niveau te tillen. Met ervaring als speler én trainer geloof ik dat de juiste begeleiding het verschil maakt — juist in de jeugd, wanneer techniek en zelfvertrouwen het hardst groeien.
+          </p>
+          <p style={{
+            fontSize: '18px',
+            color: '#555555',
+            lineHeight: '1.8',
+            fontWeight: '500',
+            marginBottom: '20px'
+          }}>
+            Mijn aanpak is persoonlijk, direct en gefocust op jouw specifieke behoeften. Of het nu gaat om techniek, sneller handelen of spelinzicht — ik werk samen met jou keihard aan jouw ontwikkeling in een professionele, maar vertrouwde omgeving op Sportpark Theo Lommen in Velden.
           </p>
           <p style={{
             fontSize: '18px',
@@ -62,7 +71,7 @@ const AboutSection = () => {
             lineHeight: '1.8',
             fontWeight: '500'
           }}>
-            Mijn aanpak is persoonlijk, direct en gefocust op jouw specifieke behoeften. Of het nu gaat om techniek, fysieke kracht, of spelinzicht—ik werk samen met jou keihard aan jouw ontwikkeling in een professionele, maar vertrouwde omgeving.
+            Omroep Venlo schreef eerder over de oprichting van de voetbalschool. Diezelfde drive staat nog steeds centraal: elke speler serieus nemen, duidelijk feedback geven en resultaat boeken zonder het plezier uit het oog te verliezen.
           </p>
 
           <div style={{

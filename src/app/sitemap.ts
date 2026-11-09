@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/pakketten",
     "/proefles-aanvragen",
     "/faq",
+    "/over-mij",
     "/contact",
     "/mini-voetbalschool",
     "/inschrijven",

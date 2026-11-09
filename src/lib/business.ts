@@ -24,6 +24,7 @@ export const BUSINESS = {
   sameAs: [
     "https://www.instagram.com/janssenvoetbal/",
     "https://www.tiktok.com/@janssenvoetbalsch",
+    "https://www.linkedin.com/in/jelte-janssen-168236321/",
     "https://omroepvenlo.nl/nieuws/artikel/jelte-janssen-19-heeft-zijn-eigen-voetbalschool",
   ],
 } as const;

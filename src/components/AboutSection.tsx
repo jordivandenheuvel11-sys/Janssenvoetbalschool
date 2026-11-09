@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import ContactLink from '@/components/contact/ContactLink';
 
 const AboutSection = () => {
@@ -81,7 +82,24 @@ const AboutSection = () => {
             uit het oog te verliezen.
           </p>
 
-          <div style={{ marginTop: '28px' }}>
+          <div style={{ marginTop: '28px', display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
+            <Link
+              href="/over-mij"
+              style={{
+                display: 'inline-block',
+                backgroundColor: '#0f0f0f',
+                color: '#ffffff',
+                padding: '14px 22px',
+                borderRadius: 0,
+                fontWeight: 800,
+                textDecoration: 'none',
+                letterSpacing: '0.04em',
+                textTransform: 'uppercase',
+                fontSize: '13px',
+              }}
+            >
+              Meer over mij
+            </Link>
             <ContactLink
               href="/proefles-aanvragen"
               type="proefles"
@@ -90,7 +108,7 @@ const AboutSection = () => {
                 backgroundColor: '#D90429',
                 color: '#ffffff',
                 padding: '14px 22px',
-                borderRadius: '9999px',
+                borderRadius: 0,
                 fontWeight: 800,
                 textDecoration: 'none',
                 letterSpacing: '0.04em',

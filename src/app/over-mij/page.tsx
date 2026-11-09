@@ -81,7 +81,7 @@ const experience = [
     period: "aug. 2025 – heden",
     place: "Velden",
     detail:
-      "Individuele en privé voetbaltraining voor jeugd: techniek, tactiek en persoonlijke ontwikkeling op Sportpark Theo Lommen.",
+      "Voetbaltraining in kleine groepjes voor jeugd: techniek, tactiek en persoonlijke ontwikkeling op Sportpark Theo Lommen.",
   },
   {
     role: "Hoofdtrainer JO15-1",
@@ -421,10 +421,11 @@ export default function OverMijPage() {
           <div style={{ maxWidth: "720px", margin: "0 auto" }}>
             <h2 style={h2}>Janssen Voetbalschool</h2>
             <p style={p}>
-              Bij Janssen Voetbalschool (KvK {BUSINESS.kvk}) geef ik privé /
-              individuele voetbaltraining in Velden, gemeente Venlo. Sessies van
-              60 minuten, gericht op jouw doelen — van balvaardigheid tot
-              1-tegen-1 en keuzes onder druk. Voor de allerjongsten is er de{" "}
+              Bij Janssen Voetbalschool (KvK {BUSINESS.kvk}) geef ik
+              voetbaltraining in kleine groepjes in Velden, gemeente Venlo.
+              Sessies van 60 minuten, gericht op jouw doelen — van
+              balvaardigheid tot 1-tegen-1 en keuzes onder druk. Voor de
+              allerjongsten is er de{" "}
               <Link href="/mini-voetbalschool" style={link}>
                 Mini Voetbalschool
               </Link>{" "}

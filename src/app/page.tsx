@@ -24,7 +24,7 @@ const homeJsonLd = {
       name: BUSINESS.name,
       legalName: BUSINESS.legalName,
       description:
-        "Privé en individuele voetbaltraining (1-op-1) voor jeugdspelers in Velden, gemeente Venlo, Limburg. Individuele voetbaltrainer Jelte Janssen op Sportpark Theo Lommen.",
+        "Voetbaltraining in kleine groepjes voor jeugdspelers in Velden, gemeente Venlo, Limburg. Individuele voetbaltrainer Jelte Janssen op Sportpark Theo Lommen.",
       url: siteUrl,
       image: [`${siteUrl}/trainer-new.webp`, `${siteUrl}/opengraph-image`],
       logo: `${siteUrl}/logo.webp`,
@@ -62,9 +62,9 @@ const homeJsonLd = {
         { "@type": "AdministrativeArea", name: "Limburg" },
       ],
       knowsAbout: [
-        "privé voetbaltraining",
+        "voetbaltraining kleine groepjes",
         "individuele voetbaltraining",
-        "1-op-1 voetbaltraining",
+        "jeugd voetbaltraining",
         "individuele voetbaltrainer Venlo",
         "jeugd voetbaltechniek",
       ],
@@ -78,7 +78,7 @@ const homeJsonLd = {
       name: BUSINESS.trainerName,
       jobTitle: "Individuele voetbaltrainer",
       description:
-        "Individuele voetbaltrainer in Venlo en Limburg. Privé 1-op-1 voetbaltraining voor jeugdspelers in Velden.",
+        "Individuele voetbaltrainer in Venlo en Limburg. Voetbaltraining in kleine groepjes voor jeugdspelers in Velden.",
       worksFor: { "@id": `${siteUrl}/#business` },
       image: `${siteUrl}/trainer-new.webp`,
       url: `${siteUrl}/individuele-voetbaltrainer-venlo`,

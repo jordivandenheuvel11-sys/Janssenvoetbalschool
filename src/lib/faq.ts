@@ -50,7 +50,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Hoe lang duurt een training?",
     parts: [
-      "Een individuele sessie bij mij duurt 60 minuten. Actuele data staan op de ",
+      "Een training bij mij duurt 60 minuten (in kleine groepjes). Actuele data staan op de ",
       { href: "/trainingen", label: "trainingsplanning" },
       ".",
     ],
@@ -72,11 +72,11 @@ export const FAQ_ITEMS: FaqItem[] = [
     ],
   },
   {
-    question: "Bied je privé voetbaltraining / 1-op-1?",
+    question: "Train je 1-op-1 of in groepen?",
     parts: [
-      "Ja. Ik geef ",
+      "Ik train in kleine groepjes — met persoonlijke aandacht. Zie ",
       { href: "/prive-voetbaltraining", label: "privé voetbaltraining" },
-      " (1-op-1) en ",
+      " en ",
       {
         href: "/individuele-techniektraining",
         label: "individuele techniektraining",
@@ -98,7 +98,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Wat is het verschil met clubtraining?",
     parts: [
-      "Bij de club train je in een groep. Bij mij krijg je individuele aandacht — zie ook ",
+      "Bij de club train je in een grote groep. Bij mij train je in kleine groepjes met individuele aandacht — zie ook ",
       {
         href: "/individuele-techniektraining",
         label: "individuele techniektraining",

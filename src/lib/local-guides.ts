@@ -5,7 +5,7 @@ export const LOCAL_GUIDE_LINKS = [
   { href: "/voetbaltraining-venlo", label: "Voetbaltraining in Venlo" },
   { href: "/jeugd-voetbaltraining", label: "Jeugd voetbaltraining" },
   { href: "/individuele-techniektraining", label: "Individuele techniektraining" },
-  { href: "/prive-voetbaltraining", label: "Privé voetbaltraining" },
+  { href: "/prive-voetbaltraining", label: "Training in kleine groepjes" },
   {
     href: "/individuele-voetbaltrainer-venlo",
     label: "Individuele voetbaltrainer Venlo",

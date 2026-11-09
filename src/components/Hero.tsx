@@ -112,7 +112,7 @@ const Hero = () => {
             fontWeight: 500,
           }}
         >
-          Ik geef privé 1-op-1 training aan jeugdspelers in gemeente{' '}
+          Ik train jeugdspelers in kleine groepjes in gemeente{' '}
           <strong>Venlo</strong> — zodat jij het beste uit jezelf haalt.
         </p>
 

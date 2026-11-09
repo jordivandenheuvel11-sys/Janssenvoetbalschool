@@ -33,9 +33,9 @@ export default function VoetbaltrainingVenloPage() {
         {BUSINESS.trainerName}. De vaste locatie is {getFullAddressLine()} —
         goed bereikbaar vanuit Venlo-stad, Blerick, Tegelen en Velden.
       </p>
-      <h2 style={h2}>Waarom individueel naast de club?</h2>
+      <h2 style={h2}>Waarom naast de club?</h2>
       <p>
-        Clubtraining is groepsgewijs. Extra 1-op-1 of kleine groepen helpen om
+        Clubtraining is groepsgewijs. Extra training in kleine groepjes helpt om
         zwakke punten gericht aan te pakken: eerste aanname, dribbelen onder
         druk, schieten en betere keuzes in de wedstrijd. Overzicht van blokken
         en tarieven:{" "}

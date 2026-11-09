@@ -9,20 +9,20 @@ import { BUSINESS, getFullAddressLine } from "@/lib/business";
 export const metadata: Metadata = {
   title: "Privé voetbaltraining in Velden & Venlo | Limburg",
   description:
-    "Privé voetbaltraining en 1-op-1 techniektraining in Velden (gemeente Venlo, Limburg). Individuele voetbaltrainer Jelte Janssen — 60 minuten focus op jouw doelen.",
+    "Privé voetbaltraining in kleine groepjes in Velden (gemeente Venlo, Limburg). Individuele voetbaltrainer Jelte Janssen — 60 minuten met persoonlijke aandacht.",
   alternates: { canonical: "/prive-voetbaltraining" },
   keywords: [
     "privé voetbaltraining",
     "prive voetbaltraining",
-    "1-op-1 voetbaltraining",
+    "voetbaltraining kleine groepjes",
     "persoonlijke voetbaltraining",
     "individuele voetbaltraining Limburg",
-    "privé voetbaltrainer Venlo",
+    "voetbaltrainer Venlo",
   ],
   openGraph: {
     title: "Privé voetbaltraining | Janssen Voetbalschool",
     description:
-      "1-op-1 privé voetbaltraining in Velden & Venlo (Limburg). Persoonlijke techniek, spelinzicht en zelfvertrouwen.",
+      "Voetbaltraining in kleine groepjes in Velden & Venlo (Limburg). Persoonlijke techniek, spelinzicht en zelfvertrouwen.",
     url: "/prive-voetbaltraining",
   },
 };
@@ -30,17 +30,16 @@ export const metadata: Metadata = {
 export default function PriveVoetbaltrainingPage() {
   return (
     <LocalGuideLayout
-      eyebrow="1-op-1"
+      eyebrow="Kleine groepjes"
       title="Privé voetbaltraining in Velden & Venlo"
-      lead="Zoek je privé voetbaltraining of een 1-op-1 sessie in Limburg? Ik train jeugdspelers individueel — gericht, zonder grote groep."
+      lead="Zoek je privé voetbaltraining in Limburg? Ik train jeugdspelers in kleine groepjes — gericht, met persoonlijke aandacht, zonder grote clubgroep."
       related={relatedExcept("/prive-voetbaltraining")}
     >
       <p>
-        <strong>Privé voetbaltraining</strong> (ook wel 1-op-1 of persoonlijke
-        voetbaltraining) betekent: jij en ik op het veld, met één duidelijk
-        doel per sessie. Geen wachten in de rij, geen verdwijnen in de clubgroep
-        — wel gerichte feedback op aanname, dribbelen, passen, schieten en
-        1-tegen-1.
+        <strong>Privé voetbaltraining</strong> bij Janssen Voetbalschool betekent:
+        training in kleine groepjes, met duidelijke doelen per sessie. Geen
+        verdwijnen in de massa — wel gerichte feedback op aanname, dribbelen,
+        passen, schieten en 1-tegen-1.
       </p>
 
       <h2 style={h2}>Voor wie is privé voetbaltraining?</h2>
@@ -63,9 +62,10 @@ export default function PriveVoetbaltrainingPage() {
 
       <h2 style={h2}>Wat is het verschil met clubtraining?</h2>
       <ul>
-        <li>Club: groep, wedstrijdgericht, minder tijd per speler</li>
+        <li>Club: grote groep, wedstrijdgericht, minder tijd per speler</li>
         <li>
-          Privé / individueel: 60 minuten focus op jouw zwakke en sterke punten
+          Bij mij: kleine groepjes, 60 minuten met persoonlijke aandacht voor
+          jouw zwakke en sterke punten
         </li>
         <li>
           Locatie: {getFullAddressLine()} — zie{" "}

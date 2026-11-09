@@ -9,7 +9,7 @@ import { BUSINESS, getFullAddressLine } from "@/lib/business";
 export const metadata: Metadata = {
   title: "Individuele voetbaltrainer Venlo & Limburg",
   description:
-    "Individuele voetbaltrainer in Venlo en Limburg: Jelte Janssen (Janssen Voetbalschool). Privé / 1-op-1 voetbaltraining in Velden, gemeente Venlo.",
+    "Individuele voetbaltrainer in Venlo en Limburg: Jelte Janssen (Janssen Voetbalschool). Voetbaltraining in kleine groepjes in Velden, gemeente Venlo.",
   alternates: { canonical: "/individuele-voetbaltrainer-venlo" },
   keywords: [
     "individuele voetbaltrainer Venlo",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Individuele voetbaltrainer Venlo | Janssen Voetbalschool",
     description:
-      "Op zoek naar een individuele voetbaltrainer in Venlo of Limburg? 1-op-1 training met Jelte Janssen in Velden.",
+      "Op zoek naar een individuele voetbaltrainer in Venlo of Limburg? Training in kleine groepjes met Jelte Janssen in Velden.",
     url: "/individuele-voetbaltrainer-venlo",
   },
 };
@@ -41,7 +41,7 @@ export default function IndividueleVoetbaltrainerVenloPage() {
         <Link href="/prive-voetbaltraining" style={link}>
           privé voetbaltraining
         </Link>{" "}
-        (1-op-1) op {getFullAddressLine()}, in de gemeente Venlo.
+        in kleine groepjes op {getFullAddressLine()}, in de gemeente Venlo.
       </p>
 
       <h2 style={h2}>Wat doet een individuele voetbaltrainer?</h2>
@@ -103,7 +103,7 @@ export default function IndividueleVoetbaltrainerVenloPage() {
           Individuele voetbaltrainer Venlo / Limburg:
         </strong>{" "}
         {BUSINESS.trainerName} van Janssen Voetbalschool (KvK {BUSINESS.kvk})
-        biedt privé 1-op-1 voetbaltraining voor jeugd op Sportpark Theo Lommen,
+        biedt voetbaltraining in kleine groepjes voor jeugd op Sportpark Theo Lommen,
         Schandeloseweg 1a, 5941 CP Velden.
       </p>
     </LocalGuideLayout>

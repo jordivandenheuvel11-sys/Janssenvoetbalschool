@@ -20,20 +20,20 @@ const montserrat = Montserrat({
 const siteUrl = getSiteUrl();
 const siteName = "Janssen Voetbalschool";
 const siteDescription =
-  "Privé en individuele voetbaltraining in Velden, gemeente Venlo (Limburg). Individuele voetbaltrainer Jelte Janssen — 1-op-1 techniek voor jeugdspelers. Vraag een proefles aan.";
+  "Voetbaltraining in kleine groepjes in Velden, gemeente Venlo (Limburg). Individuele voetbaltrainer Jelte Janssen — persoonlijke aandacht voor jeugdspelers. Vraag een proefles aan.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${siteName} | Privé & individuele voetbaltraining Venlo Limburg`,
+    default: `${siteName} | Voetbaltraining in kleine groepjes Venlo Limburg`,
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
   keywords: [
-    "privé voetbaltraining",
+    "voetbaltraining kleine groepjes",
     "individuele voetbaltrainer Venlo",
     "individuele voetbaltrainer Limburg",
-    "1-op-1 voetbaltraining",
+    "jeugd voetbaltraining Venlo",
     "voetbaltraining Velden",
     "voetbaltraining Venlo",
   ],
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "nl_NL",
-    title: `${siteName} | Privé & individuele voetbaltraining Venlo Limburg`,
+    title: `${siteName} | Voetbaltraining in kleine groepjes Venlo Limburg`,
     description: siteDescription,
     siteName,
     url: "/",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteName} | Privé & individuele voetbaltraining Venlo Limburg`,
+    title: `${siteName} | Voetbaltraining in kleine groepjes Venlo Limburg`,
     description: siteDescription,
   },
   robots: {

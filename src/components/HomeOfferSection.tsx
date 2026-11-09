@@ -115,7 +115,7 @@ export default function HomeOfferSection() {
             maxWidth: "40rem",
           }}
         >
-          Ik geef privé / individuele voetbaltraining in Velden (Venlo, Limburg)
+          Ik geef voetbaltraining in kleine groepjes in Velden (Venlo, Limburg)
           aan jeugdspelers die willen groeien — en via Mini ook aan de
           allerjongsten.
         </p>

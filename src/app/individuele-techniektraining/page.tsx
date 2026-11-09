@@ -9,7 +9,7 @@ import { BUSINESS, getFullAddressLine } from "@/lib/business";
 export const metadata: Metadata = {
   title: "Individuele techniektraining voetbal | Velden & Venlo",
   description:
-    "Individuele techniektraining en privé 1-op-1 voetbaltraining in Velden (gemeente Venlo, Limburg). Focus op jouw aanname, dribbelen, passen en schieten.",
+    "Individuele techniektraining in kleine groepjes in Velden (gemeente Venlo, Limburg). Focus op jouw aanname, dribbelen, passen en schieten.",
   alternates: { canonical: "/individuele-techniektraining" },
   openGraph: {
     title: "Individuele techniektraining | Janssen Voetbalschool",
@@ -24,7 +24,7 @@ export default function IndividueleTechniektrainingPage() {
     <LocalGuideLayout
       eyebrow="Techniek"
       title="Individuele techniektraining"
-      lead={`Zestig minuten focus op jouw balvaardigheid — niet verdwijnen in de groep, maar gericht verbeteren met ${BUSINESS.trainerName}.`}
+      lead={`Zestig minuten focus op jouw balvaardigheid — in een klein groepje, met persoonlijke aandacht van ${BUSINESS.trainerName}.`}
       related={relatedExcept("/individuele-techniektraining")}
     >
       <p>
@@ -33,7 +33,7 @@ export default function IndividueleTechniektrainingPage() {
         <Link href="/prive-voetbaltraining" style={link}>
           privé voetbaltraining
         </Link>
-        : jij en je{" "}
+        : kleine groepjes met je{" "}
         <Link href="/individuele-voetbaltrainer-venlo" style={link}>
           individuele voetbaltrainer
         </Link>

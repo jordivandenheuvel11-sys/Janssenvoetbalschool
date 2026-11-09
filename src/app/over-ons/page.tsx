@@ -1,11 +1,14 @@
 import type { CSSProperties } from "react";
 import type { Metadata } from "next";
-import ContactLink from "@/components/contact/ContactLink";
+import Link from "next/link";
+import FirstTrainingCta from "@/components/FirstTrainingCta";
 import TrainersSection from "@/components/TrainersSection";
 import { BUSINESS, getFullAddressLine, getMapsUrl } from "@/lib/business";
 import { getSiteUrl } from "@/lib/site";
 
 const siteUrl = getSiteUrl();
+const omroepUrl =
+  "https://omroepvenlo.nl/nieuws/artikel/jelte-janssen-19-heeft-zijn-eigen-voetbalschool";
 
 export const metadata: Metadata = {
   title: "Over ons — Janssen Voetbalschool",
@@ -96,14 +99,22 @@ export default function OverOnsPage() {
 
         <section style={{ backgroundColor: "#f7f7f7", padding: "72px 24px" }}>
           <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-            <h2 style={h2}>Wat we doen</h2>
+            <h2 style={h2}>Janssen Voetbalschool</h2>
             <p style={p}>
               Bij Janssen Voetbalschool (KvK {BUSINESS.kvk}) trainen we
-              jeugdspelers in kleine groepjes in Velden, gemeente Venlo. Sessies
-              van 60 minuten, gericht op techniek, zelfvertrouwen en jouw
-              doelen — naast de clubtraining.
+              jeugdspelers in kleine groepjes in Velden, gemeente Venlo. Geen
+              grote massa-training: sessies van 60 minuten met echte aandacht
+              per speler — techniek, spelinzicht en zelfvertrouwen, naast de
+              club.
             </p>
-            <p style={{ ...p, marginBottom: 0 }}>
+            <p style={p}>
+              Eigenaar Jelte Janssen combineert de voetbalschool met ervaring
+              als hoofdtrainer FCV JO15-1 en assistent bij VVV-Venlo jeugd.
+              Samen met trainers Rik en Wout werken we aan duidelijke doelen:
+              beter handelen onder druk, sterker in 1-tegen-1, of meer zekerheid
+              in de wedstrijd.
+            </p>
+            <p style={p}>
               We trainen op{" "}
               <a
                 href={getMapsUrl()}
@@ -113,29 +124,48 @@ export default function OverOnsPage() {
               >
                 {getFullAddressLine()}
               </a>
-              . Klaar om te starten? Vraag een proefles aan.
+              . Voor de allerjongsten is er de{" "}
+              <Link href="/mini-voetbalschool" style={link}>
+                Mini Voetbalschool
+              </Link>{" "}
+              (3 t/m 5 jaar). Bekijk ook onze{" "}
+              <Link href="/pakketten" style={link}>
+                pakketten &amp; tarieven
+              </Link>{" "}
+              of de{" "}
+              <Link href="/trainingen" style={link}>
+                trainingsplanning
+              </Link>
+              .
             </p>
-            <ContactLink
-              href="/proefles-aanvragen"
-              type="proefles"
-              style={{
-                display: "inline-block",
-                marginTop: "28px",
-                backgroundColor: "#D90429",
-                color: "#ffffff",
-                padding: "14px 28px",
-                borderRadius: "var(--radius)",
-                fontWeight: 800,
-                textDecoration: "none",
-                fontSize: "14px",
-                letterSpacing: "0.04em",
-                textTransform: "uppercase",
-              }}
-            >
-              Proefles aanvragen
-            </ContactLink>
+            <p style={{ ...p, marginBottom: 0 }}>
+              Over het ontstaan van de school schreef{" "}
+              <a
+                href={omroepUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={link}
+              >
+                Omroep Venlo
+              </a>{" "}
+              eerder. Vragen? Mail{" "}
+              <a href={`mailto:${BUSINESS.email}`} style={link}>
+                {BUSINESS.email}
+              </a>{" "}
+              of bel{" "}
+              <a href={`tel:${BUSINESS.telephone}`} style={link}>
+                {BUSINESS.telephoneDisplay}
+              </a>
+              .
+            </p>
           </div>
         </section>
+
+        <FirstTrainingCta
+          description="Vraag een proefles aan — we plannen samen een moment op Sportpark Theo Lommen in Velden."
+          href="/proefles-aanvragen"
+          ctaLabel="Proefles aanvragen"
+        />
       </main>
     </>
   );

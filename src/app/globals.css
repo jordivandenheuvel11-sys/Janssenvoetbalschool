@@ -11,7 +11,8 @@
   --border-radius-md: var(--radius);
   --janssen-red: #D90429;
   --max-width: 1200px;
-  --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Montserrat', system-ui, -apple-system, sans-serif;
+  --font-inter: var(--font-sans);
   --navbar-height: 80px;
 }
 
@@ -44,7 +45,7 @@ body {
 }
 
 body {
-  font-family: var(--font-inter);
+  font-family: var(--font-sans);
   color: var(--text-main);
   background-color: var(--bg-main);
   line-height: 1.5;

@@ -4,8 +4,8 @@ import React from 'react';
 import Link from 'next/link';
 
 /**
- * LCP: plain <img> with fetchPriority (discoverable in SSR HTML, no optimizer delay).
- * Video only on desktop + when idle / not save-data — keeps mobile Lighthouse lean.
+ * Sharp hero stills from native 720p/1080p frames (srcSet).
+ * Video only on desktop after idle — mobile keeps the high-res poster.
  */
 const Hero = () => {
   const [isMobile, setIsMobile] = React.useState(false);
@@ -77,12 +77,14 @@ const Hero = () => {
         backgroundColor: '#0a0a0a',
       }}
     >
-      {/* LCP element — static img, explicit dimensions, high priority */}
+      {/* Sharp LCP still — real 1280 + 1920 sources, no upscale blur */}
       <img
-        src="/hero-bg.webp"
+        src="/hero-bg-1920.webp"
+        srcSet="/hero-bg.webp 1280w, /hero-bg-1920.webp 1920w"
+        sizes="100vw"
         alt=""
-        width={1600}
-        height={1065}
+        width={1920}
+        height={1080}
         fetchPriority="high"
         decoding="async"
         style={{
@@ -104,7 +106,7 @@ const Hero = () => {
           muted
           playsInline
           preload="none"
-          poster="/hero-bg.webp"
+          poster="/hero-bg-1920.webp"
           style={{
             position: 'absolute',
             top: 0,

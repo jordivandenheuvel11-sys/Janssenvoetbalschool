@@ -68,8 +68,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Discover LCP hero poster in the initial document (no JS delay)
-  preload("/hero-bg.webp", { as: "image", fetchPriority: "high" });
+  // Discover sharp LCP hero poster in the initial document (no JS delay)
+  preload("/hero-bg-1920.webp", { as: "image", fetchPriority: "high" });
 
   return (
     <html lang="nl">

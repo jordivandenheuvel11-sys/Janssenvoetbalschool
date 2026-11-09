@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { BUSINESS, getFullAddressLine, getMapsUrl } from '@/lib/business';
 
 const Footer = () => {
   const pathname = usePathname();
@@ -37,7 +38,7 @@ const Footer = () => {
           <Link href="/" onClick={handleHomeClick} style={{ display: 'block', width: 'fit-content' }}>
             <img 
               src="/logo.png" 
-              alt="Logo" 
+              alt="Logo Janssen Voetbalschool" 
               loading="lazy"
               style={{ 
                 height: '80px', 
@@ -54,7 +55,7 @@ const Footer = () => {
             margin: '0 0 20px 0',
             textTransform: 'uppercase'
           }}>
-            Janssen Voetbalschool
+            {BUSINESS.name}
           </h3>
           <p style={{
             fontSize: '15px',
@@ -112,7 +113,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Column */}
+        {/* Contact Column — full NAP for local SEO */}
         <div>
           <h4 style={{
             fontSize: '14px',
@@ -134,10 +135,20 @@ const Footer = () => {
             color: '#a0a0a0',
             fontSize: '15px'
           }}>
-            <li><strong style={{ color: '#fff' }}>Email:</strong> <a href="mailto:jelte.janssen@ziggo.nl" style={{ color: 'inherit', textDecoration: 'none' }}>jelte.janssen@ziggo.nl</a></li>
-            <li><strong style={{ color: '#fff' }}>Telefoon:</strong> <a href="tel:+31611250476" style={{ color: 'inherit', textDecoration: 'none' }}>+31 6 11250476</a></li>
-            <li><strong style={{ color: '#fff' }}>Locatie:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Sportpark+Theo+Lommen+Velden" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>Sportpark Theo Lommen, Velden – Gemeente Venlo</a></li>
-            <li><strong style={{ color: '#fff' }}>KvK:</strong> 4218918</li>
+            <li><strong style={{ color: '#fff' }}>Email:</strong> <a href={`mailto:${BUSINESS.email}`} style={{ color: 'inherit', textDecoration: 'none' }}>{BUSINESS.email}</a></li>
+            <li><strong style={{ color: '#fff' }}>Telefoon:</strong> <a href={`tel:${BUSINESS.telephone}`} style={{ color: 'inherit', textDecoration: 'none' }}>{BUSINESS.telephoneDisplay}</a></li>
+            <li>
+              <strong style={{ color: '#fff' }}>Adres:</strong>{' '}
+              <a
+                href={getMapsUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: 'inherit', textDecoration: 'none' }}
+              >
+                {getFullAddressLine()}
+              </a>
+            </li>
+            <li><strong style={{ color: '#fff' }}>KvK:</strong> {BUSINESS.kvk}</li>
           </ul>
         </div>
       </div>
@@ -167,7 +178,7 @@ const Footer = () => {
             color: '#666666',
             margin: 0
           }}>
-            KvK 4218918
+            KvK {BUSINESS.kvk}
           </p>
           <a 
             href="https://www.instagram.com/jordivdhvl" 

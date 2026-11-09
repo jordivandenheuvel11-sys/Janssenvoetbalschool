@@ -38,13 +38,12 @@ export const metadata: Metadata = {
     description: siteDescription,
     siteName,
     url: "/",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: siteName }],
+    /** Raster OG via `app/opengraph-image.tsx` (ImageResponse) — crawlers prefer PNG over SVG */
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteName} | Voetbaltraining in Velden & Gemeente Venlo`,
     description: siteDescription,
-    images: ["/og-image.svg"],
   },
   robots: {
     index: true,

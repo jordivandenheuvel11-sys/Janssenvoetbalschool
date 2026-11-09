@@ -33,6 +33,8 @@ const Hero = () => {
         loop
         muted
         playsInline
+        preload="metadata"
+        poster="/hero-bg.jpg"
         style={{
           position: 'absolute',
           top: 0,

@@ -1,49 +1,105 @@
-/** Shared FAQ copy for homepage section, /faq page and FAQPage schema. */
+/** Shared FAQ for homepage, /faq page and FAQPage schema (eerste persoon + page links). */
+
+export type FaqLink = { href: string; label: string };
+
+export type FaqPart = string | FaqLink;
 
 export type FaqItem = {
   question: string;
-  answer: string;
+  /** Mixed plain text + internal links (rendered in UI) */
+  parts: FaqPart[];
 };
+
+export function isFaqLink(part: FaqPart): part is FaqLink {
+  return typeof part === "object" && part !== null && "href" in part;
+}
+
+/** Plain-text answer for JSON-LD */
+export function faqAnswerText(item: FaqItem): string {
+  return item.parts
+    .map((p) => (isFaqLink(p) ? p.label : p))
+    .join("");
+}
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Voor welke leeftijden train ik?",
-    answer:
-      "Ik train jeugdspelers die naast hun club extra willen werken aan techniek en zelfvertrouwen. Voor de allerjongsten (3 t/m 5 jaar) bied ik de Mini Voetbalschool.",
+    parts: [
+      "Ik train jeugdspelers die naast hun club extra willen werken aan techniek en zelfvertrouwen. Meer over ",
+      { href: "/jeugd-voetbaltraining", label: "jeugd voetbaltraining" },
+      ". Voor 3 t/m 5 jaar bied ik de ",
+      { href: "/mini-voetbalschool", label: "Mini Voetbalschool" },
+      ".",
+    ],
   },
   {
     question: "Waar train ik?",
-    answer:
-      "Ik train op Sportpark Theo Lommen, Schandeloseweg 1a, 5941 CP Velden (gemeente Venlo).",
+    parts: [
+      "Ik train op ",
+      {
+        href: "/locatie-sportpark-theo-lommen",
+        label: "Sportpark Theo Lommen",
+      },
+      " in Velden (gemeente Venlo). Ook relevant: ",
+      { href: "/voetbaltraining-velden", label: "training in Velden" },
+      " en ",
+      { href: "/voetbaltraining-venlo", label: "training in Venlo" },
+      ".",
+    ],
   },
   {
     question: "Hoe lang duurt een training?",
-    answer:
-      "Een individuele sessie bij mij duurt 60 minuten, met een duidelijk doel per training.",
+    parts: [
+      "Een individuele sessie bij mij duurt 60 minuten. Actuele data staan op de ",
+      { href: "/trainingen", label: "trainingsplanning" },
+      ".",
+    ],
   },
   {
     question: "Kan ik eerst een proefles doen?",
-    answer:
-      "Ja. Vraag een proefles aan en ik plan samen met jou een moment. Zo ervaar je mijn aanpak voordat je een pakket kiest.",
+    parts: [
+      "Ja. Via ",
+      { href: "/proefles-aanvragen", label: "proefles aanvragen" },
+      " plan ik samen met jou een moment. Zo ervaar je mijn aanpak voordat je een pakket kiest.",
+    ],
   },
   {
     question: "Wat kosten de trainingen?",
-    answer:
-      "Ik bied trainingsblokken en jaarpakketten. Actuele tarieven vind je op de pagina Pakketten.",
+    parts: [
+      "Ik bied trainingsblokken en jaarpakketten. Actuele tarieven staan bij ",
+      { href: "/pakketten", label: "pakketten" },
+      ".",
+    ],
   },
   {
     question: "Wat is het verschil met clubtraining?",
-    answer:
-      "Bij de club train je in een groep. Bij mij krijg je individuele aandacht: gerichte feedback op aanname, dribbelen, passen en schieten.",
+    parts: [
+      "Bij de club train je in een groep. Bij mij krijg je individuele aandacht — zie ook ",
+      {
+        href: "/individuele-techniektraining",
+        label: "individuele techniektraining",
+      },
+      ".",
+    ],
   },
   {
     question: "Wat is de Mini Voetbalschool?",
-    answer:
-      "Dat is mijn programma voor kinderen van 3 t/m 5 jaar (ouder & kind) om spelenderwijs met de bal te wennen. Meer info op de Mini Voetbalschool-pagina.",
+    parts: [
+      "Dat is mijn programma voor kinderen van 3 t/m 5 jaar (ouder & kind). Alles staat op de ",
+      { href: "/mini-voetbalschool", label: "Mini Voetbalschool-pagina" },
+      ".",
+    ],
   },
   {
     question: "Hoe meld ik me aan?",
-    answer:
-      "Vraag een proefles aan of stuur me een bericht via Contact. Ik neem zo snel mogelijk contact met je op.",
+    parts: [
+      "Vraag een ",
+      { href: "/proefles-aanvragen", label: "proefles" },
+      " aan of stuur me een bericht via ",
+      { href: "/contact", label: "Contact" },
+      ". Ik neem zo snel mogelijk contact met je op. Inschrijven kan via ",
+      { href: "/inschrijven", label: "inschrijven" },
+      ".",
+    ],
   },
 ];

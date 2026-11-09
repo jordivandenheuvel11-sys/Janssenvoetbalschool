@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "@/components/Hero";
+import PressMentionSection from "@/components/PressMentionSection";
 import AboutUsSection from "@/components/AboutUsSection";
 import StickyFeatures from "@/components/StickyFeatures";
 import AboutSection from "@/components/AboutSection";
@@ -13,6 +14,11 @@ const homeJsonLd = {
   url: "https://www.janssenvoetbalschool.nl",
   telephone: "+31611250476",
   email: "jelte.janssen@ziggo.nl",
+  identifier: {
+    "@type": "PropertyValue",
+    name: "KvK",
+    value: "4218918",
+  },
   address: {
     "@type": "PostalAddress",
     streetAddress: "Sportpark Theo Lommen",
@@ -28,6 +34,7 @@ const homeJsonLd = {
   sameAs: [
     "https://www.instagram.com/janssenvoetbal/",
     "https://www.tiktok.com/@janssenvoetbalsch",
+    "https://omroepvenlo.nl/nieuws/artikel/jelte-janssen-19-heeft-zijn-eigen-voetbalschool",
   ],
 };
 
@@ -40,6 +47,7 @@ export default function Home() {
       />
       <main>
         <Hero />
+        <PressMentionSection />
         <AboutUsSection />
         <StickyFeatures />
         <AboutSection />

@@ -137,6 +137,7 @@ const Footer = () => {
             <li><strong style={{ color: '#fff' }}>Email:</strong> <a href="mailto:jelte.janssen@ziggo.nl" style={{ color: 'inherit', textDecoration: 'none' }}>jelte.janssen@ziggo.nl</a></li>
             <li><strong style={{ color: '#fff' }}>Telefoon:</strong> <a href="tel:+31611250476" style={{ color: 'inherit', textDecoration: 'none' }}>+31 6 11250476</a></li>
             <li><strong style={{ color: '#fff' }}>Locatie:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Sportpark+Theo+Lommen+Velden" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>Sportpark Theo Lommen, Velden – Gemeente Venlo</a></li>
+            <li><strong style={{ color: '#fff' }}>KvK:</strong> 4218918</li>
           </ul>
         </div>
       </div>
@@ -160,6 +161,13 @@ const Footer = () => {
             margin: 0
           }}>
             &copy; {new Date().getFullYear()} Janssen Voetbalschool. Alle rechten voorbehouden.
+          </p>
+          <p style={{
+            fontSize: '13px',
+            color: '#666666',
+            margin: 0
+          }}>
+            KvK 4218918
           </p>
           <a 
             href="https://www.instagram.com/jordivdhvl" 

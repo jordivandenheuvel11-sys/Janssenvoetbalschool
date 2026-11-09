@@ -1,4 +1,7 @@
-import Link from "next/link";
+"use client";
+
+import ContactLink from "@/components/contact/ContactLink";
+import type { ContactAanvraagType } from "@/components/contact/ContactModalContext";
 
 type FirstTrainingCtaProps = {
   description: string;
@@ -6,6 +9,8 @@ type FirstTrainingCtaProps = {
   ctaLabel: string;
   /** Optional background image (defaults to gallery/g1.jpg like mini) */
   imageSrc?: string;
+  type?: ContactAanvraagType;
+  subject?: string;
 };
 
 /**
@@ -16,6 +21,8 @@ export default function FirstTrainingCta({
   href,
   ctaLabel,
   imageSrc = "/gallery/g1.jpg",
+  type = "proefles",
+  subject,
 }: FirstTrainingCtaProps) {
   return (
     <section
@@ -85,8 +92,10 @@ export default function FirstTrainingCta({
         >
           {description}
         </p>
-        <Link
+        <ContactLink
           href={href}
+          type={type}
+          subject={subject}
           style={{
             display: "inline-block",
             padding: "16px 34px",
@@ -101,7 +110,7 @@ export default function FirstTrainingCta({
           }}
         >
           {ctaLabel}
-        </Link>
+        </ContactLink>
       </div>
     </section>
   );

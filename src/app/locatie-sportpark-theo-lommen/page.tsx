@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import ContactLink from "@/components/contact/ContactLink";
 import LocalGuideLayout from "@/components/LocalGuideLayout";
 import { relatedExcept } from "@/lib/local-guides";
 import { BUSINESS, getFullAddressLine, getMapsUrl } from "@/lib/business";
@@ -69,9 +70,9 @@ export default function LocatiePage() {
           wanneer trainen
         </Link>{" "}
         voor actuele data. Twijfel je of de locatie past? Plan een{" "}
-        <Link href="/proefles-aanvragen" style={link}>
+        <ContactLink href="/proefles-aanvragen" type="proefles" style={link}>
           proefles
-        </Link>
+        </ContactLink>
         .
       </p>
       <h2 style={h2}>Citations / vermeldingen</h2>

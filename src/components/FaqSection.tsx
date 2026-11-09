@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import ContactLink from "@/components/contact/ContactLink";
 import { FAQ_ITEMS, isFaqLink } from "@/lib/faq";
 
 type FaqSectionProps = {
@@ -6,6 +9,13 @@ type FaqSectionProps = {
   heading?: string;
   limit?: number;
 };
+
+function isFormHref(href: string) {
+  return (
+    href.startsWith("/contact") ||
+    href.startsWith("/proefles-aanvragen")
+  );
+}
 
 /**
  * Crawlable FAQ (native details/summary) met links naar actuele pagina’s.
@@ -91,9 +101,23 @@ export default function FaqSection({
               >
                 {item.parts.map((part, i) =>
                   isFaqLink(part) ? (
-                    <Link key={`${item.question}-${i}`} href={part.href} style={linkStyle}>
-                      {part.label}
-                    </Link>
+                    isFormHref(part.href) ? (
+                      <ContactLink
+                        key={`${item.question}-${i}`}
+                        href={part.href}
+                        style={linkStyle}
+                      >
+                        {part.label}
+                      </ContactLink>
+                    ) : (
+                      <Link
+                        key={`${item.question}-${i}`}
+                        href={part.href}
+                        style={linkStyle}
+                      >
+                        {part.label}
+                      </Link>
+                    )
                   ) : (
                     <span key={`${item.question}-${i}`}>{part}</span>
                   ),
@@ -117,9 +141,9 @@ export default function FaqSection({
               volledige FAQ
             </Link>{" "}
             of{" "}
-            <Link href="/contact" style={linkStyle}>
+            <ContactLink href="/contact" type="contact" style={linkStyle}>
               neem contact op
-            </Link>
+            </ContactLink>
             .
           </p>
         )}

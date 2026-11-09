@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollHandler from "@/components/ScrollHandler";
+import { ContactModalProvider } from "@/components/contact/ContactModalContext";
 import { Suspense } from "react";
 import { Analytics } from "@vercel/analytics/next";
 import { getSiteUrl } from "@/lib/site";
@@ -85,10 +86,12 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <ScrollHandler />
         </Suspense>
-        <Navbar />
-        {children}
-        <WhatsAppButton />
-        <Footer />
+        <ContactModalProvider>
+          <Navbar />
+          {children}
+          <WhatsAppButton />
+          <Footer />
+        </ContactModalProvider>
         <Analytics />
       </body>
     </html>

@@ -1,7 +1,7 @@
 'use client';
 
-import Link from 'next/link';
 import Image from 'next/image';
+import ContactLink from '@/components/contact/ContactLink';
 
 const AboutSection = () => {
   return (
@@ -82,8 +82,9 @@ const AboutSection = () => {
           </p>
 
           <div style={{ marginTop: '28px' }}>
-            <Link
+            <ContactLink
               href="/proefles-aanvragen"
+              type="proefles"
               style={{
                 display: 'inline-block',
                 backgroundColor: '#D90429',
@@ -98,7 +99,7 @@ const AboutSection = () => {
               }}
             >
               Proefles aanvragen
-            </Link>
+            </ContactLink>
           </div>
         </div>
 

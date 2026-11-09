@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import ContactLink from '@/components/contact/ContactLink';
 import { BUSINESS, getFullAddressLine, getMapsUrl } from '@/lib/business';
 
 const Footer = () => {
@@ -104,21 +105,37 @@ const Footer = () => {
               { name: 'Locatie', href: '/locatie-sportpark-theo-lommen' },
               { name: 'Over mij', href: '/#over-mij' },
               { name: 'FAQ', href: '/faq' },
-              { name: 'Contact', href: '/contact' }
+              { name: 'Contact', href: '/contact', contact: true as const }
             ].map((item) => (
               <li key={item.name}>
-                <Link 
-                  href={item.href} 
-                  onClick={item.name === 'Home' ? handleHomeClick : undefined}
-                  style={{
-                  color: '#a0a0a0',
-                  textDecoration: 'none',
-                  fontSize: '15px',
-                  transition: 'color 0.2s ease',
-                  cursor: 'pointer'
-                }}>
-                  {item.name}
-                </Link>
+                {'contact' in item && item.contact ? (
+                  <ContactLink
+                    href="/contact"
+                    type="contact"
+                    style={{
+                      color: '#a0a0a0',
+                      textDecoration: 'none',
+                      fontSize: '15px',
+                      transition: 'color 0.2s ease',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    {item.name}
+                  </ContactLink>
+                ) : (
+                  <Link 
+                    href={item.href} 
+                    onClick={item.name === 'Home' ? handleHomeClick : undefined}
+                    style={{
+                    color: '#a0a0a0',
+                    textDecoration: 'none',
+                    fontSize: '15px',
+                    transition: 'color 0.2s ease',
+                    cursor: 'pointer'
+                  }}>
+                    {item.name}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

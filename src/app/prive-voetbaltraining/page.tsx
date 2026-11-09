@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import ContactLink from "@/components/contact/ContactLink";
 import LocalGuideLayout from "@/components/LocalGuideLayout";
 import { relatedExcept } from "@/lib/local-guides";
 import { BUSINESS, getFullAddressLine } from "@/lib/business";
@@ -77,9 +78,9 @@ export default function PriveVoetbaltrainingPage() {
       <h2 style={h2}>Hoe start je?</h2>
       <p>
         Vraag een{" "}
-        <Link href="/proefles-aanvragen" style={link}>
+        <ContactLink href="/proefles-aanvragen" type="proefles" style={link}>
           proefles
-        </Link>{" "}
+        </ContactLink>{" "}
         aan. Daarna kies je een blok of jaarpakket via{" "}
         <Link href="/pakketten" style={link}>
           pakketten

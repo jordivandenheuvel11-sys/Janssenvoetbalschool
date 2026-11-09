@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import ContactLink from "@/components/contact/ContactLink";
 import LocalGuideLayout from "@/components/LocalGuideLayout";
 import { relatedExcept } from "@/lib/local-guides";
 import { BUSINESS } from "@/lib/business";
@@ -55,9 +56,9 @@ export default function JeugdVoetbaltrainingPage() {
         Meer speelvreugde, betere basisvaardigheden en duidelijke feedback.
         Trainingen in Velden (gemeente Venlo) combineren intensiteit met een
         veilige, vertrouwde sfeer. Start met een{" "}
-        <Link href="/proefles-aanvragen" style={link}>
+        <ContactLink href="/proefles-aanvragen" type="proefles" style={link}>
           proefles
-        </Link>
+        </ContactLink>
         .
       </p>
     </LocalGuideLayout>

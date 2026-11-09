@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
+import ContactLink from '@/components/contact/ContactLink';
 
 /**
  * Hero: scherpe poster (LCP) + gecomprimeerde loop-video op desktop.
@@ -175,8 +175,9 @@ const Hero = () => {
         </p>
 
         <div className="hero-buttons" style={{ justifyContent: isMobile ? 'center' : 'flex-start' }}>
-          <Link
+          <ContactLink
             href="/proefles-aanvragen"
+            type="proefles"
             className="btn btn-secondary"
             style={{
               padding: '12px 32px',
@@ -191,7 +192,7 @@ const Hero = () => {
             }}
           >
             Proefles aanvragen
-          </Link>
+          </ContactLink>
         </div>
       </div>
     </section>

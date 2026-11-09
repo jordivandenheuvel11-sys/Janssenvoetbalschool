@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import FirstTrainingCta from "@/components/FirstTrainingCta";
+import ContactLink from "@/components/contact/ContactLink";
 
 export const metadata: Metadata = {
   title: "Mini Voetbalschool Janssen",
@@ -138,8 +139,10 @@ export default function MiniVoetbalschoolPage() {
             Speels ouder-kind voetbal voor kinderen van 3 t/m 5 jaar. Vanaf 6 september in de sportzaal.
           </p>
           <div className="hero-buttons" style={{ justifyContent: "center" }}>
-            <Link
+            <ContactLink
               href="/contact?onderwerp=Mini%20Voetbalschool"
+              type="mini-voetbalschool"
+              subject="Mini Voetbalschool"
               className="btn btn-secondary"
               style={{
                 padding: "14px 32px",
@@ -153,7 +156,7 @@ export default function MiniVoetbalschoolPage() {
               }}
             >
               Contact
-            </Link>
+            </ContactLink>
           </div>
         </div>
       </section>
@@ -417,6 +420,8 @@ export default function MiniVoetbalschoolPage() {
         description="Meld je kind aan voor mijn Mini Voetbalschool. Start vanaf 6 september."
         href="/contact?onderwerp=Mini%20Voetbalschool"
         ctaLabel="Contact"
+        type="mini-voetbalschool"
+        subject="Mini Voetbalschool"
       />
 
       <style>{`

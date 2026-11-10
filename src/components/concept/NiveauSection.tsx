@@ -49,7 +49,7 @@ const NiveauSection = () => {
               fontWeight: 500,
               lineHeight: 1.75,
               color: '#3a3a3a',
-              maxWidth: 36rem,
+              maxWidth: '36rem',
             }}
           >
             Ik train spelers uit Velden en gemeente Venlo die naast clubtraining

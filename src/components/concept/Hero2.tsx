@@ -19,8 +19,11 @@ const Hero2 = () => {
     <section
       aria-labelledby="hero2-heading"
       style={{
-        height: isMobile ? '100dvh' : '100vh',
-        minHeight: isMobile ? '100dvh' : 900,
+        /* Exact viewport height so the fold sits at the bottom of the screen */
+        height: '100dvh',
+        minHeight: '100dvh',
+        maxHeight: '100dvh',
+        boxSizing: 'border-box',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: isMobile ? 'flex-end' : 'center',

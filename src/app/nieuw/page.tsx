@@ -3,9 +3,7 @@ import dynamic from "next/dynamic";
 import Hero2 from "@/components/concept/Hero2";
 import NiveauSection from "@/components/concept/NiveauSection";
 
-const PressMentionSection = dynamic(
-  () => import("@/components/PressMentionSection"),
-);
+const GezienBijBar = dynamic(() => import("@/components/concept/GezienBijBar"));
 
 export const metadata: Metadata = {
   title: "Homepage concept (niet live)",
@@ -23,7 +21,7 @@ export default function NieuwHomepageConceptPage() {
   return (
     <main>
       <Hero2 />
-      <PressMentionSection />
+      <GezienBijBar />
       <NiveauSection />
     </main>
   );

@@ -45,21 +45,6 @@ const GezienBijBar = () => {
             'opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1)',
         }}
       >
-        <span
-          style={{
-            fontSize: 11,
-            fontWeight: 700,
-            color: '#D90429',
-            letterSpacing: '0.18em',
-            textTransform: 'uppercase',
-            display: 'block',
-            marginBottom: 14,
-            textAlign: 'center',
-          }}
-        >
-          Gezien bij
-        </span>
-
         <a
           href={ARTICLE_HREF}
           target="_blank"

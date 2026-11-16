@@ -11,7 +11,7 @@ const STORIES = [
     logo: '/concept/logo-fortuna.webp',
     logoAlt: 'Fortuna Sittard',
     logoSide: 'left' as const,
-    objectPosition: 'center 20%',
+    objectPosition: 'center 30%',
   },
   {
     name: 'DANI-DEX',
@@ -116,7 +116,7 @@ const SuccessStoriesSection = () => {
                       fontWeight: 800,
                       letterSpacing: '-0.02em',
                       lineHeight: 1,
-                      color: 'rgba(255,255,255,0.72)',
+                      color: 'rgba(217, 4, 41, 0.72)',
                       textTransform: 'uppercase',
                       pointerEvents: 'none',
                     }}

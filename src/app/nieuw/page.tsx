@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Hero2 from "@/components/concept/Hero2";
 import NiveauSection from "@/components/concept/NiveauSection";
-import TestimonialSection from "@/components/concept/TestimonialSection";
 import SuccessStoriesSection from "@/components/concept/SuccessStoriesSection";
+import TestimonialSection from "@/components/concept/TestimonialSection";
 import NextGenSection from "@/components/concept/NextGenSection";
+import TeamSection from "@/components/concept/TeamSection";
+import TrialCtaSection from "@/components/concept/TrialCtaSection";
 
 const GezienBijBar = dynamic(() => import("@/components/concept/GezienBijBar"));
 
@@ -26,9 +28,11 @@ export default function NieuwHomepageConceptPage() {
       <Hero2 />
       <GezienBijBar />
       <NiveauSection />
-      <TestimonialSection />
       <SuccessStoriesSection />
+      <TestimonialSection />
       <NextGenSection />
+      <TeamSection />
+      <TrialCtaSection />
     </main>
   );
 }

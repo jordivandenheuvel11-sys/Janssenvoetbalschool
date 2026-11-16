@@ -75,12 +75,22 @@ const Hero2 = () => {
           padding: '0 24px',
           display: 'flex',
           flexWrap: 'wrap',
-          alignItems: 'flex-start',
-          justifyContent: 'space-between',
+          alignItems: isMobile ? 'center' : 'flex-start',
+          justifyContent: isMobile ? 'center' : 'space-between',
+          textAlign: isMobile ? 'center' : 'left',
           gap: isMobile ? 32 : 48,
         }}
       >
-        <div style={{ flex: '1 1 280px', maxWidth: 744, minWidth: 0 }}>
+        <div
+          style={{
+            flex: '1 1 280px',
+            maxWidth: 744,
+            minWidth: 0,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: isMobile ? 'center' : 'flex-start',
+          }}
+        >
           <h1
             id="hero2-heading"
             style={{
@@ -92,6 +102,7 @@ const Hero2 = () => {
               lineHeight: 1.05,
               textTransform: 'uppercase',
               color: '#ffffff',
+              textAlign: isMobile ? 'center' : 'left',
             }}
           >
             Individuele
@@ -125,9 +136,10 @@ const Hero2 = () => {
           style={{
             flex: '0 1 280px',
             width: '100%',
-            maxWidth: isMobile ? '100%' : 280,
+            maxWidth: isMobile ? 320 : 280,
             display: 'flex',
             flexDirection: 'column',
+            alignItems: isMobile ? 'center' : 'flex-start',
             gap: 16,
           }}
         >
@@ -164,6 +176,7 @@ const Hero2 = () => {
               fontWeight: 500,
               lineHeight: 1.35,
               color: 'rgba(255,255,255,0.92)',
+              textAlign: isMobile ? 'center' : 'left',
             }}
           >
             Bekijk de video van een van onze trainingen. We zorgen voor een

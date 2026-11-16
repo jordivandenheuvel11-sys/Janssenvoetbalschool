@@ -1,9 +1,19 @@
 'use client';
 
+import type { CSSProperties } from 'react';
 import Image from 'next/image';
 
 /** “De volgende generatie van voetballers” — Figma hero 2. */
 const NextGenSection = () => {
+  const cardStyle: CSSProperties = {
+    position: 'relative',
+    width: '100%',
+    aspectRatio: '629 / 500',
+    borderRadius: 10,
+    overflow: 'hidden',
+    minHeight: 0,
+  };
+
   return (
     <section
       aria-labelledby="nextgen-heading"
@@ -58,16 +68,7 @@ const NextGenSection = () => {
             alignItems: 'stretch',
           }}
         >
-          <div
-            style={{
-              position: 'relative',
-              minHeight: 280,
-              aspectRatio: '629 / 500',
-              borderRadius: 10,
-              overflow: 'hidden',
-              backgroundColor: '#111',
-            }}
-          >
+          <div style={{ ...cardStyle, backgroundColor: '#111' }}>
             <Image
               src="/concept/jelte-coach.webp"
               alt="Jelte Janssen tijdens training"
@@ -80,17 +81,17 @@ const NextGenSection = () => {
 
           <div
             style={{
+              ...cardStyle,
               backgroundColor: '#D90429',
-              borderRadius: 10,
-              minHeight: 280,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
               gap: 12,
-              padding: 'clamp(28px, 4vw, 48px)',
+              padding: 'clamp(24px, 3.5vw, 48px)',
               textAlign: 'center',
               color: '#ffffff',
+              boxSizing: 'border-box',
             }}
           >
             <p
@@ -124,10 +125,6 @@ const NextGenSection = () => {
         @media (max-width: 768px) {
           .nextgen-grid {
             grid-template-columns: 1fr !important;
-          }
-          .nextgen-grid > div {
-            aspect-ratio: 4 / 3 !important;
-            min-height: 240px !important;
           }
         }
       `}</style>

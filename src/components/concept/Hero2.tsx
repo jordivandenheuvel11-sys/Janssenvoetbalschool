@@ -48,7 +48,7 @@ const Hero2 = () => {
           width: '100%',
           height: '100%',
           objectFit: 'cover',
-          objectPosition: isMobile ? '92% 28%' : '78% center',
+          objectPosition: isMobile ? '62% 42%' : '68% center',
           zIndex: 0,
         }}
       />

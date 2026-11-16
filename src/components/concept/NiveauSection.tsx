@@ -97,7 +97,7 @@ const NiveauSection = () => {
             fill
             sizes="(max-width: 768px) 100vw, 542px"
             quality={75}
-            style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
+            style={{ objectFit: 'cover', objectPosition: 'center 28%' }}
           />
         </div>
       </div>

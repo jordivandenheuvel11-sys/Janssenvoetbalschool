@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Bricolage_Grotesque, Montserrat } from "next/font/google";
 import { preload } from "react-dom";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -16,6 +16,14 @@ const montserrat = Montserrat({
   display: "swap",
   preload: true,
   weight: ["500", "600", "700", "800", "900"],
+});
+
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin"],
+  display: "swap",
+  preload: false,
+  weight: ["800"],
+  variable: "--font-display",
 });
 
 const siteUrl = getSiteUrl();
@@ -86,7 +94,7 @@ export default function RootLayout({
 
   return (
     <html lang="nl">
-      <body className={montserrat.className}>
+      <body className={`${montserrat.className} ${bricolage.variable}`}>
         <Suspense fallback={null}>
           <ScrollHandler />
         </Suspense>

@@ -16,6 +16,7 @@ const NiveauSection = () => {
       }}
     >
       <div
+        className="niveau-grid"
         style={{
           maxWidth: 1300,
           margin: '0 auto',
@@ -23,7 +24,7 @@ const NiveauSection = () => {
           flexWrap: 'wrap',
           alignItems: 'center',
           justifyContent: 'center',
-          gap: 'clamp(32px, 5vw, 68px)',
+          gap: 'clamp(28px, 4vw, 48px)',
         }}
       >
         <div style={{ flex: '1 1 320px', minWidth: 280, maxWidth: 560 }}>
@@ -31,10 +32,10 @@ const NiveauSection = () => {
             id="niveau-heading"
             style={{
               margin: '0 0 20px',
-              fontSize: 'clamp(2rem, 4vw, 3rem)',
+              fontSize: 'clamp(1.85rem, 3.6vw, 2.25rem)',
               fontWeight: 700,
-              letterSpacing: '0.02em',
-              lineHeight: 1.15,
+              letterSpacing: '-0.02em',
+              lineHeight: 1.2,
               color: '#0f0f0f',
             }}
           >
@@ -46,16 +47,17 @@ const NiveauSection = () => {
             style={{
               margin: '0 0 28px',
               fontSize: 17,
-              fontWeight: 500,
-              lineHeight: 1.75,
+              fontWeight: 600,
+              lineHeight: 1.6,
+              letterSpacing: '-0.02em',
               color: '#3a3a3a',
               maxWidth: '36rem',
             }}
           >
-            Ik train spelers uit Velden en gemeente Venlo die naast clubtraining
-            extra willen werken aan balvaardigheid, sneller handelen en meer
-            zelfvertrouwen in de wedstrijd. Persoonlijke aandacht — geen grote
-            groep.
+            Wij trainen spelers uit Velden en gemeente Venlo op BVO niveau, die
+            naast clubtraining extra willen werken aan balvaardigheid, sneller
+            handelen en meer zelfvertrouwen in de wedstrijd. Persoonlijke
+            aandacht en kleine groepen.
           </p>
           <ContactLink
             href="/proefles-aanvragen"
@@ -64,8 +66,8 @@ const NiveauSection = () => {
               display: 'inline-flex',
               alignItems: 'center',
               justifyContent: 'center',
-              backgroundColor: '#ffffff',
-              color: '#1a1a1b',
+              backgroundColor: '#1a1a1b',
+              color: '#ffffff',
               padding: '12px 32px',
               borderRadius: 30,
               fontWeight: 700,
@@ -74,7 +76,7 @@ const NiveauSection = () => {
               boxShadow: '0 8px 16px rgba(0,0,0,0.2)',
             }}
           >
-            Proefles aanvragen
+            Gratis proefles
           </ContactLink>
         </div>
 
@@ -86,7 +88,7 @@ const NiveauSection = () => {
             width: '100%',
             position: 'relative',
             aspectRatio: '542 / 551',
-            borderRadius: 20,
+            borderRadius: 10,
             overflow: 'hidden',
             backgroundColor: '#1a1a1a',
           }}

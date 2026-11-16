@@ -3,7 +3,7 @@
 import React from 'react';
 import ContactLink from '@/components/contact/ContactLink';
 
-/** Concept hero for /nieuw — matches Figma "Janssen voetbalschool hero 2". */
+/** Concept hero for /nieuw — Figma “Janssen voetbalschool hero 2”. */
 const Hero2 = () => {
   const [isMobile, setIsMobile] = React.useState(false);
 
@@ -19,18 +19,17 @@ const Hero2 = () => {
     <section
       aria-labelledby="hero2-heading"
       style={{
-        /* Exact viewport height so the fold sits at the bottom of the screen */
-        height: '100dvh',
-        minHeight: '100dvh',
-        maxHeight: '100dvh',
+        height: isMobile ? 'auto' : '100dvh',
+        minHeight: isMobile ? '100dvh' : '100dvh',
+        maxHeight: isMobile ? 'none' : '100dvh',
         boxSizing: 'border-box',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: isMobile ? 'flex-end' : 'center',
         position: 'relative',
         margin: 0,
-        paddingTop: isMobile ? '88px' : '120px',
-        paddingBottom: isMobile ? '48px' : 0,
+        paddingTop: isMobile ? '100px' : '120px',
+        paddingBottom: isMobile ? '40px' : 0,
         overflow: 'hidden',
         backgroundColor: '#0a0a0a',
       }}
@@ -48,7 +47,7 @@ const Hero2 = () => {
           width: '100%',
           height: '100%',
           objectFit: 'cover',
-          objectPosition: isMobile ? '62% 42%' : '68% center',
+          objectPosition: isMobile ? '55% 58%' : '68% center',
           zIndex: 0,
         }}
       />
@@ -58,15 +57,15 @@ const Hero2 = () => {
         style={{
           position: 'absolute',
           inset: 0,
-          backgroundImage: isMobile
-            ? 'linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.45) 38%, rgba(0,0,0,0.25) 62%, rgba(0,0,0,0.35) 100%)'
-            : 'linear-gradient(90deg, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.35) 42%, rgba(0,0,0,0.12) 68%, rgba(0,0,0,0.05) 100%)',
+          background: isMobile
+            ? 'linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.35) 45%, rgba(0,0,0,0.25) 100%)'
+            : 'rgba(0,0,0,0.25)',
           zIndex: 1,
         }}
       />
 
       <div
-        className="container"
+        className="hero2-inner"
         style={{
           position: 'relative',
           zIndex: 2,
@@ -74,55 +73,103 @@ const Hero2 = () => {
           maxWidth: 1200,
           margin: '0 auto',
           padding: '0 24px',
+          display: 'flex',
+          flexWrap: 'wrap',
+          alignItems: 'flex-start',
+          justifyContent: 'space-between',
+          gap: isMobile ? 32 : 48,
         }}
       >
-        <h1
-          id="hero2-heading"
+        <div style={{ flex: '1 1 280px', maxWidth: 744, minWidth: 0 }}>
+          <h1
+            id="hero2-heading"
+            style={{
+              margin: '0 0 28px',
+              fontFamily: 'var(--font-display), var(--font-sans)',
+              fontSize: 'clamp(2.2rem, 5.5vw, 4rem)',
+              fontWeight: 800,
+              letterSpacing: '-0.02em',
+              lineHeight: 1.05,
+              textTransform: 'uppercase',
+              color: '#ffffff',
+            }}
+          >
+            Individuele
+            <br />
+            voetbaltraining
+            <br />
+            in Velden
+          </h1>
+          <ContactLink
+            href="/proefles-aanvragen"
+            type="proefles"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundColor: '#ffffff',
+              color: '#1a1a1b',
+              padding: '12px 32px',
+              borderRadius: 30,
+              fontWeight: 700,
+              fontSize: 15,
+              textDecoration: 'none',
+              boxShadow: '0 8px 16px rgba(0,0,0,0.2)',
+            }}
+          >
+            Gratis proefles
+          </ContactLink>
+        </div>
+
+        <div
           style={{
-            margin: '0 0 24px',
-            maxWidth: 744,
-            fontSize: 'clamp(2.4rem, 5.2vw, 3.8rem)',
-            fontWeight: 700,
-            letterSpacing: '0.02em',
-            lineHeight: 1.08,
-            color: '#ffffff',
+            flex: '0 1 280px',
+            width: '100%',
+            maxWidth: isMobile ? '100%' : 280,
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 16,
           }}
         >
-          Individuele voetbaltraining in Velden
-        </h1>
-        <p
-          style={{
-            margin: '0 0 32px',
-            maxWidth: 544,
-            fontSize: 'clamp(1.05rem, 2vw, 1.15rem)',
-            fontWeight: 500,
-            lineHeight: 1.65,
-            color: 'rgba(255,255,255,0.92)',
-          }}
-        >
-          Extra training naast je club, in kleine groepjes voor jeugd uit{' '}
-          <strong style={{ fontWeight: 700 }}>Limburg</strong> (locatie Velden,
-          gemeente Venlo).
-        </p>
-        <ContactLink
-          href="/proefles-aanvragen"
-          type="proefles"
-          style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: '#ffffff',
-            color: '#1a1a1b',
-            padding: '12px 32px',
-            borderRadius: 30,
-            fontWeight: 700,
-            fontSize: 15,
-            textDecoration: 'none',
-            boxShadow: '0 8px 16px rgba(0,0,0,0.2)',
-          }}
-        >
-          Proefles aanvragen
-        </ContactLink>
+          <div
+            style={{
+              position: 'relative',
+              width: '100%',
+              aspectRatio: '273 / 154',
+              borderRadius: 10,
+              overflow: 'hidden',
+              backgroundColor: '#d9d9d9',
+            }}
+          >
+            <video
+              src="/feature-video-1.mp4"
+              poster="/hero-loop-poster.webp"
+              muted
+              playsInline
+              autoPlay
+              loop
+              preload="metadata"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                display: 'block',
+              }}
+            />
+          </div>
+          <p
+            style={{
+              margin: 0,
+              fontSize: 15,
+              fontWeight: 500,
+              lineHeight: 1.35,
+              color: 'rgba(255,255,255,0.92)',
+            }}
+          >
+            Bekijk de video van een van onze trainingen. We zorgen voor een
+            goede sfeer, maar ook een professionele setting
+          </p>
+        </div>
       </div>
     </section>
   );
